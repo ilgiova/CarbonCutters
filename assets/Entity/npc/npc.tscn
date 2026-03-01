@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://bqlc2wsmk5nju"]
+
+[ext_resource type="Script" uid="uid://crpv32amix6kv" path="res://scripts/npc.gd" id="1_xh6w2"]
+[ext_resource type="SpriteFrames" uid="uid://dakg7qbuothgc" path="res://assets/Entity/npc/frames/SpriteFrameBryce.tres" id="2_et1l5"]
+[ext_resource type="Texture2D" uid="uid://enrnfollta1l" path="res://assets/Entity/npc/ui/E.png" id="3_et1l5"]
+[ext_resource type="PackedScene" uid="uid://crj271o6rb468" path="res://assets/Entity/npc/dialogue.tscn" id="3_y5pv2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kuclc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ukjld"]
+radius = 67.00746
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nld6"]
+atlas = ExtResource("3_et1l5")
+region = Rect2(0, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kuclc"]
+atlas = ExtResource("3_et1l5")
+region = Rect2(19, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukjld"]
+atlas = ExtResource("3_et1l5")
+region = Rect2(38, 0, 19, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_reaqw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nld6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kuclc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukjld")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Npc" type="CharacterBody2D" unique_id=191786429]
+script = ExtResource("1_xh6w2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=548844570]
+position = Vector2(0, -21)
+sprite_frames = ExtResource("2_et1l5")
+animation = &"run_right"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2044245073]
+position = Vector2(-1, 1)
+shape = SubResource("CircleShape2D_kuclc")
+
+[node name="collisionArea" type="Area2D" parent="." unique_id=1976052826]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="collisionArea" unique_id=1652752877]
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_ukjld")
+
+[node name="IconKeyboard" type="AnimatedSprite2D" parent="." unique_id=75152126]
+z_index = 1
+position = Vector2(1.4210855e-14, -71)
+scale = Vector2(1.3421053, 1.3421053)
+sprite_frames = SubResource("SpriteFrames_reaqw")
+frame_progress = 0.6971776
+
+[node name="Timer" type="Timer" parent="." unique_id=395024489]
+
+[node name="Dialogue" parent="." unique_id=1723502717 instance=ExtResource("3_y5pv2")]
+offset_left = -154.0
+offset_top = -140.0
+offset_right = -1.0
+offset_bottom = -39.0
+
+[connection signal="body_shape_entered" from="collisionArea" to="." method="_on_collision_area_body_shape_entered"]
+[connection signal="body_shape_exited" from="collisionArea" to="." method="_on_collision_area_body_shape_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="dialogue_finish" from="Dialogue" to="." method="_on_dialogue_dialogue_finish"]
