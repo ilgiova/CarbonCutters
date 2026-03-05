@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CarbonCutters"
-run/main_scene="uid://c4nx5ge2olrp"
+run/main_scene="uid://bur1einktqps1"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

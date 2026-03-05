@@ -1,8 +1,8 @@
-[gd_scene format=3 uid="uid://bj6ogvlus66nj"]
+[gd_scene format=3 uid="uid://cwgfjjhemmkv8"]
 
-[ext_resource type="Script" uid="uid://u58owe5yovyo" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://ouaaf6e6vrkn" path="res://assets/Entity/Player/player.png" id="2_g2els"]
-[ext_resource type="Texture2D" uid="uid://k24ndwg85jml" path="res://assets/Entity/Player/dust.png" id="3_qhqgy"]
+[ext_resource type="Script" uid="uid://u58owe5yovyo" path="res://scripts/player.gd" id="1_gfro8"]
+[ext_resource type="Texture2D" uid="uid://ouaaf6e6vrkn" path="res://assets/Entity/Player/player.png" id="2_iol27"]
+[ext_resource type="Texture2D" uid="uid://k24ndwg85jml" path="res://assets/Entity/Player/dust.png" id="3_l3nf4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gmlin"]
 height = 44.0
@@ -174,11 +174,11 @@ transitions = ["idle", "run_up", SubResource("AnimationNodeStateMachineTransitio
 graph_offset = Vector2(153.30022, -130.69519)
 
 [node name="player" type="CharacterBody2D" unique_id=951992718]
-script = ExtResource("1_g2els")
+script = ExtResource("1_gfro8")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1486141473]
 position = Vector2(0, -22)
-texture = ExtResource("2_g2els")
+texture = ExtResource("2_iol27")
 hframes = 10
 vframes = 4
 
@@ -198,7 +198,7 @@ anim_player = NodePath("../AnimationPlayer")
 [node name="dust" type="CPUParticles2D" parent="." unique_id=1342352435]
 emitting = false
 amount = 3
-texture = ExtResource("3_qhqgy")
+texture = ExtResource("3_l3nf4")
 lifetime = 0.29000000000000004
 emission_shape = 3
 emission_rect_extents = Vector2(3, 2)
