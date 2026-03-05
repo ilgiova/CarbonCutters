@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="CarbonCutters"
-run/main_scene="uid://c4nx5ge2olrp"
+run/main_scene="uid://cffui727qadf7"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+PlayerData="*uid://ch2wdgapxfofl"
+ScoreUI="*uid://bn04wh734c5gb"
 
 [display]
 

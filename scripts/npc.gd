@@ -25,7 +25,7 @@ var is_chatting = false
 
 var player
 var player_in_chat_zone = false
-
+var alredySpeak = false
 var dir = Vector2.RIGHT
 var start_pos
 
@@ -42,6 +42,9 @@ func _ready():
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("interact") and player_in_chat_zone:
+		if !alredySpeak:
+			PlayerData.add_score(25)
+			alredySpeak = true
 		$Dialogue.d_file = dialogue_file
 		$Dialogue.start()
 		is_chatting = true

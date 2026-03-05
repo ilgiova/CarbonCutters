@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://j31bte0lln4"]
+
+[ext_resource type="Script" uid="uid://b2vb7o6su2wny" path="res://scripts/canvas_layer.gd" id="1_cfvaj"]
+[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/Entity/npc/dialogue/Star Crush.ttf" id="2_uceqf"]
+
+[node name="Control" type="CanvasLayer" unique_id=1874023264]
+script = ExtResource("1_cfvaj")
+
+[node name="Label" type="Label" parent="." unique_id=1612623822]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -161.0
+offset_bottom = 66.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = ExtResource("2_uceqf")
+theme_override_font_sizes/font_size = 40
+text = "Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1

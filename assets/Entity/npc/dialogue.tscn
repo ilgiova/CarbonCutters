@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cxj7vtona3lxs" path="res://scripts/dialogue.gd" id="1_r4l5n"]
 [ext_resource type="Texture2D" uid="uid://dccb772iqjxrd" path="res://assets/Entity/npc/ui/dialogueImmage.png" id="2_r4l5n"]
+[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/Entity/npc/dialogue/Star Crush.ttf" id="3_fl34x"]
 
 [node name="Dialogue" type="Control" unique_id=1723502717]
 layout_mode = 3
@@ -18,28 +19,31 @@ anchor_left = 1.036
 anchor_top = 1.041
 anchor_right = 1.036
 anchor_bottom = 1.041
-offset_left = -213.508
-offset_top = -131.14099
-offset_right = -4.8160095
-offset_bottom = -6.951996
+offset_left = -291.508
+offset_top = -206.14099
+offset_right = -6.8160095
+offset_bottom = -27.951996
 texture = ExtResource("2_r4l5n")
 
 [node name="Name" type="RichTextLabel" parent="NinePatchRect" unique_id=562818793]
 layout_mode = 0
-offset_left = 19.000002
-offset_top = 17.999992
-offset_right = 297.3333
-offset_bottom = 41.749985
-scale = Vector2(0.6, 0.6)
+offset_left = 31.000002
+offset_top = 27.999992
+offset_right = 250.0
+offset_bottom = 51.749985
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_fl34x")
 text = "Name:"
+scroll_active = false
+vertical_alignment = 1
 
 [node name="Text" type="RichTextLabel" parent="NinePatchRect" unique_id=97556753]
 layout_mode = 0
-offset_left = 19.0
-offset_top = 28.999992
-offset_right = 302.3333
-offset_bottom = 152.33331
-scale = Vector2(0.6, 0.6)
+offset_left = 32.0
+offset_top = 50.999992
+offset_right = 255.0
+offset_bottom = 147.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_fl34x")
 text = "Text:"
+scroll_active = false

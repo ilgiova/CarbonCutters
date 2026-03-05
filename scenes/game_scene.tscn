@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bg1a1vxhjrndg"]
+
+[ext_resource type="Script" uid="uid://ch2wdgapxfofl" path="res://scripts/playerData.gd" id="1_onqr8"]
+[ext_resource type="PackedScene" uid="uid://c4nx5ge2olrp" path="res://scenes/world/main_lobby.tscn" id="1_w5aja"]
+[ext_resource type="PackedScene" uid="uid://j31bte0lln4" path="res://scenes/ScoreUI.tscn" id="2_ycayy"]
+
+[node name="GameScene" type="Node2D" unique_id=1703066664]
+script = ExtResource("1_onqr8")
+
+[node name="Control" parent="." unique_id=1874023264 instance=ExtResource("2_ycayy")]
+
+[node name="MainLobby" parent="." unique_id=17929028 instance=ExtResource("1_w5aja")]

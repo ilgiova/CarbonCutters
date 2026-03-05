@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bqlc2wsmk5nju"]
 
 [ext_resource type="Script" uid="uid://crpv32amix6kv" path="res://scripts/npc.gd" id="1_xh6w2"]
-[ext_resource type="SpriteFrames" uid="uid://dakg7qbuothgc" path="res://assets/Entity/npc/frames/SpriteFrameBryce.tres" id="2_et1l5"]
+[ext_resource type="SpriteFrames" uid="uid://blj6rlaj4vhng" path="res://assets/Entity/npc/frames/SpriteFrameDylan.tres" id="2_et1l5"]
 [ext_resource type="Texture2D" uid="uid://enrnfollta1l" path="res://assets/Entity/npc/ui/E.png" id="3_et1l5"]
 [ext_resource type="PackedScene" uid="uid://crj271o6rb468" path="res://assets/Entity/npc/dialogue.tscn" id="3_y5pv2"]
 
@@ -45,7 +45,7 @@ script = ExtResource("1_xh6w2")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=548844570]
 position = Vector2(0, -21)
 sprite_frames = ExtResource("2_et1l5")
-animation = &"run_right"
+animation = &"run_up"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2044245073]
 position = Vector2(-1, 1)
