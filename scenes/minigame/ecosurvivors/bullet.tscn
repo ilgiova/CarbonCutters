@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bgk0vjr378g5j"]
+
+[ext_resource type="Texture2D" uid="uid://daw1paiaka46v" path="res://assets/minigame/ecoSurvivors/Bullet/Bullet.png" id="1_4pagx"]
+[ext_resource type="Script" uid="uid://bn08jtc4yeeld" path="res://scripts/minigame/ecosurvivors/bullet.gd" id="1_dalux"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vm5eq"]
+radius = 16.0
+
+[node name="Bullet" type="Area2D" unique_id=213313564]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_dalux")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1618327704]
+texture = ExtResource("1_4pagx")
+hframes = 6
+vframes = 2
+frame = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=650320551]
+shape = SubResource("CircleShape2D_vm5eq")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

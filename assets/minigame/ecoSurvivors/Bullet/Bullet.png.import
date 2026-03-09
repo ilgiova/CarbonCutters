@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8uf5df83dlxu"
-path="res://.godot/imported/generalEnemy.png-16ffe8fb2a92c037f3a4fc80f612f2f6.ctex"
+uid="uid://daw1paiaka46v"
+path="res://.godot/imported/Bullet.png-74b6d424c8a1d8c8951f32fd5ffdadf4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/minigame/ecoSurvivors/generalEnemy/generalEnemy.png"
-dest_files=["res://.godot/imported/generalEnemy.png-16ffe8fb2a92c037f3a4fc80f612f2f6.ctex"]
+source_file="res://assets/minigame/ecoSurvivors/Bullet/Bullet.png"
+dest_files=["res://.godot/imported/Bullet.png-74b6d424c8a1d8c8951f32fd5ffdadf4.ctex"]
 
 [params]
 

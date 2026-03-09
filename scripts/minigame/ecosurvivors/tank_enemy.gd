@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@export var movement_speed = 200.0
-@export var damage = 10
-@export var max_health: int = 30
+@export var movement_speed = 100.0
+@export var damage = 40
+@export var max_health: int = 150
 @export var exp_scene: PackedScene
 @export var potion_scene: PackedScene
 

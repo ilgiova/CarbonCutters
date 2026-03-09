@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://j2bjensw7f75"]
+
+[ext_resource type="Texture2D" uid="uid://cnm0xpln317pn" path="res://assets/minigame/ecoSurvivors/healt.png" id="1_ohky8"]
+[ext_resource type="Script" uid="uid://c3wo6u4b33dxe" path="res://scripts/minigame/ecosurvivors/health_potion.gd" id="1_s2gyn"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s2gyn"]
+radius = 32.0
+height = 80.0
+
+[node name="HealthPotion" type="Area2D" unique_id=65761084]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_s2gyn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1458689073]
+shape = SubResource("CapsuleShape2D_s2gyn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=9323536]
+position = Vector2(1.0000014, 1.0000019)
+scale = Vector2(0.11166667, 0.11166667)
+texture = ExtResource("1_ohky8")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -6,6 +6,7 @@ enum State { IDLE, RUN }
 @export var speed: int = 300
 # 🔴 Nuove stats per la salute
 @export var max_health: int = 100
+var experience: int = 0
 var current_health: int
 
 var state: State = State.IDLE
@@ -16,6 +17,7 @@ var move_direction: Vector2 = Vector2.ZERO
 @onready var dust = $dust
 # 🔴 Riferimento alla barra (Assicurati che il nome nel Scene Tree sia "HealtBar")
 @onready var health_bar = $HealtBar 
+@onready var exp_label = get_tree().get_first_node_in_group("exp_label")
 
 func _ready() -> void:
 	animation_tree.active = true
@@ -30,6 +32,19 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	movement_loop()
+
+func gain_exp(amount: int) -> void:
+	experience += amount
+	update_exp_label()
+
+func update_exp_label() -> void:
+	if exp_label != null:
+		exp_label.text = "Garbage collected: " + str(experience)
+
+func heal(amount: int) -> void:
+	current_health = mini(current_health + amount, max_health)
+	if health_bar != null:
+		health_bar.value = current_health
 
 # 🔴 Funzione per ricevere danno
 func take_damage(amount: int) -> void:
@@ -84,3 +99,7 @@ func update_animation() -> void:
 					animation_playback.travel("run_up")
 				else:
 					animation_playback.travel("run_down")
+
+
+func _on_pickup_radius_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
