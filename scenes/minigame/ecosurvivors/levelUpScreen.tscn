@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://b7wxb7ox623y3"]
+
+[ext_resource type="Script" uid="uid://c8suu2k3oe5pi" path="res://scripts/minigame/ecosurvivors/level_up_screen.gd" id="1_wit4d"]
+
+[node name="LevelUpScreen" type="CanvasLayer" unique_id=220686174 groups=["level_up_screen"]]
+process_mode = 3
+script = ExtResource("1_wit4d")
+
+[node name="Panel" type="Panel" parent="." unique_id=1986015402]
+anchors_preset = -1
+anchor_right = 0.021000002
+anchor_bottom = 0.037
+offset_left = 890.0
+offset_top = 425.0
+offset_right = 997.68
+offset_bottom = 457.04
+
+[node name="VBox" type="VBoxContainer" parent="Panel" unique_id=1084690861]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 5.0
+offset_right = 135.0
+offset_bottom = 120.0
+
+[node name="QuestionLabel" type="Label" parent="Panel/VBox" unique_id=303745873]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="Button0" type="Button" parent="Panel/VBox" unique_id=1349671623]
+layout_mode = 2
+
+[node name="Button1" type="Button" parent="Panel/VBox" unique_id=595566755]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="Panel/VBox" unique_id=471947556]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="Panel/VBox" unique_id=1664464339]
+layout_mode = 2
+
+[node name="powerupPannel" type="Panel" parent="." unique_id=2095446455]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBox" type="VBoxContainer" parent="powerupPannel" unique_id=624067827]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="powerupButton0" type="Button" parent="powerupPannel/VBox" unique_id=276615457]
+layout_mode = 2
+
+[node name="powerupButton1" type="Button" parent="powerupPannel/VBox" unique_id=779038553]
+layout_mode = 2
+
+[node name="powerupButton2" type="Button" parent="powerupPannel/VBox" unique_id=829649172]
+layout_mode = 2

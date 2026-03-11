@@ -4,6 +4,7 @@
 [ext_resource type="TileSet" uid="uid://cy155fk2jtd5h" path="res://assets/TileSet/ground.tres" id="2_q2g75"]
 [ext_resource type="PackedScene" uid="uid://bj6ogvlus66nj" path="res://scenes/player/player.tscn" id="3_ajsc6"]
 [ext_resource type="Script" uid="uid://buctfrg2qth08" path="res://scripts/minigame/ecosurvivors/ecosurvivors_player.gd" id="4_4kkh6"]
+[ext_resource type="PackedScene" uid="uid://b7wxb7ox623y3" path="res://scenes/minigame/ecosurvivors/levelUpScreen.tscn" id="5_7ycma"]
 [ext_resource type="Script" uid="uid://dle46qevb0ndk" path="res://scripts/minigame/ecosurvivors/enemy_spawner.gd" id="5_p6i14"]
 [ext_resource type="PackedScene" uid="uid://dp1gxe3147fu3" path="res://scenes/minigame/ecosurvivors/general_enemy.tscn" id="6_7ycma"]
 [ext_resource type="Script" uid="uid://cwcqmu8l3ph4o" path="res://scripts/minigame/ecosurvivors/pickup_radius.gd" id="7_4kkh6"]
@@ -44,6 +45,8 @@ y_sort_enabled = true
 position = Vector2(1593, 902)
 script = ExtResource("4_4kkh6")
 max_health = 100
+bullet_scene = ExtResource("7_q2g75")
+orbit_radius = 80.0
 
 [node name="HealtBar" type="ProgressBar" parent="Y-sorted/player" unique_id=895999149]
 offset_left = -42.0
@@ -94,6 +97,8 @@ offset_left = -40.0
 offset_bottom = 23.0
 grow_horizontal = 0
 text = "Garbage collected: 0"
+
+[node name="LevelUpScreen" parent="." unique_id=220686174 instance=ExtResource("5_7ycma")]
 
 [connection signal="body_entered" from="Y-sorted/player/pickupRadius" to="Y-sorted/player" method="_on_pickup_radius_body_entered"]
 [connection signal="timeout" from="EnemySpawner/Timer" to="EnemySpawner" method="_on_timer_timeout"]
