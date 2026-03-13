@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://6lbleveogegr"]
+
+[ext_resource type="PackedScene" uid="uid://bbdlxbyan0xmm" path="res://assets/minigame/ConveyourBelt/Scenes/trashCanGenerics.tscn" id="1_msx1c"]
+[ext_resource type="Texture2D" uid="uid://buqf3hg6pignn" path="res://assets/minigame/ConveyourBelt/Immages/PetTrash.png" id="2_l7fm5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_maky8"]
+size = Vector2(175, 18)
+
+[node name="TrashCan" unique_id=533542316 instance=ExtResource("1_msx1c")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=582701765]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_l7fm5")
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=502487508]
+position = Vector2(-9.5, -85)
+shape = SubResource("RectangleShape2D_maky8")

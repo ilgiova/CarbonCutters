@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bepc7tp16mh6i"]
+
+[ext_resource type="PackedScene" uid="uid://bi3os2v38c6kn" path="res://assets/minigame/ConveyourBelt/Scenes/item_base.tscn" id="1_s26cl"]
+[ext_resource type="Texture2D" uid="uid://64q0quj7jccq" path="res://assets/minigame/ConveyourBelt/Immages/carboard.png" id="2_f0iie"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3dmk"]
+size = Vector2(77, 16.5)
+
+[node name="ItemBase" unique_id=693086956 instance=ExtResource("1_s26cl")]
+gravity_scale = 1.0
+itemType = "paper"
+
+[node name="Sprite2D" parent="." index="0" unique_id=79197371]
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_f0iie")
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=1459557402]
+position = Vector2(2.5, 32.75)
+shape = SubResource("RectangleShape2D_q3dmk")
