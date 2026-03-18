@@ -5,154 +5,152 @@ enum State { IDLE, RUN }
 @export_category("Stats")
 @export var speed: int = 300
 @export var max_health: int = 100
+
+@export_category("Scenes")
 @export var bullet_scene: PackedScene
-@export var orbit_radius: float = 80.0
 
 var experience: int = 0
 var current_health: int
 var xp_to_levelup: int = 10
 var level: int = 1
-var level_up_screen: Node = null
+var current_rotation_speed: float = 2.0
 var state: State = State.IDLE
 var move_direction: Vector2 = Vector2.ZERO
+var _level_up_screen: Node = null
 
 @onready var animation_tree: AnimationTree = $AnimationTree
-@onready var animation_playback: AnimationNodeStateMachinePlayback = animation_tree.get("parameters/playback")
+@onready var animation_playback: AnimationNodeStateMachinePlayback = \
+	animation_tree.get("parameters/playback")
 @onready var dust = $dust
 @onready var health_bar = $HealtBar
-@onready var weapon_pivot = $WeaponPivot
-@onready var exp_label = get_tree().get_first_node_in_group("exp_label")
+@onready var weapon_pivot: Node2D = $WeaponPivot
+@onready var exp_label: Label = get_tree().get_first_node_in_group("exp_label")
+@onready var stats_label = get_tree().get_first_node_in_group("stats_label")
 
 func _ready() -> void:
+	add_to_group("player")
 	animation_tree.active = true
 	if dust != null:
 		dust.emitting = false
 	current_health = max_health
-	if health_bar != null:
-		health_bar.max_value = max_health
-		health_bar.value = current_health
-	reposition_bullets()
+	_update_health_bar()
+	if weapon_pivot != null:
+		weapon_pivot.reposition_bullets()
+		weapon_pivot.rotation_speed = current_rotation_speed
+	update_stats_label()
 
 func _physics_process(_delta: float) -> void:
-	movement_loop()
+	_movement_loop()
 
-func _process(delta: float) -> void:
-	if weapon_pivot != null:
-		var rot_speed = weapon_pivot.get_meta("rotation_speed", 2.0)
-		weapon_pivot.rotation += rot_speed * delta
-
-# ---- XP e Level Up ----
+func _process(_delta: float) -> void:
+	pass
 
 func gain_exp(amount: int) -> void:
 	experience += amount
-	update_exp_label()
+	_update_exp_label()
 	if experience >= xp_to_levelup:
 		experience -= xp_to_levelup
 		level += 1
 		xp_to_levelup = 10 + level * 5
-		level_up()
+		_level_up()
 
-func update_exp_label() -> void:
+func _update_exp_label() -> void:
 	if exp_label != null:
-		exp_label.text = "Garbage collected: " + str(experience) + " / " + str(xp_to_levelup)
+		exp_label.text = "Garbage collected: %d / %d" % [experience, xp_to_levelup]
 
-func level_up() -> void:
-	if level_up_screen == null:
-		level_up_screen = get_tree().current_scene.get_node_or_null("LevelUpScreen")
-	if level_up_screen == null:
-		print("ERRORE: LevelUpScreen non trovato nella scena!")
+func _level_up() -> void:
+	if _level_up_screen == null:
+		_level_up_screen = get_tree().current_scene.get_node_or_null("LevelUpScreen")
+	if _level_up_screen == null:
+		push_error("[Player] _level_up | 'LevelUpScreen' node not found!")
 		return
-	if level_up_screen.answer_selected.is_connected(_on_answer_selected):
-		level_up_screen.answer_selected.disconnect(_on_answer_selected)
-	level_up_screen.show_random_question()
-	level_up_screen.answer_selected.connect(_on_answer_selected, CONNECT_ONE_SHOT)
+	if _level_up_screen.answer_selected.is_connected(_on_answer_selected):
+		_level_up_screen.answer_selected.disconnect(_on_answer_selected)
+	_level_up_screen.answer_selected.connect(_on_answer_selected, CONNECT_ONE_SHOT)
+	_level_up_screen.show_random_question()
 
-func _on_answer_selected(correct: bool) -> void:
+func _on_answer_selected(_correct: bool) -> void:
 	pass
 
 func apply_powerup(id: String) -> void:
 	match id:
 		"damage":
+			if weapon_pivot == null:
+				return
 			for bullet in weapon_pivot.get_children():
-				bullet.damage += 5
+				bullet.damage += 15
 		"health":
 			max_health += 20
 			current_health = mini(current_health + 20, max_health)
-			if health_bar:
-				health_bar.max_value = max_health
-				health_bar.value = current_health
+			_update_health_bar()
 		"rotation":
-			weapon_pivot.set_meta("rotation_speed", weapon_pivot.get_meta("rotation_speed", 2.0) + 0.5)
+			if weapon_pivot == null:
+				return
+			current_rotation_speed += 0.5
+			weapon_pivot.rotation_speed = current_rotation_speed
 		"bullet":
-			add_bullet()
+			_add_bullet()
+		_:
+			push_error("[Player] apply_powerup | unknown id='%s'" % id)
+	update_stats_label()
 
-func add_bullet() -> void:
-	if bullet_scene == null:
-		print("ERRORE: bullet_scene non assegnata nell'Inspector!")
+func _add_bullet() -> void:
+	if bullet_scene == null or weapon_pivot == null:
 		return
-	var new_bullet = bullet_scene.instantiate()
+	var new_bullet := bullet_scene.instantiate()
 	weapon_pivot.add_child(new_bullet)
-	reposition_bullets()
+	weapon_pivot.reposition_bullets()
 
-func reposition_bullets() -> void:
-	var bullets = weapon_pivot.get_children()
-	var count = bullets.size()
-	if count == 0:
-		return
-	for i in range(count):
-		var angle = (TAU / count) * i
-		bullets[i].position = Vector2(cos(angle), sin(angle)) * orbit_radius
-
-# ---- Salute ----
+func _update_health_bar() -> void:
+	if health_bar != null:
+		health_bar.max_value = max_health
+		health_bar.value = current_health
 
 func heal(amount: int) -> void:
 	current_health = mini(current_health + amount, max_health)
-	if health_bar != null:
-		health_bar.value = current_health
+	_update_health_bar()
+	update_stats_label()
 
 func take_damage(amount: int) -> void:
-	current_health -= amount
-	current_health = clampi(current_health, 0, max_health)
-	if health_bar != null:
-		health_bar.value = current_health
+	current_health = clampi(current_health - amount, 0, max_health)
+	_update_health_bar()
+	update_stats_label()
 	if current_health <= 0:
-		die()
+		_die()
 
-func die() -> void:
+func _die() -> void:
 	get_tree().reload_current_scene()
 
-# ---- Movimento ----
+func update_stats_label() -> void:
+	if stats_label == null:
+		return
+	var bullet_damage = 0
+	if weapon_pivot and weapon_pivot.get_child_count() > 0:
+		bullet_damage = weapon_pivot.get_child(0).damage
+	stats_label.text = "HP: %d/%d | DMG: %d | ROTATION SPEED %.1f" % [
+		current_health, max_health, bullet_damage, current_rotation_speed
+	]
 
-func movement_loop() -> void:
-	move_direction.x = int(Input.is_action_pressed("right")) - int(Input.is_action_pressed("left"))
-	move_direction.y = int(Input.is_action_pressed("down")) - int(Input.is_action_pressed("up"))
-	var motion: Vector2 = move_direction.normalized() * speed
-	velocity = motion
+func _movement_loop() -> void:
+	move_direction.x = float(Input.is_action_pressed("right")) - float(Input.is_action_pressed("left"))
+	move_direction.y = float(Input.is_action_pressed("down")) - float(Input.is_action_pressed("up"))
+	velocity = move_direction.normalized() * speed
 	move_and_slide()
-	var moving := motion != Vector2.ZERO
-	if moving:
-		state = State.RUN
-	else:
-		state = State.IDLE
-	update_animation()
+	var moving := velocity != Vector2.ZERO
+	state = State.RUN if moving else State.IDLE
+	_update_animation()
 	if dust != null:
 		dust.emitting = moving
 
-func update_animation() -> void:
+func _update_animation() -> void:
 	match state:
 		State.IDLE:
 			animation_playback.travel("idle")
 		State.RUN:
 			if abs(move_direction.x) > abs(move_direction.y):
-				if move_direction.x < 0:
-					animation_playback.travel("run_left")
-				else:
-					animation_playback.travel("run_right")
+				animation_playback.travel("run_right" if move_direction.x > 0.0 else "run_left")
 			else:
-				if move_direction.y < 0:
-					animation_playback.travel("run_up")
-				else:
-					animation_playback.travel("run_down")
+				animation_playback.travel("run_down" if move_direction.y > 0.0 else "run_up")
 
-func _on_pickup_radius_body_entered(body: Node2D) -> void:
+func _on_pickup_radius_body_entered(_body: Node2D) -> void:
 	pass
