@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bbdlxbyan0xmm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n5ueh"]
+
+[node name="TrashCan" type="Area2D" unique_id=533542316]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=582701765]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=502487508]
+shape = SubResource("CircleShape2D_n5ueh")

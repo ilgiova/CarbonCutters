@@ -5,7 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://k24ndwg85jml" path="res://assets/Entity/Player/dust.png" id="3_qhqgy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gmlin"]
-height = 44.0
+radius = 9.0
+height = 18.0
 
 [sub_resource type="Animation" id="Animation_dqkch"]
 length = 0.8
@@ -183,7 +184,7 @@ hframes = 10
 vframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1324410659]
-position = Vector2(1, -25)
+position = Vector2(1, -4)
 shape = SubResource("CapsuleShape2D_gmlin")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1230707525]

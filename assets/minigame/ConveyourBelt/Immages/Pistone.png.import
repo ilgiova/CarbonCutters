@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1wmsr8evf631"
-path="res://.godot/imported/House1.png-fff5cbe52a486a4d2de9ac27612ba30e.ctex"
+uid="uid://bd26alen451kw"
+path="res://.godot/imported/Pistone.png-a3714db0f07d8b01c92b8f796e28fb74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/building/House1.png"
-dest_files=["res://.godot/imported/House1.png-fff5cbe52a486a4d2de9ac27612ba30e.ctex"]
+source_file="res://assets/minigame/ConveyourBelt/Immages/Pistone.png"
+dest_files=["res://.godot/imported/Pistone.png-a3714db0f07d8b01c92b8f796e28fb74.ctex"]
 
 [params]
 

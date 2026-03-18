@@ -10,8 +10,6 @@ var move_direction: Vector2 = Vector2.ZERO
 
 @onready var animation_tree: AnimationTree = $AnimationTree
 @onready var animation_playback: AnimationNodeStateMachinePlayback = animation_tree.get("parameters/playback")
-
-# ✅ Metti qui il riferimento alle particelle
 @onready var dust = $dust
 
 func _ready() -> void:
@@ -19,7 +17,7 @@ func _ready() -> void:
 	if dust != null:
 		dust.emitting = false
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	movement_loop()
 
 func movement_loop() -> void:

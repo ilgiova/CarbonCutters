@@ -17,7 +17,7 @@ grow_vertical = 2
 script = ExtResource("1_vjeyx")
 
 [node name="BackGround" parent="." unique_id=1973606014 instance=ExtResource("2_8huic")]
-position = Vector2(-3, -8)
+position = Vector2(-1, -1)
 
 [node name="BoxContainer" type="VBoxContainer" parent="." unique_id=627578818]
 layout_mode = 0
