@@ -23,7 +23,7 @@ extends Node2D
 @export var conveyorSpeed := 400.0
 
 var point = 0
-var gameTimeLeft = 5.0
+var gameTimeLeft = 60.0
 var itemsOnConveyourBelt = []
 var foodPoint = 0
 var cardboardPoint = 0
@@ -281,11 +281,12 @@ func _on_trash_can_body_entered(body: Node2D) -> void:
 	if body is RigidBody2D:
 		if itemsOnConveyourBelt.has(body):
 			itemsOnConveyourBelt.erase(body)
-
+		missedPoint += 1
 		body.queue_free()
-
+		
 		if point > 0:
 			point -= 5
+			
 
 func _on_piston_a_body_entered(body: Node2D) -> void:
 	if body is RigidBody2D:

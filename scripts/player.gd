@@ -17,7 +17,7 @@ func _ready() -> void:
 	if dust != null:
 		dust.emitting = false
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	movement_loop()
 
 func movement_loop() -> void:
