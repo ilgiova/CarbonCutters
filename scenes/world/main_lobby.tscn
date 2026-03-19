@@ -35,6 +35,18 @@ physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 0
 sources/3 = SubResource("TileSetAtlasSource_plwcx")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3h7x"]
+size = Vector2(370, 155)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wssbd"]
+radius = 69.02898
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mo1wk"]
+size = Vector2(487, 153.5)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7hmi3"]
+radius = 37.802116
+
 [node name="MainLobby" type="Node2D" unique_id=17929028]
 
 [node name="Water" type="TileMapLayer" parent="." unique_id=1344855461]
@@ -128,6 +140,7 @@ tile_set = ExtResource("8_qn4h6")
 position = Vector2(1360, 1422)
 
 [node name="ZonaEcosurvivos" parent="Y-sorted" unique_id=116407124 instance=ExtResource("16_qn4h6")]
+y_sort_enabled = true
 position = Vector2(4739, 853)
 target_scene = "uid://bur1einktqps1"
 sprite_texture = ExtResource("17_p3h7x")
@@ -140,13 +153,15 @@ scale = Vector2(0.39531013, 0.39892578)
 position = Vector2(-307, -306)
 
 [node name="CollisionShape2D" parent="Y-sorted/ZonaEcosurvivos/StaticBody2D" index="0" unique_id=1051250301]
-position = Vector2(43, 5)
+position = Vector2(43, 4.5)
+shape = SubResource("RectangleShape2D_p3h7x")
 
 [node name="Area2D" parent="Y-sorted/ZonaEcosurvivos" index="2" unique_id=130289625]
 position = Vector2(-358, -224)
 
 [node name="CollisionShape2D" parent="Y-sorted/ZonaEcosurvivos/Area2D" index="0" unique_id=448928396]
 position = Vector2(3, 0)
+shape = SubResource("CircleShape2D_wssbd")
 
 [node name="IconKeyboard" parent="Y-sorted/ZonaEcosurvivos" index="3" unique_id=1169338842]
 position = Vector2(-358, -295)
@@ -156,6 +171,17 @@ y_sort_enabled = true
 position = Vector2(-226, 1215)
 target_scene = "uid://l4samjtjjh0u"
 sprite_texture = ExtResource("17_wtwro")
+
+[node name="Sprite2D" parent="Y-sorted/ZonaConveyour" index="0" unique_id=446796136]
+position = Vector2(15, -143)
+
+[node name="CollisionShape2D" parent="Y-sorted/ZonaConveyour/StaticBody2D" parent_id_path=PackedInt32Array(1018397069, 631433023) index="0" unique_id=1051250301]
+position = Vector2(14.5, -75.25)
+shape = SubResource("RectangleShape2D_mo1wk")
+
+[node name="CollisionShape2D" parent="Y-sorted/ZonaConveyour/Area2D" parent_id_path=PackedInt32Array(1018397069, 130289625) index="0" unique_id=448928396]
+position = Vector2(-154, 1)
+shape = SubResource("CircleShape2D_7hmi3")
 
 [editable path="Y-sorted/ZonaEcosurvivos"]
 [editable path="Y-sorted/ZonaConveyour"]

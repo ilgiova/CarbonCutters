@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://53s65nlo73on"]
 
 [ext_resource type="Script" uid="uid://d2xdj0whsud0k" path="res://scripts/zona_interattiva.gd" id="1_qtwx3"]
-[ext_resource type="Texture2D" uid="uid://dstnp2c4xcnqm" path="res://scenes/minigame/ecosurvivors/ecosurvivorsTP.png" id="2_2h61s"]
+[ext_resource type="Texture2D" uid="uid://bvuby2yieyahf" path="res://assets/building/RecyclingCenter.png" id="2_2h61s"]
 [ext_resource type="Texture2D" uid="uid://enrnfollta1l" path="res://assets/Entity/npc/ui/E.png" id="3_2h61s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qtwx3"]
-size = Vector2(370, 143)
+size = Vector2(487, 153.5)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2h61s"]
-radius = 60.876926
+radius = 37.802116
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0nld6"]
 atlas = ExtResource("3_2h61s")
