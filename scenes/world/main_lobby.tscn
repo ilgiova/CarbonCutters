@@ -1,6 +1,8 @@
 [gd_scene format=4 uid="uid://c4nx5ge2olrp"]
 
+[ext_resource type="Script" uid="uid://dcduebbejwicr" path="res://scripts/main_lobby.gd" id="1_mo1wk"]
 [ext_resource type="TileSet" uid="uid://ctcj3o7tytfp1" path="res://assets/TileSet/water.tres" id="1_rx0ym"]
+[ext_resource type="PackedScene" uid="uid://cd1r8x8od7iwm" path="res://scenes/world/pause_menu.tscn" id="2_7hmi3"]
 [ext_resource type="TileSet" uid="uid://2qtycvgn62gr" path="res://assets/TileSet/foam.tres" id="2_wy8lf"]
 [ext_resource type="TileSet" uid="uid://cy155fk2jtd5h" path="res://assets/TileSet/ground.tres" id="3_d6emp"]
 [ext_resource type="Texture2D" uid="uid://cxnbyywtdied1" path="res://assets/TileSet/texture/Forest Tile Bridges (2).png" id="4_sj314"]
@@ -15,8 +17,9 @@
 [ext_resource type="PackedScene" uid="uid://bqlc2wsmk5nju" path="res://assets/Entity/npc/npc.tscn" id="10_wy8lf"]
 [ext_resource type="SpriteFrames" uid="uid://blj6rlaj4vhng" path="res://assets/Entity/npc/frames/SpriteFrameDylan.tres" id="12_qcc23"]
 [ext_resource type="PackedScene" uid="uid://dyowpal4xe1f4" path="res://scenes/player/sheep.tscn" id="14_4pv15"]
+[ext_resource type="SpriteFrames" uid="uid://cu506iq6rkul6" path="res://assets/Entity/npc/frames/SpriteFrameMatt.tres" id="14_7hmi3"]
 [ext_resource type="PackedScene" uid="uid://53s65nlo73on" path="res://scenes/world/zona_interattiva.tscn" id="16_qn4h6"]
-[ext_resource type="Texture2D" uid="uid://dstnp2c4xcnqm" path="res://scenes/minigame/ecosurvivors/ecosurvivorsTP.png" id="17_p3h7x"]
+[ext_resource type="Texture2D" uid="uid://dstnp2c4xcnqm" path="res://assets/building/ecosurvivorsTP.png" id="17_p3h7x"]
 [ext_resource type="Texture2D" uid="uid://bvuby2yieyahf" path="res://assets/building/RecyclingCenter.png" id="17_wtwro"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_plwcx"]
@@ -48,6 +51,9 @@ size = Vector2(487, 153.5)
 radius = 37.802116
 
 [node name="MainLobby" type="Node2D" unique_id=17929028]
+script = ExtResource("1_mo1wk")
+
+[node name="PauseMenu" parent="." unique_id=1009582514 instance=ExtResource("2_7hmi3")]
 
 [node name="Water" type="TileMapLayer" parent="." unique_id=1344855461]
 position = Vector2(1, 0)
@@ -100,6 +106,17 @@ position = Vector2(995, 1171)
 npc_name = "Jacob"
 npc_frames = ExtResource("9_qcc23")
 dialogue_file = "res://assets/Entity/npc/dialogue/JacobDialoguer.json"
+
+[node name="NpcMatt" parent="Y-sorted/npc" unique_id=2094250646 instance=ExtResource("10_wy8lf")]
+position = Vector2(397, 15)
+npc_name = "Matt"
+npc_frames = ExtResource("14_7hmi3")
+dialogue_file = "res://assets/Entity/npc/dialogue/MattDialoguer.json"
+
+[node name="NpcTrevor" parent="Y-sorted/npc" unique_id=1473692085 instance=ExtResource("10_wy8lf")]
+position = Vector2(2403, 953)
+npc_name = "Trevor"
+dialogue_file = "res://assets/Entity/npc/dialogue/TrevorDialoguer.json"
 
 [node name="sheeps" type="Node2D" parent="Y-sorted" unique_id=524456191]
 

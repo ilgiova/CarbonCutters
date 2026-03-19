@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://bur1einktqps1"]
 
 [ext_resource type="TileSet" uid="uid://ctcj3o7tytfp1" path="res://assets/TileSet/water.tres" id="1_mypaq"]
+[ext_resource type="Script" uid="uid://dntikjw1h3owd" path="res://scripts/minigame/ecosurvivors/ecosurvivors.gd" id="1_wndej"]
 [ext_resource type="TileSet" uid="uid://cy155fk2jtd5h" path="res://assets/TileSet/ground.tres" id="2_q2g75"]
 [ext_resource type="PackedScene" uid="uid://bj6ogvlus66nj" path="res://scenes/player/player.tscn" id="3_ajsc6"]
 [ext_resource type="Script" uid="uid://buctfrg2qth08" path="res://scripts/minigame/ecosurvivors/ecosurvivors_player.gd" id="4_4kkh6"]
@@ -11,6 +12,8 @@
 [ext_resource type="Script" uid="uid://b5rv58fafrabn" path="res://scripts/minigame/ecosurvivors/weapon_pivot.gd" id="7_ajsc6"]
 [ext_resource type="PackedScene" uid="uid://bgk0vjr378g5j" path="res://scenes/minigame/ecosurvivors/bullet.tscn" id="7_q2g75"]
 [ext_resource type="PackedScene" uid="uid://dhnv7m4wvq3o3" path="res://scenes/minigame/ecosurvivors/tank_enemy.tscn" id="10_p6i14"]
+[ext_resource type="PackedScene" uid="uid://cd1r8x8od7iwm" path="res://scenes/world/pause_menu.tscn" id="13_tr8mv"]
+[ext_resource type="PackedScene" uid="uid://j31bte0lln4" path="res://scenes/ScoreUI.tscn" id="14_tr8mv"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mypaq"]
 
@@ -34,6 +37,7 @@ func _ready() -> void:
 
 [node name="Island" type="Node2D" unique_id=17929028]
 position = Vector2(388, -246)
+script = ExtResource("1_wndej")
 
 [node name="Water" type="TileMapLayer" parent="." unique_id=1344855461]
 position = Vector2(1, 0)
@@ -104,8 +108,10 @@ autostart = true
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -40.0
-offset_bottom = 23.0
+offset_left = -192.0
+offset_top = 58.0
+offset_right = -2.0
+offset_bottom = 81.0
 grow_horizontal = 0
 text = "Garbage collected: 0 / 10"
 
@@ -116,6 +122,10 @@ text = "STATS"
 script = SubResource("GDScript_7ycma")
 
 [node name="LevelUpScreen" parent="." unique_id=220686174 instance=ExtResource("5_7ycma")]
+
+[node name="PauseMenu" parent="." unique_id=1009582514 instance=ExtResource("13_tr8mv")]
+
+[node name="Control" parent="." unique_id=1874023264 instance=ExtResource("14_tr8mv")]
 
 [connection signal="body_entered" from="Y-sorted/player/pickupRadius" to="Y-sorted/player" method="_on_pickup_radius_body_entered"]
 [connection signal="timeout" from="EnemySpawner/Timer" to="EnemySpawner" method="_on_timer_timeout"]

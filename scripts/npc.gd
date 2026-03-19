@@ -140,4 +140,7 @@ func _on_collision_area_body_shape_exited(_body_rid, body, _body_shape_index, _l
 		icon.visible = false
 		icon.stop()
 		player_in_chat_zone = false
+		is_chatting = false
+		is_roaming = true
+		$Dialogue.force_close()
 		player = null

@@ -49,6 +49,7 @@ func flash_red() -> void:
 		sprite.modulate = Color.WHITE
 
 func die() -> void:
+	PlayerData.add_score(5)
 	call_deferred("_spawn_drops")
 	queue_free()
 

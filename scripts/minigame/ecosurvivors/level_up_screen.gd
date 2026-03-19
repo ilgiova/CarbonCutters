@@ -7,16 +7,56 @@ var available_powerups: Array = []
 var is_showing: bool = false
 
 const QUESTIONS: Array = [
-	{
-		"text": "Press B",
-		"answers": ["A", "B", "C", "D"],
-		"correct_index": 1
-	},
-	{
-		"text": "Press D",
-		"answers": ["A", "B", "C", "D"],
-		"correct_index": 3
-	},
+  {
+	"text": "How long does it take for a plastic bottle to decompose?",
+	"answers": ["1 day", "1 year", "500 years", "1000 years"],
+	"correct_index": 2
+  },
+  {
+	"text": "Which bin should you use to recycle glass bottles?",
+	"answers": ["General waste (black)", "Recycling (blue/green)", "Compost (brown)", "Hazardous waste"],
+	"correct_index": 1
+  },
+  {
+	"text": "How many times can aluminium be recycled?",
+	"answers": ["Only once", "Up to 5 times", "Up to 10 times", "Indefinitely"],
+	"correct_index": 3
+  },
+  {
+	"text": "What percentage of a recycled glass bottle is used to make a new one?",
+	"answers": ["10%", "40%", "70%", "100%"],
+	"correct_index": 3
+  },
+  {
+	"text": "Which of these items should NOT go in the recycling bin?",
+	"answers": ["Cardboard box", "Plastic bottle", "Greasy pizza box", "Newspaper"],
+	"correct_index": 2
+  },
+  {
+	"text": "How long does it take for a glass bottle to decompose in a landfill?",
+	"answers": ["10 years", "100 years", "500 years", "1 million years"],
+	"correct_index": 3
+  },
+  {
+	"text": "What does the recycling symbol with a number inside mean on plastic?",
+	"answers": ["The product price", "The type of plastic resin", "How many times it was recycled", "The weight of the item"],
+	"correct_index": 1
+  },
+  {
+	"text": "Which material takes the longest to decompose?",
+	"answers": ["Paper", "Cotton", "Glass", "Banana peel"],
+	"correct_index": 2
+  },
+  {
+	"text": "How much energy is saved by recycling one aluminium can compared to making a new one?",
+	"answers": ["5%", "25%", "50%", "95%"],
+	"correct_index": 3
+  },
+  {
+	"text": "What should you do with plastic bags?",
+	"answers": ["Put them in the recycling bin", "Throw them in general waste", "Return them to supermarket collection points", "Burn them"],
+	"correct_index": 2
+  },
 ]
 
 const POWERUPS: Array = [

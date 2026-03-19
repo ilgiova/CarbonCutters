@@ -57,8 +57,9 @@ var binTypes = {
 var pistonNodes = {}
 
 func _ready() -> void:
+	PlayerData.current_context = "minigame"
 	randomize()
-
+	
 	pistonNodes = {
 		"A": pistonA,
 		"B": pistonB,

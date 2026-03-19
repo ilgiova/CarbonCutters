@@ -119,8 +119,11 @@ func take_damage(amount: int) -> void:
 		_die()
 
 func _die() -> void:
-	get_tree().reload_current_scene()
-
+	# TODO: aggiungere i punti al player in caso di morte
+	get_tree().change_scene_to_file("res://scenes/game_scene.tscn")
+	queue_free()
+	
+	
 func update_stats_label() -> void:
 	if stats_label == null:
 		return

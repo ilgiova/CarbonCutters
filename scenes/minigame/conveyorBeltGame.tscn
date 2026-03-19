@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://dbde6atb8ni13" path="res://assets/minigame/ConveyourBelt/Immages/A.png" id="14_fq4ca"]
 [ext_resource type="Texture2D" uid="uid://bdj5t4hpy707m" path="res://assets/minigame/ConveyourBelt/Immages/S.png" id="15_vj3wq"]
 [ext_resource type="Texture2D" uid="uid://cwob66a01neko" path="res://assets/minigame/ConveyourBelt/Immages/D.png" id="16_vj3wq"]
+[ext_resource type="PackedScene" uid="uid://cd1r8x8od7iwm" path="res://scenes/world/pause_menu.tscn" id="17_mt4qr"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8cenw"]
 load_path = "res://.godot/imported/background.png-ea4ad5e861605908cb56d16533415b56.ctex"
@@ -338,6 +339,8 @@ position = Vector2(1485, 300)
 scale = Vector2(7, 7)
 sprite_frames = SubResource("SpriteFrames_g7fm4")
 frame_progress = 0.9861238
+
+[node name="PauseMenu" parent="." unique_id=1009582514 instance=ExtResource("17_mt4qr")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="conveyourBelt/ConveyorArea" to="." method="_on_conveyor_area_body_entered"]

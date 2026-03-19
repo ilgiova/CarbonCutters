@@ -1,0 +1,155 @@
+[gd_scene format=3 uid="uid://cd1r8x8od7iwm"]
+
+[ext_resource type="Script" uid="uid://dhty2xk4pa2e1" path="res://scripts/pause_menu.gd" id="1_12pgt"]
+[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/Entity/npc/dialogue/Star Crush.ttf" id="1_s2r85"]
+[ext_resource type="Texture2D" uid="uid://7le15n4qpeov" path="res://assets/UI/button.png" id="2_12pgt"]
+[ext_resource type="Texture2D" uid="uid://vnnmh1m3r2si" path="res://assets/UI/buttonPress.png" id="3_7gtfw"]
+[ext_resource type="Texture2D" uid="uid://b5100k7biuiox" path="res://assets/UI/buttonHover.png" id="4_fe1us"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=1009582514]
+script = ExtResource("1_12pgt")
+
+[node name="Panel" type="Panel" parent="." unique_id=1603667376]
+clip_contents = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel" unique_id=349736494]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -150.0
+offset_right = 100.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer" unique_id=1900211137]
+custom_minimum_size = Vector2(200, 300)
+layout_mode = 2
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="Panel/CenterContainer/VBoxContainer" unique_id=400294919]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_fonts/font = ExtResource("1_s2r85")
+theme_override_font_sizes/font_size = 60
+text = "Pause"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="space" type="Control" parent="Panel/CenterContainer/VBoxContainer" unique_id=2068457752]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="ResumeButton" type="TextureButton" parent="Panel/CenterContainer/VBoxContainer" unique_id=284523788]
+custom_minimum_size = Vector2(330, 120)
+layout_mode = 2
+texture_normal = ExtResource("2_12pgt")
+texture_pressed = ExtResource("3_7gtfw")
+texture_hover = ExtResource("4_fe1us")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer/ResumeButton" unique_id=811952675]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -55.5
+offset_right = 160.0
+offset_bottom = 55.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.18359044, 0.18359044, 0.18359044, 0.96400005)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("1_s2r85")
+theme_override_font_sizes/font_size = 48
+text = "Resume Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="space2" type="Control" parent="Panel/CenterContainer/VBoxContainer" unique_id=296460417]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="LobbyButton" type="TextureButton" parent="Panel/CenterContainer/VBoxContainer" unique_id=1373408610]
+custom_minimum_size = Vector2(330, 120)
+layout_mode = 2
+texture_normal = ExtResource("2_12pgt")
+texture_pressed = ExtResource("3_7gtfw")
+texture_hover = ExtResource("4_fe1us")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer/LobbyButton" unique_id=1947651254]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -55.5
+offset_right = 160.0
+offset_bottom = 55.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.18359044, 0.18359044, 0.18359044, 0.96400005)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("1_s2r85")
+theme_override_font_sizes/font_size = 48
+text = "Go to lobby"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="space3" type="Control" parent="Panel/CenterContainer/VBoxContainer" unique_id=2035929878]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="ExitButton" type="TextureButton" parent="Panel/CenterContainer/VBoxContainer" unique_id=919121924]
+custom_minimum_size = Vector2(330, 120)
+layout_mode = 2
+texture_normal = ExtResource("2_12pgt")
+texture_pressed = ExtResource("3_7gtfw")
+texture_hover = ExtResource("4_fe1us")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer/ExitButton" unique_id=31138688]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.5
+offset_top = -55.5
+offset_right = 140.5
+offset_bottom = 55.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.18359044, 0.18359044, 0.18359044, 0.96400005)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("1_s2r85")
+theme_override_font_sizes/font_size = 48
+text = "Exit Game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/LobbyButton" to="." method="_on_lobby_button_pressed"]
+[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
