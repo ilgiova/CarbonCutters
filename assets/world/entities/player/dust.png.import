@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7le15n4qpeov"
-path="res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+uid="uid://k24ndwg85jml"
+path="res://.godot/imported/dust.png-13519f487adaab5ff82f3bf6f70239f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/button.png"
-dest_files=["res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"]
+source_file="res://assets/world/entities/player/dust.png"
+dest_files=["res://.godot/imported/dust.png-13519f487adaab5ff82f3bf6f70239f7.ctex"]
 
 [params]
 

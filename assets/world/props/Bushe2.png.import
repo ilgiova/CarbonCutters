@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7le15n4qpeov"
-path="res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+uid="uid://dhdedre20y7jq"
+path="res://.godot/imported/Bushe2.png-e5960ac8dae038184010de1e3af32123.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/button.png"
-dest_files=["res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"]
+source_file="res://assets/world/props/Bushe2.png"
+dest_files=["res://.godot/imported/Bushe2.png-e5960ac8dae038184010de1e3af32123.ctex"]
 
 [params]
 

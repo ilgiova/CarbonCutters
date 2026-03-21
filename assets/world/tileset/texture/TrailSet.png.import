@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7le15n4qpeov"
-path="res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+uid="uid://dhgnejqnl28hl"
+path="res://.godot/imported/TrailSet.png-ddef02a57dcfaee98aa39ba3b19880dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/button.png"
-dest_files=["res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"]
+source_file="res://assets/world/tileset/texture/TrailSet.png"
+dest_files=["res://.godot/imported/TrailSet.png-ddef02a57dcfaee98aa39ba3b19880dc.ctex"]
 
 [params]
 

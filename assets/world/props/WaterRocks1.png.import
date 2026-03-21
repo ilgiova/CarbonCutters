@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7le15n4qpeov"
-path="res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+uid="uid://0rt8ocbqoxqb"
+path="res://.godot/imported/WaterRocks1.png-9b101415efe808f6cb9b78ccbd0a4eb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/button.png"
-dest_files=["res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"]
+source_file="res://assets/world/props/WaterRocks1.png"
+dest_files=["res://.godot/imported/WaterRocks1.png-9b101415efe808f6cb9b78ccbd0a4eb0.ctex"]
 
 [params]
 

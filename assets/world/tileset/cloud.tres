@@ -1,0 +1,33 @@
+[gd_resource type="TileSet" format=3 uid="uid://52naiex1tctu"]
+
+[ext_resource type="Texture2D" uid="uid://d0iuxc8y4n0x8" path="res://assets/world/tileset/texture/Clouds_04.png" id="1_6uiac"]
+[ext_resource type="Texture2D" uid="uid://6gpnk2wlv6tl" path="res://assets/world/tileset/texture/Clouds_03.png" id="2_0pvye"]
+[ext_resource type="Texture2D" uid="uid://bmfs0q6j21hyo" path="res://assets/world/tileset/texture/Clouds_02.png" id="3_i3ioj"]
+[ext_resource type="Texture2D" uid="uid://ckfv46wsntkv" path="res://assets/world/tileset/texture/Clouds_01.png" id="4_bqjny"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pwgp7"]
+texture = ExtResource("1_6uiac")
+texture_region_size = Vector2i(576, 254)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c6a4r"]
+texture = ExtResource("2_0pvye")
+texture_region_size = Vector2i(576, 256)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ai3se"]
+texture = ExtResource("3_i3ioj")
+texture_region_size = Vector2i(576, 254)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_walhk"]
+texture = ExtResource("4_bqjny")
+texture_region_size = Vector2i(576, 256)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_pwgp7")
+sources/1 = SubResource("TileSetAtlasSource_c6a4r")
+sources/2 = SubResource("TileSetAtlasSource_ai3se")
+sources/3 = SubResource("TileSetAtlasSource_walhk")

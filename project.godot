@@ -13,11 +13,12 @@ config_version=5
 config/name="CarbonCutters"
 run/main_scene="uid://cffui727qadf7"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://assets/ui/logo.png"
 
 [autoload]
 
-PlayerData="*uid://ch2wdgapxfofl"
+PlayerData="*res://autoload/player_data.gd"
+GameManager="*res://autoload/game_manager.gd"
 
 [display]
 

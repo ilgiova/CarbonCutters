@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://cffui727qadf7"]
+
+[ext_resource type="Script" uid="uid://ds88vpbrshl35" path="res://src/world/ui/main_menu.gd" id="1_ey0r0"]
+[ext_resource type="PackedScene" uid="uid://dbvnnaryali03" path="res://src/world/ui/Background.tscn" id="2_cn6n6"]
+[ext_resource type="Texture2D" uid="uid://7le15n4qpeov" path="res://assets/ui/button.png" id="3_4xlah"]
+[ext_resource type="Texture2D" uid="uid://vnnmh1m3r2si" path="res://assets/ui/buttonPress.png" id="4_f5ops"]
+[ext_resource type="Texture2D" uid="uid://b5100k7biuiox" path="res://assets/ui/buttonHover.png" id="5_bl5j8"]
+[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="6_p1psj"]
+
+[node name="MainMenu" type="Control" unique_id=2123111629]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ey0r0")
+
+[node name="BackGround" parent="." unique_id=1973606014 instance=ExtResource("2_cn6n6")]
+position = Vector2(-1, -1)
+
+[node name="BoxContainer" type="VBoxContainer" parent="." unique_id=627578818]
+layout_mode = 0
+offset_left = 173.0
+offset_top = -1.0
+offset_right = 573.0
+offset_bottom = 1081.0
+alignment = 1
+
+[node name="Play" type="TextureButton" parent="BoxContainer" unique_id=942371331]
+custom_minimum_size = Vector2(400, 150)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("3_4xlah")
+texture_pressed = ExtResource("4_f5ops")
+texture_hover = ExtResource("5_bl5j8")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="BoxContainer/Play" unique_id=612113407]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 14.0
+offset_right = 360.0
+offset_bottom = 125.0
+theme_override_colors/font_shadow_color = Color(0.18359044, 0.18359044, 0.18359044, 0.96400005)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("6_p1psj")
+theme_override_font_sizes/font_size = 48
+text = "PLAY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="About" type="TextureButton" parent="BoxContainer" unique_id=556318847]
+custom_minimum_size = Vector2(400, 150)
+layout_mode = 2
+texture_normal = ExtResource("3_4xlah")
+texture_pressed = ExtResource("4_f5ops")
+texture_hover = ExtResource("5_bl5j8")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="BoxContainer/About" unique_id=606612442]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 14.0
+offset_right = 360.0
+offset_bottom = 125.0
+theme_override_colors/font_shadow_color = Color(0.18359044, 0.18359044, 0.18359044, 0.96400005)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("6_p1psj")
+theme_override_font_sizes/font_size = 48
+text = "ABOUT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="space" type="Control" parent="BoxContainer" unique_id=1847084651]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+
+[node name="EXIT" type="TextureButton" parent="BoxContainer" unique_id=1461928452]
+custom_minimum_size = Vector2(400, 150)
+layout_mode = 2
+texture_normal = ExtResource("3_4xlah")
+texture_pressed = ExtResource("4_f5ops")
+texture_hover = ExtResource("5_bl5j8")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="BoxContainer/EXIT" unique_id=2110707641]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 14.0
+offset_right = 360.0
+offset_bottom = 125.0
+theme_override_colors/font_shadow_color = Color(0.18359044, 0.18359044, 0.18359044, 0.96400005)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("6_p1psj")
+theme_override_font_sizes/font_size = 48
+text = "EXIT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="BoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="BoxContainer/EXIT" to="." method="_on_exit_pressed"]

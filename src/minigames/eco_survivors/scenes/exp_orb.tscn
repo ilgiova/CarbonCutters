@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dk4xiko2vxpn6"]
+
+[ext_resource type="Script" uid="uid://co0bicwn5niva" path="res://src/minigames/eco_survivors/scripts/exp_orb.gd" id="1_envfs"]
+[ext_resource type="Texture2D" uid="uid://ccbbo177sfgw0" path="res://src/minigames/eco_survivors/assets/xpBottle.png" id="1_h7xio"]
+
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ru0oq"]
+radius = 12.0
+
+[node name="ExpOrb" type="Area2D" unique_id=914819288]
+collision_layer = 5
+collision_mask = 4
+script = ExtResource("1_envfs")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=156049758]
+scale = Vector2(0.07411458, 0.07411458)
+texture = ExtResource("1_h7xio")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1151380142]
+shape = SubResource("CapsuleShape2D_ru0oq")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://dyowpal4xe1f4"]
+
+[ext_resource type="Script" uid="uid://cbepu8y7j8fxx" path="res://src/world/entities/sheep/sheep.gd" id="1_t4vy7"]
+[ext_resource type="Texture2D" uid="uid://dtdc4cyo13ren" path="res://assets/world/entities/sheep/Sheep_Idle.png" id="2_3wgum"]
+[ext_resource type="Texture2D" uid="uid://l1itwmm0xxdr" path="res://assets/world/entities/sheep/Sheep_Move.png" id="3_531ys"]
+
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dlxbr"]
+atlas = ExtResource("2_3wgum")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8yxic"]
+atlas = ExtResource("2_3wgum")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phfuf"]
+atlas = ExtResource("2_3wgum")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hafb"]
+atlas = ExtResource("2_3wgum")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8idvm"]
+atlas = ExtResource("2_3wgum")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rv1hm"]
+atlas = ExtResource("2_3wgum")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g470a"]
+atlas = ExtResource("3_531ys")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alj4n"]
+atlas = ExtResource("3_531ys")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8f4uj"]
+atlas = ExtResource("3_531ys")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3l2v0"]
+atlas = ExtResource("3_531ys")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_knm5q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dlxbr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8yxic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phfuf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6hafb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8idvm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rv1hm")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g470a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_alj4n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8f4uj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3l2v0")
+}],
+"loop": true,
+"name": &"move",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p3ank"]
+
+[node name="Sheep" type="CharacterBody2D" unique_id=1726531562]
+script = ExtResource("1_t4vy7")
+
+[node name="Spritesheep" type="AnimatedSprite2D" parent="." unique_id=178630720]
+sprite_frames = SubResource("SpriteFrames_knm5q")
+animation = &"idle"
+frame_progress = 0.6728252
+
+[node name="CollisionShapeSheep" type="CollisionShape2D" parent="." unique_id=1828201579]
+shape = SubResource("CircleShape2D_p3ank")
+
+[node name="TimerSheep" type="Timer" parent="." unique_id=1594570417]
+
+[connection signal="timeout" from="TimerSheep" to="." method="_on_timer_sheep_timeout"]

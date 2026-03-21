@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bxdl6ihk4ma78"]
+
+[ext_resource type="PackedScene" uid="uid://bi3os2v38c6kn" path="res://src/minigames/conveyor_belt/scenes/item_base.tscn" id="1_mi2kb"]
+
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mi2kb"]
+size = Vector2(116, 9)
+
+[node name="ItemBase" unique_id=693086956 instance=ExtResource("1_mi2kb")]
+gravity_scale = 1.0
+itemType = "organic"
+
+[node name="Sprite2D" parent="." index="0" unique_id=79197371]
+scale = Vector2(0.15, 0.15)
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=1459557402]
+position = Vector2(-2, 16)
+shape = SubResource("RectangleShape2D_mi2kb")

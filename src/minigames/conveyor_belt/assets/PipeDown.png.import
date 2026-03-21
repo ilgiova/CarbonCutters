@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7le15n4qpeov"
-path="res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+uid="uid://yuygdeeociy4"
+path="res://.godot/imported/PipeDown.png-ce178a09e83d113420c36ca7065f8345.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/button.png"
-dest_files=["res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"]
+source_file="res://src/minigames/conveyor_belt/assets/PipeDown.png"
+dest_files=["res://.godot/imported/PipeDown.png-ce178a09e83d113420c36ca7065f8345.ctex"]
 
 [params]
 

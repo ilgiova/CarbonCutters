@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dp1gxe3147fu3"]
+
+[ext_resource type="Script" uid="uid://dhxbrnijskkg" path="res://src/minigames/eco_survivors/scripts/general_enemy.gd" id="1_7h7pj"]
+[ext_resource type="Texture2D" uid="uid://8uf5df83dlxu" path="res://src/minigames/eco_survivors/assets/generalEnemy.png" id="1_ar5qp"]
+[ext_resource type="PackedScene" uid="uid://dk4xiko2vxpn6" path="res://src/minigames/eco_survivors/scenes/exp_orb.tscn" id="2_keceg"]
+[ext_resource type="PackedScene" uid="uid://j2bjensw7f75" path="res://src/minigames/eco_survivors/scenes/health_potion.tscn" id="3_p2q33"]
+
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fip4x"]
+radius = 13.038404
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o78p6"]
+radius = 14.035668
+
+[node name="generalEnemy" type="CharacterBody2D" unique_id=2131848229 groups=["enemy"]]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_7h7pj")
+exp_scene = ExtResource("2_keceg")
+potion_scene = ExtResource("3_p2q33")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1545427463]
+scale = Vector2(0.111250035, 0.111250035)
+texture = ExtResource("1_ar5qp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1837856078]
+position = Vector2(-5, -2)
+shape = SubResource("CircleShape2D_fip4x")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1885287781]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=62909942]
+position = Vector2(-5, -2)
+shape = SubResource("CircleShape2D_o78p6")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

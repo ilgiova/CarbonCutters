@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7le15n4qpeov"
-path="res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"
+uid="uid://64q0quj7jccq"
+path="res://.godot/imported/carboard.png-3474d7d99bbcfa82e9da3a3c25f813c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/button.png"
-dest_files=["res://.godot/imported/button.png-473760ec7449fb30c95f607492aecb17.ctex"]
+source_file="res://src/minigames/conveyor_belt/assets/carboard.png"
+dest_files=["res://.godot/imported/carboard.png-3474d7d99bbcfa82e9da3a3c25f813c2.ctex"]
 
 [params]
 
