@@ -3,9 +3,8 @@
 [ext_resource type="Script" uid="uid://crpv32amix6kv" path="res://src/world/entities/npc/npc.gd" id="1_xh6w2"]
 [ext_resource type="SpriteFrames" uid="uid://cu506iq6rkul6" path="res://assets/world/entities/npc/SpriteFrameMatt.tres" id="2_et1l5"]
 [ext_resource type="SpriteFrames" uid="uid://frpsydlpaeke" path="res://assets/world/entities/npc/SpriteFrameTrevor.tres" id="2_v74vx"]
-[ext_resource type="Texture2D" uid="uid://enrnfollta1l" path="res://assets/ui/E.png" id="3_et1l5"]
+[ext_resource type="Texture2D" uid="uid://enrnfollta1l" path="res://assets/UI/E.png" id="3_et1l5"]
 [ext_resource type="PackedScene" uid="uid://crj271o6rb468" path="res://src/global/dialogue/dialogue.tscn" id="3_y5pv2"]
-
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kuclc"]
 
@@ -70,12 +69,11 @@ frame_progress = 0.6971776
 [node name="Timer" type="Timer" parent="." unique_id=395024489]
 
 [node name="Dialogue" parent="." unique_id=1723502717 instance=ExtResource("3_y5pv2")]
-offset_left = -154.0
-offset_top = -140.0
-offset_right = -1.0
-offset_bottom = -39.0
+offset_left = -288.0
+offset_top = -251.0
+offset_right = -21.708984
+offset_bottom = -55.71997
 
 [connection signal="body_shape_entered" from="collisionArea" to="." method="_on_collision_area_body_shape_entered"]
 [connection signal="body_shape_exited" from="collisionArea" to="." method="_on_collision_area_body_shape_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="dialogue_finish" from="Dialogue" to="." method="_on_dialogue_dialogue_finish"]

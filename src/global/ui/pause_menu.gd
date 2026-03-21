@@ -61,7 +61,7 @@ func _on_lobby_button_pressed() -> void:
 	is_open = false
 	get_tree().paused = false
 	hide()
-	get_tree().change_scene_to_file("res://scenes/game_scene.tscn")
+	get_tree().change_scene_to_file("res://src/world/game_scene.tscn")
 
 
 func _on_exit_button_pressed() -> void:
