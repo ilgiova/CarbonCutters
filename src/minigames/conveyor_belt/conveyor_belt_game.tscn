@@ -5,10 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://bf2eldjjk57rf" path="res://src/minigames/conveyor_belt/scenes/item_pet_bottle.tscn" id="4_dnays"]
 [ext_resource type="PackedScene" uid="uid://bxdl6ihk4ma78" path="res://src/minigames/conveyor_belt/scenes/item_banana_peel.tscn" id="5_j4a30"]
 [ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="5_k6x4i"]
-[ext_resource type="Texture2D" uid="uid://741tmirxjkyf" path="res://src/minigames/conveyor_belt/assets/NastroTrasportatore.png" id="6_a4aaw"]
+[ext_resource type="Texture2D" uid="uid://bglscraq44p8c" path="res://assets/UI/BackgroundPoints.png" id="6_wuflo"]
 [ext_resource type="PackedScene" uid="uid://ddch8y805mtr6" path="res://src/minigames/conveyor_belt/scenes/carboard_trash_can.tscn" id="7_bvmx0"]
 [ext_resource type="PackedScene" uid="uid://bbkflrbkiqq42" path="res://src/minigames/conveyor_belt/scenes/trash_can.tscn" id="7_l2mjd"]
 [ext_resource type="PackedScene" uid="uid://6lbleveogegr" path="res://src/minigames/conveyor_belt/scenes/pet_trash_can.tscn" id="8_a4aaw"]
+[ext_resource type="Texture2D" uid="uid://cnlcebwwfe5q4" path="res://src/minigames/conveyor_belt/assets/ConveyorBelt.png" id="8_wuflo"]
 [ext_resource type="PackedScene" uid="uid://ccy4ru6cpwt6l" path="res://src/minigames/conveyor_belt/scenes/food_trash_can.tscn" id="9_k6x4i"]
 [ext_resource type="PackedScene" uid="uid://na18ilakdqc1" path="res://src/minigames/conveyor_belt/scenes/piston.tscn" id="11_k6x4i"]
 [ext_resource type="Texture2D" uid="uid://bwym4okk7fc68" path="res://src/minigames/conveyor_belt/assets/PipeTop.png" id="12_jbtbx"]
@@ -18,33 +19,32 @@
 [ext_resource type="Texture2D" uid="uid://cwob66a01neko" path="res://src/minigames/conveyor_belt/assets/D.png" id="16_vj3wq"]
 [ext_resource type="PackedScene" uid="uid://cd1r8x8od7iwm" path="res://src/global/ui/pause_menu.tscn" id="17_mt4qr"]
 
-
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8cenw"]
 load_path = "res://.godot/imported/background.png-ea4ad5e861605908cb56d16533415b56.ctex"
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_k6x4i"]
-atlas = ExtResource("6_a4aaw")
+[sub_resource type="AtlasTexture" id="AtlasTexture_psdr6"]
+atlas = ExtResource("8_wuflo")
 region = Rect2(0, 0, 1536, 1024)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8cenw"]
-atlas = ExtResource("6_a4aaw")
+[sub_resource type="AtlasTexture" id="AtlasTexture_nf8u6"]
+atlas = ExtResource("8_wuflo")
 region = Rect2(0, 1024, 1536, 1024)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jbtbx"]
-atlas = ExtResource("6_a4aaw")
+[sub_resource type="AtlasTexture" id="AtlasTexture_83tjx"]
+atlas = ExtResource("8_wuflo")
 region = Rect2(0, 2048, 1536, 1024)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bvmx0"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_k6x4i")
+"texture": SubResource("AtlasTexture_psdr6")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8cenw")
+"texture": SubResource("AtlasTexture_nf8u6")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jbtbx")
+"texture": SubResource("AtlasTexture_83tjx")
 }],
 "loop": true,
 "name": &"default",
@@ -161,19 +161,6 @@ text = "TIMER"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Score" type="Label" parent="UI" unique_id=1533740468]
-custom_minimum_size = Vector2(200, 50)
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -200.0
-offset_bottom = 50.0
-grow_horizontal = 0
-theme_override_colors/font_color = Color(1, 1, 0, 1)
-theme_override_fonts/font = ExtResource("5_k6x4i")
-theme_override_font_sizes/font_size = 50
-text = "SCORE: "
-
 [node name="CountdownBg" type="ColorRect" parent="UI" unique_id=1397882554]
 anchors_preset = 15
 anchor_right = 1.0
@@ -218,6 +205,31 @@ theme_override_font_sizes/font_size = 140
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="MarginContainer" type="MarginContainer" parent="UI" unique_id=102863338]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -280.0
+offset_bottom = 80.0
+grow_horizontal = 0
+
+[node name="Sprite2D" type="TextureRect" parent="UI/MarginContainer" unique_id=1136144851]
+layout_mode = 2
+texture = ExtResource("6_wuflo")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="UI/MarginContainer" unique_id=1910444062]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("5_k6x4i")
+theme_override_font_sizes/font_size = 40
+text = "Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseMenu" parent="." unique_id=1009582514 instance=ExtResource("17_mt4qr")]
+visible = false
+
 [node name="Timer" type="Timer" parent="." unique_id=102985783]
 wait_time = 2.0
 autostart = true
@@ -226,10 +238,9 @@ autostart = true
 
 [node name="BeltSprite" type="AnimatedSprite2D" parent="conveyourBelt" unique_id=1606050249]
 z_index = -1
-position = Vector2(841, 337)
-scale = Vector2(1.3730469, 1.3730469)
+position = Vector2(868, 829)
+scale = Vector2(1.101074, 1.1010742)
 sprite_frames = SubResource("SpriteFrames_bvmx0")
-frame = 2
 frame_progress = 0.72076446
 
 [node name="spawnPoint" type="Marker2D" parent="conveyourBelt" unique_id=37099360]
@@ -340,8 +351,6 @@ position = Vector2(1485, 300)
 scale = Vector2(7, 7)
 sprite_frames = SubResource("SpriteFrames_g7fm4")
 frame_progress = 0.9861238
-
-[node name="PauseMenu" parent="." unique_id=1009582514 instance=ExtResource("17_mt4qr")]
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="conveyourBelt/ConveyorArea" to="." method="_on_conveyor_area_body_entered"]

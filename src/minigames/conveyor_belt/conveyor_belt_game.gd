@@ -10,7 +10,7 @@ extends Node2D
 @onready var pistonC: Node2D = $Pistons/PistonC
 
 @onready var timerLabel: Label = $UI/TimerLabel
-@onready var scoreLabel: Label = $UI/Score
+@onready var scoreLabel: Label = $UI/MarginContainer/Label
 @onready var countdownBg: ColorRect = $UI/CountdownBg
 @onready var countdownShadow: Label = $UI/CountdownShadow
 @onready var countdownLabel: Label = $UI/CountdownLabel
@@ -166,6 +166,7 @@ func _on_timer_timeout() -> void:
 	startRandomTimer()
 
 func _process(delta):
+	scoreLabel.text = tr("SCORE")+": " + str(point)
 	if not game_started:
 		return
 
@@ -193,9 +194,9 @@ func _process(delta):
 		get_tree().root.add_child(scene)
 		queue_free()
 
-	scoreLabel.text = "Score: " + str(point)
+	
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if not game_started:
 		return
 

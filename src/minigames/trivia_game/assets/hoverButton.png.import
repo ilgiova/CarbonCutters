@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://741tmirxjkyf"
-path="res://.godot/imported/NastroTrasportatore.png-5708c12e282154f97e73af3385086080.ctex"
+uid="uid://c242okssnjr5n"
+path="res://.godot/imported/hoverButton.png-64564980ed627cf91bdd07031e4f27ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/minigames/conveyor_belt/assets/NastroTrasportatore.png"
-dest_files=["res://.godot/imported/NastroTrasportatore.png-5708c12e282154f97e73af3385086080.ctex"]
+source_file="res://src/minigames/trivia_game/assets/hoverButton.png"
+dest_files=["res://.godot/imported/hoverButton.png-64564980ed627cf91bdd07031e4f27ae.ctex"]
 
 [params]
 

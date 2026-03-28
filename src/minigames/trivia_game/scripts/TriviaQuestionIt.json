@@ -1,0 +1,102 @@
+[
+  {
+	"question": "Cosa significa riciclare?",
+	"answers": ["Gettare i rifiuti nella natura", "Trasformare materiali usati in nuovi prodotti", "Bruciare tutta la spazzatura", "Nascondere i rifiuti sottoterra"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Quale materiale può essere riciclato infinite volte senza perdere qualità?",
+	"answers": ["Plastica", "Carta", "Alluminio", "Legno"],
+	"correctIndex": 2
+  },
+  {
+	"question": "Qual è il principale beneficio del riciclo della carta?",
+	"answers": ["Salvare gli alberi", "Ridurre l'inquinamento acustico", "Aumentare la produzione di plastica", "Creare più discariche"],
+	"correctIndex": 0
+  },
+  {
+	"question": "Cosa dovresti fare con una bottiglia di plastica prima di riciclarla?",
+	"answers": ["Riempirla d'acqua", "Schiacciarla per risparmiare spazio", "Bruciare l'etichetta", "Tagliarla in piccoli pezzi"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Quale di questi oggetti di solito NON è riciclabile in un normale bidone blu?",
+	"answers": ["Cartone", "Bottiglie di vetro", "Scatole della pizza unte", "Lattine"],
+	"correctIndex": 2
+  },
+  {
+	"question": "A cosa serve il compostaggio?",
+	"answers": ["Riciclare il metallo", "Trasformare i rifiuti organici in fertilizzante", "Smaltire le batterie", "Pulire gli oceani inquinati"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Quale colore di bidone è più comunemente usato nel mondo per il riciclo del vetro?",
+	"answers": ["Rosso", "Verde", "Blu", "Giallo"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Che cosa sono i RAEE o rifiuti elettronici?",
+	"answers": ["Rifiuti elettronici", "Rifiuti ambientali", "Spreco di energia", "Rifiuti extra"],
+	"correctIndex": 0
+  },
+  {
+	"question": "Perché è pericoloso buttare le batterie al litio nella spazzatura normale?",
+	"answers": ["Hanno cattivo odore", "Possono causare incendi", "Si trasformano in plastica", "Attirano insetti"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Cosa rappresenta di solito il simbolo delle 'frecce che si inseguono'?",
+	"answers": ["Limite di velocità", "Riciclo", "Energia eolica", "Flusso d'acqua"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Quale di questi impiega più tempo a decomporsi?",
+	"answers": ["Torsolo di mela", "Sacchetto di carta", "Bottiglia di plastica", "Maglietta di cotone"],
+	"correctIndex": 2
+  },
+  {
+	"question": "Che cos'è l'upcycling?",
+	"answers": ["Buttare via le cose", "Comprare cose nuove", "Creare qualcosa di maggior valore da oggetti vecchi", "Sotterrare i rifiuti più in profondità"],
+	"correctIndex": 2
+  },
+  {
+	"question": "Quale materiale si ottiene dalla bauxite?",
+	"answers": ["Vetro", "Plastica", "Alluminio", "Carta"],
+	"correctIndex": 2
+  },
+  {
+	"question": "Quante volte può essere riciclata la carta prima che le fibre diventino troppo corte?",
+	"answers": ["Solo una volta", "Da 5 a 7 volte", "100 volte", "Per sempre"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Qual è il contaminante più comune nel riciclo del vetro?",
+	"answers": ["Etichette", "Residui di liquidi", "Ceramica e Pyrex", "Tappi di metallo"],
+	"correctIndex": 2
+  },
+  {
+	"question": "Cosa significa il termine 'biodegradabile'?",
+	"answers": ["Può essere bruciato", "Può essere decomposto dai microrganismi", "È fatto di metallo", "Dura per sempre"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Quale delle 3 R è la più importante per l'ambiente?",
+	"answers": ["Riciclare", "Riutilizzare", "Ridurre", "Recuperare"],
+	"correctIndex": 2
+  },
+  {
+	"question": "Qual è il risultato del riciclo delle lattine di alluminio rispetto alla produzione di nuove?",
+	"answers": ["Usa il 95% in meno di energia", "Usa più energia", "Costa di più", "Produce più fumo"],
+	"correctIndex": 0
+  },
+  {
+	"question": "Cosa dovresti fare con i vestiti vecchi che sono ancora indossabili?",
+	"answers": ["Buttarli nella spazzatura", "Bruciarli", "Donarli o venderli", "Gettarli nel WC"],
+	"correctIndex": 2
+  },
+  {
+	"question": "Che cos'è la 'separazione alla fonte'?",
+	"answers": ["Separare i rifiuti nel luogo in cui vengono prodotti", "Mescolare tutta la spazzatura insieme", "Buttare i rifiuti nell'oceano", "Raccogliere i rifiuti dalle strade"],
+	"correctIndex": 0
+  }
+]

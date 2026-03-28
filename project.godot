@@ -68,6 +68,10 @@ MainMenu={
 ]
 }
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://lang/translations.en.translation", "res://lang/translations.it.translation")
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

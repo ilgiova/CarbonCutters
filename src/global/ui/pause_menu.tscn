@@ -2,10 +2,14 @@
 
 [ext_resource type="Script" uid="uid://dhty2xk4pa2e1" path="res://src/global/ui/pause_menu.gd" id="1_12pgt"]
 [ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="1_s2r85"]
-[ext_resource type="Texture2D" uid="uid://7le15n4qpeov" path="res://assets/ui/button.png" id="2_12pgt"]
-[ext_resource type="Texture2D" uid="uid://vnnmh1m3r2si" path="res://assets/ui/buttonPress.png" id="3_7gtfw"]
-[ext_resource type="Texture2D" uid="uid://b5100k7biuiox" path="res://assets/ui/buttonHover.png" id="4_fe1us"]
+[ext_resource type="Texture2D" uid="uid://e8a28ytqgk80" path="res://assets/UI/NormalLongButton.png" id="2_pvqoo"]
+[ext_resource type="Texture2D" uid="uid://bqglvykm05k2q" path="res://assets/UI/button_normal.png" id="3_l0elr"]
+[ext_resource type="Texture2D" uid="uid://kk1cmgyu4cw6" path="res://assets/UI/Button_hover.png" id="4_pvqoo"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5u8h5"]
+bg_color = Color(0, 0, 0, 0.546)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l0elr"]
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=1009582514]
 script = ExtResource("1_12pgt")
@@ -17,6 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5u8h5")
 
 [node name="CenterContainer" type="CenterContainer" parent="Panel" unique_id=349736494]
 layout_mode = 1
@@ -33,124 +38,94 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel/CenterContainer" unique_id=1900211137]
-custom_minimum_size = Vector2(200, 300)
 layout_mode = 2
 alignment = 1
 
-[node name="TitleLabel" type="Label" parent="Panel/CenterContainer/VBoxContainer" unique_id=400294919]
+[node name="MarginContainer4" type="MarginContainer" parent="Panel/CenterContainer/VBoxContainer" unique_id=2030603559]
 layout_mode = 2
-theme_override_colors/font_color = Color(1, 1, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="Panel/CenterContainer/VBoxContainer/MarginContainer4" unique_id=365976220]
+layout_mode = 2
+texture = ExtResource("2_pvqoo")
+
+[node name="TitleLabel" type="Label" parent="Panel/CenterContainer/VBoxContainer/MarginContainer4" unique_id=400294919]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
 theme_override_fonts/font = ExtResource("1_s2r85")
 theme_override_font_sizes/font_size = 60
-text = "Pause"
+text = "PAUSE"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="space" type="Control" parent="Panel/CenterContainer/VBoxContainer" unique_id=2068457752]
+[node name="HSeparator3" type="HSeparator" parent="Panel/CenterContainer/VBoxContainer" unique_id=310185793]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_l0elr")
 
-[node name="ResumeButton" type="TextureButton" parent="Panel/CenterContainer/VBoxContainer" unique_id=284523788]
-custom_minimum_size = Vector2(330, 120)
+[node name="MarginContainer" type="MarginContainer" parent="Panel/CenterContainer/VBoxContainer" unique_id=1050152326]
 layout_mode = 2
-texture_normal = ExtResource("2_12pgt")
-texture_pressed = ExtResource("3_7gtfw")
-texture_hover = ExtResource("4_fe1us")
-stretch_mode = 0
+size_flags_horizontal = 4
 
-[node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer/ResumeButton" unique_id=811952675]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -160.0
-offset_top = -55.5
-offset_right = 160.0
-offset_bottom = 55.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0.18359044, 0.18359044, 0.18359044, 0.96400005)
-theme_override_constants/shadow_offset_x = 5
-theme_override_constants/shadow_offset_y = 4
-theme_override_constants/outline_size = 4
+[node name="ResumeButton" type="TextureButton" parent="Panel/CenterContainer/VBoxContainer/MarginContainer" unique_id=1811726204]
+layout_mode = 2
+texture_normal = ExtResource("3_l0elr")
+texture_hover = ExtResource("4_pvqoo")
+
+[node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer/MarginContainer" unique_id=1617496463]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
 theme_override_fonts/font = ExtResource("1_s2r85")
-theme_override_font_sizes/font_size = 48
-text = "Resume Game"
+theme_override_font_sizes/font_size = 40
+text = "RESUME_GAME"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="space2" type="Control" parent="Panel/CenterContainer/VBoxContainer" unique_id=296460417]
-custom_minimum_size = Vector2(0, 50)
+[node name="HSeparator" type="HSeparator" parent="Panel/CenterContainer/VBoxContainer" unique_id=210828256]
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_l0elr")
 
-[node name="LobbyButton" type="TextureButton" parent="Panel/CenterContainer/VBoxContainer" unique_id=1373408610]
-custom_minimum_size = Vector2(330, 120)
+[node name="MarginContainer2" type="MarginContainer" parent="Panel/CenterContainer/VBoxContainer" unique_id=148263083]
 layout_mode = 2
-texture_normal = ExtResource("2_12pgt")
-texture_pressed = ExtResource("3_7gtfw")
-texture_hover = ExtResource("4_fe1us")
-stretch_mode = 0
+size_flags_horizontal = 4
 
-[node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer/LobbyButton" unique_id=1947651254]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -160.0
-offset_top = -55.5
-offset_right = 160.0
-offset_bottom = 55.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0.18359044, 0.18359044, 0.18359044, 0.96400005)
-theme_override_constants/shadow_offset_x = 5
-theme_override_constants/shadow_offset_y = 4
-theme_override_constants/outline_size = 4
+[node name="LobbyButton" type="TextureButton" parent="Panel/CenterContainer/VBoxContainer/MarginContainer2" unique_id=919087976]
+layout_mode = 2
+texture_normal = ExtResource("3_l0elr")
+texture_hover = ExtResource("4_pvqoo")
+
+[node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer/MarginContainer2" unique_id=1794172361]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
 theme_override_fonts/font = ExtResource("1_s2r85")
-theme_override_font_sizes/font_size = 48
-text = "Go to lobby"
+theme_override_font_sizes/font_size = 40
+text = "GO_LOBBY"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="space3" type="Control" parent="Panel/CenterContainer/VBoxContainer" unique_id=2035929878]
-custom_minimum_size = Vector2(0, 50)
+[node name="HSeparator2" type="HSeparator" parent="Panel/CenterContainer/VBoxContainer" unique_id=921662489]
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_l0elr")
 
-[node name="ExitButton" type="TextureButton" parent="Panel/CenterContainer/VBoxContainer" unique_id=919121924]
-custom_minimum_size = Vector2(330, 120)
+[node name="MarginContainer3" type="MarginContainer" parent="Panel/CenterContainer/VBoxContainer" unique_id=2137764919]
 layout_mode = 2
-texture_normal = ExtResource("2_12pgt")
-texture_pressed = ExtResource("3_7gtfw")
-texture_hover = ExtResource("4_fe1us")
-stretch_mode = 0
+size_flags_horizontal = 4
 
-[node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer/ExitButton" unique_id=31138688]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -140.5
-offset_top = -55.5
-offset_right = 140.5
-offset_bottom = 55.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0.18359044, 0.18359044, 0.18359044, 0.96400005)
-theme_override_constants/shadow_offset_x = 5
-theme_override_constants/shadow_offset_y = 4
-theme_override_constants/outline_size = 4
+[node name="ExitButton" type="TextureButton" parent="Panel/CenterContainer/VBoxContainer/MarginContainer3" unique_id=214745404]
+layout_mode = 2
+texture_normal = ExtResource("3_l0elr")
+texture_hover = ExtResource("4_pvqoo")
+
+[node name="Label" type="Label" parent="Panel/CenterContainer/VBoxContainer/MarginContainer3" unique_id=2002298257]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
 theme_override_fonts/font = ExtResource("1_s2r85")
-theme_override_font_sizes/font_size = 48
-text = "Exit Game"
+theme_override_font_sizes/font_size = 40
+text = "GO_MENU"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
-[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/LobbyButton" to="." method="_on_lobby_button_pressed"]
-[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/MarginContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/MarginContainer2/LobbyButton" to="." method="_on_lobby_button_pressed"]
+[connection signal="pressed" from="Panel/CenterContainer/VBoxContainer/MarginContainer3/ExitButton" to="." method="_on_exit_button_pressed"]

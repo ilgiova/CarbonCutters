@@ -1,0 +1,175 @@
+[gd_scene format=3 uid="uid://dqr6668unj5a0"]
+
+[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="1_l2vgh"]
+[ext_resource type="Script" uid="uid://li4kvltqykk2" path="res://src/minigames/trivia_game/scripts/trivia_game.gd" id="1_x6l1h"]
+[ext_resource type="Texture2D" uid="uid://v08ct0kaanpi" path="res://src/minigames/trivia_game/assets/background.png" id="1_x43ce"]
+[ext_resource type="Texture2D" uid="uid://6kageht4677y" path="res://src/minigames/trivia_game/assets/QuestionBackground.png" id="2_btkcx"]
+[ext_resource type="Texture2D" uid="uid://cupev6bulci3p" path="res://assets/UI/RightLongButton.png" id="3_gk3ly"]
+[ext_resource type="Texture2D" uid="uid://dn38b7d8nylsy" path="res://assets/UI/wrongLongButton.png" id="4_ph77j"]
+[ext_resource type="Texture2D" uid="uid://e8a28ytqgk80" path="res://assets/UI/NormalLongButton.png" id="5_x6l1h"]
+[ext_resource type="Texture2D" uid="uid://crv5mjmgymtgq" path="res://assets/UI/HoverLongButton.png" id="6_mgo8a"]
+[ext_resource type="PackedScene" uid="uid://j31bte0lln4" path="res://src/global/ui/score_hud.tscn" id="7_x6l1h"]
+[ext_resource type="PackedScene" uid="uid://cd1r8x8od7iwm" path="res://src/global/ui/pause_menu.tscn" id="9_ph77j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mgo8a"]
+
+[node name="TriviaGame" type="Control" unique_id=229631925]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x6l1h")
+normalButtonTexture = ExtResource("5_x6l1h")
+hoverButtonTexture = ExtResource("6_mgo8a")
+correctButtonTexture = ExtResource("3_gk3ly")
+wrongButtonTexture = ExtResource("4_ph77j")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1992491155]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_x43ce")
+expand_mode = 3
+
+[node name="DarkOverlay" type="ColorRect" parent="." unique_id=1507943062]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.432)
+
+[node name="MainPanel" type="MarginContainer" parent="." unique_id=538295202]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 150
+theme_override_constants/margin_top = 120
+theme_override_constants/margin_right = 150
+theme_override_constants/margin_bottom = 120
+
+[node name="QuestionFrame" type="PanelContainer" parent="MainPanel" unique_id=827158192]
+custom_minimum_size = Vector2(1100, 500)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_mgo8a")
+
+[node name="TextureRect" type="TextureRect" parent="MainPanel/QuestionFrame" unique_id=592652324]
+layout_mode = 2
+texture = ExtResource("2_btkcx")
+expand_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MainPanel/QuestionFrame" unique_id=351603521]
+layout_mode = 2
+theme_override_constants/margin_left = 240
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 240
+theme_override_constants/margin_bottom = 30
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainPanel/QuestionFrame/MarginContainer" unique_id=493811042]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="MarginContainer5" type="MarginContainer" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer" unique_id=1967080445]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="Question" type="Label" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer5" unique_id=1121587738]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_l2vgh")
+theme_override_font_sizes/font_size = 64
+text = "QUESTION"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer" unique_id=148773108]
+layout_mode = 2
+
+[node name="button1" type="TextureButton" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer" unique_id=1470119290]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+texture_normal = ExtResource("5_x6l1h")
+texture_hover = ExtResource("6_mgo8a")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="anser1" type="Label" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer" unique_id=1280145468]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("1_l2vgh")
+theme_override_font_sizes/font_size = 40
+text = "Anser1"
+horizontal_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer" unique_id=6133738]
+layout_mode = 2
+
+[node name="button2" type="TextureButton" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer2" unique_id=812556383]
+custom_minimum_size = Vector2(1200, 80)
+layout_mode = 2
+texture_normal = ExtResource("5_x6l1h")
+texture_hover = ExtResource("6_mgo8a")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="anser2" type="Label" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer2" unique_id=1576742108]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("1_l2vgh")
+theme_override_font_sizes/font_size = 40
+text = "Anser2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer3" type="MarginContainer" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer" unique_id=2129658846]
+layout_mode = 2
+
+[node name="button3" type="TextureButton" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer3" unique_id=2056692908]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+texture_normal = ExtResource("5_x6l1h")
+texture_hover = ExtResource("6_mgo8a")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="anser3" type="Label" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer3" unique_id=1050692747]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("1_l2vgh")
+theme_override_font_sizes/font_size = 40
+text = "Anser3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer4" type="MarginContainer" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer" unique_id=701746480]
+layout_mode = 2
+
+[node name="button4" type="TextureButton" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer4" unique_id=1820340468]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+texture_normal = ExtResource("5_x6l1h")
+texture_hover = ExtResource("6_mgo8a")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="anser4" type="Label" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer4" unique_id=970840646]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("1_l2vgh")
+theme_override_font_sizes/font_size = 40
+text = "Anser4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" parent="." unique_id=1874023264 instance=ExtResource("7_x6l1h")]
+
+[node name="PauseMenu" parent="." unique_id=1009582514 instance=ExtResource("9_ph77j")]
+visible = false

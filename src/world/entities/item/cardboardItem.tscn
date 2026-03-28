@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dr05nre0byomy"]
+
+[ext_resource type="Script" uid="uid://bfm84ky3n1k4q" path="res://src/world/entities/item/item_base.gd" id="1_b4kum"]
+[ext_resource type="Texture2D" uid="uid://dra4vnu0d2k20" path="res://src/world/entities/item/assets/cardboard32x32.png" id="2_xnxbr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rin06"]
+
+[node name="ItemBase" type="Area2D" unique_id=95679390]
+z_index = -1
+y_sort_enabled = true
+script = ExtResource("1_b4kum")
+itemType = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1878163751]
+texture = ExtResource("2_xnxbr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1931318996]
+shape = SubResource("RectangleShape2D_rin06")

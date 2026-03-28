@@ -1,7 +1,6 @@
 extends Node2D
 
 @export_file("*.tscn") var target_scene: String
-@export var sprite_texture: Texture2D
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var icon: AnimatedSprite2D = $IconKeyboard
 
@@ -9,7 +8,7 @@ var body_inside := false
 
 
 func _ready() -> void:
-	sprite.texture = sprite_texture
+	icon.visible = false
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("interact") and body_inside:

@@ -1,0 +1,102 @@
+[
+  {
+	"question": "What does recycling mean?",
+	"answers": ["Throwing waste in nature", "Turning used materials into new products", "Burning all trash", "Hiding waste underground"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Which material can be recycled an infinite number of times without losing quality?",
+	"answers": ["Plastic", "Paper", "Aluminum", "Wood"],
+	"correctIndex": 2
+  },
+  {
+	"question": "What is the primary benefit of recycling paper?",
+	"answers": ["Saving trees", "Reducing noise pollution", "Increasing plastic production", "Creating more landfills"],
+	"correctIndex": 0
+  },
+  {
+	"question": "What should you do with a plastic bottle before recycling it?",
+	"answers": ["Fill it with water", "Flatten it to save space", "Burn the label", "Cut it into small pieces"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Which of these items is usually NOT recyclable in a standard blue bin?",
+	"answers": ["Cardboard", "Glass bottles", "Greasy pizza boxes", "Soda cans"],
+	"correctIndex": 2
+  },
+  {
+	"question": "What is 'composting' used for?",
+	"answers": ["Recycling metal", "Breaking down organic waste into fertilizer", "Disposing of batteries", "Cleaning polluted oceans"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Which color bin is most commonly used for glass recycling globally?",
+	"answers": ["Red", "Green", "Blue", "Yellow"],
+	"correctIndex": 1
+  },
+  {
+	"question": "What is E-waste?",
+	"answers": ["Electronic waste", "Environmental waste", "Energy waste", "Extra waste"],
+	"correctIndex": 0
+  },
+  {
+	"question": "Why is it dangerous to put lithium batteries in regular trash?",
+	"answers": ["They smell bad", "They can cause fires", "They turn into plastic", "They attract insects"],
+	"correctIndex": 1
+  },
+  {
+	"question": "What does the 'chasing arrows' symbol typically represent?",
+	"answers": ["Speed limit", "Recycling", "Wind energy", "Water flow"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Which of these takes the longest to decompose?",
+	"answers": ["Apple core", "Paper bag", "Plastic bottle", "Cotton shirt"],
+	"correctIndex": 2
+  },
+  {
+	"question": "What is 'Upcycling'?",
+	"answers": ["Throwing things away", "Buying new things", "Creating something of higher value from old items", "Burying trash deeper"],
+	"correctIndex": 2
+  },
+  {
+	"question": "Which material is made from bauxite ore?",
+	"answers": ["Glass", "Plastic", "Aluminum", "Paper"],
+	"correctIndex": 2
+  },
+  {
+	"question": "How many times can paper be recycled before its fibers become too short?",
+	"answers": ["Only once", "5 to 7 times", "100 times", "Forever"],
+	"correctIndex": 1
+  },
+  {
+	"question": "What is the most common contaminant in glass recycling?",
+	"answers": ["Labels", "Liquid residue", "Ceramics and Pyrex", "Metal caps"],
+	"correctIndex": 2
+  },
+  {
+	"question": "What does the term 'biodegradable' mean?",
+	"answers": ["It can be burned", "It can be broken down by microorganisms", "It is made of metal", "It lasts forever"],
+	"correctIndex": 1
+  },
+  {
+	"question": "Which of the 3 R's is the most important for the environment?",
+	"answers": ["Recycle", "Reuse", "Reduce", "Recover"],
+	"correctIndex": 2
+  },
+  {
+	"question": "What is the result of recycling aluminum cans compared to making new ones?",
+	"answers": ["Uses 95% less energy", "Uses more energy", "Costs more money", "Produces more smoke"],
+	"correctIndex": 0
+  },
+  {
+	"question": "What should you do with old clothes that are still wearable?",
+	"answers": ["Throw them in the trash", "Burn them", "Donate or sell them", "Flush them"],
+	"correctIndex": 2
+  },
+  {
+	"question": "What is 'source segregation'?",
+	"answers": ["Sorting waste at the point of origin", "Mixing all trash together", "Dumping waste in the ocean", "Collecting trash from streets"],
+	"correctIndex": 0
+  }
+]

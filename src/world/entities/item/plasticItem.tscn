@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b4svr0p3fxa7x"]
+
+[ext_resource type="Script" uid="uid://bfm84ky3n1k4q" path="res://src/world/entities/item/item_base.gd" id="1_huvxi"]
+[ext_resource type="Texture2D" uid="uid://dojgv4voscfc6" path="res://src/world/entities/item/assets/PetBottle32x32.png" id="2_w8bg7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iv7x6"]
+
+[node name="ItemBase" type="Area2D" unique_id=95679390]
+z_index = -1
+y_sort_enabled = true
+script = ExtResource("1_huvxi")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1878163751]
+texture = ExtResource("2_w8bg7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1931318996]
+shape = SubResource("RectangleShape2D_iv7x6")

@@ -5,8 +5,6 @@ extends Control
 @onready var plasticLabel: Label = $VBoxContainer/PlasticText
 @onready var wasteLabel: Label = $VBoxContainer/WasteText
 @onready var pointsLabel: Label = $VBoxContainer/PointText
-@onready var buttonPlay: TextureButton = $VBoxContainer/HBoxContainer/PlayAgain
-@onready var buttonLobby: TextureButton = $VBoxContainer/HBoxContainer/Lobby
 
 var foodPoint = 0
 var cardboardPoint = 0
@@ -18,17 +16,18 @@ var totalPoint  = 0
 
 
 func _ready() -> void:
-	foodLabel.text = "Food recycled: " + str(foodPoint)
-	paperLabel.text = "Cardbard recycled: " + str(cardboardPoint)
-	plasticLabel.text = "Plastic recycled: " + str(plasticPoint)
-	wasteLabel.text = "Missed item: " + str(missedPoint)
-	pointsLabel.text = "Total points: " + str(totalPoint)
+	foodLabel.text = tr("FOOD_RECYCLED") + ": " + str(foodPoint)
+	paperLabel.text = tr("CARDBOARD_RECYCLED") + ": " + str(cardboardPoint)
+	plasticLabel.text = tr("PLASTIC_RECYCLED") + ": " + str(plasticPoint)
+	wasteLabel.text = tr("MISSED_POINT") + ": " + str(missedPoint)
+	pointsLabel.text = tr("TOTAL_POINT") + ": " + str(totalPoint)
 
 
 func _on_play_again_pressed() -> void:
 	get_tree().change_scene_to_file("res://src/minigames/conveyor_belt/conveyor_belt_game.tscn")
 	queue_free()
 	
-func _on_lobby_pressed() -> void:
+
+func _on_go_lobby_pressed() -> void:
 	get_tree().change_scene_to_file("res://src/world/game_scene.tscn")
 	queue_free()
