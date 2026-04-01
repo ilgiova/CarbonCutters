@@ -6,7 +6,7 @@ extends BaseEnemy
 func _ready() -> void:
 	movement_speed = 80.0
 	max_health = 150
-	damage = 40
+	damage = 30
 	potion_drop_chance = 0.20
 	exp_value = 5
 	if tank_exp_scene:

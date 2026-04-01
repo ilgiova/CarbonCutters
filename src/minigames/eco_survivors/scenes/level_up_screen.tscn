@@ -1,15 +1,41 @@
 [gd_scene format=3 uid="uid://b7wxb7ox623y3"]
 
 [ext_resource type="Script" uid="uid://c8suu2k3oe5pi" path="res://src/minigames/eco_survivors/scripts/level_up_screen.gd" id="1_wit4d"]
+[ext_resource type="Texture2D" uid="uid://7le15n4qpeov" path="res://assets/UI/button.png" id="2_x818l"]
+[ext_resource type="Texture2D" uid="uid://vnnmh1m3r2si" path="res://assets/UI/buttonPress.png" id="3_oulfk"]
+[ext_resource type="Texture2D" uid="uid://b5100k7biuiox" path="res://assets/UI/buttonHover.png" id="4_ylpep"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r0pdf"]
+texture = ExtResource("2_x818l")
+texture_margin_left = 49.0
+texture_margin_top = 23.0
+texture_margin_right = 29.0
+texture_margin_bottom = 21.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vgb70"]
+texture = ExtResource("3_oulfk")
+texture_margin_left = 49.0
+texture_margin_top = 23.0
+texture_margin_right = 29.0
+texture_margin_bottom = 21.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tdmqf"]
+texture = ExtResource("4_ylpep")
+texture_margin_left = 49.0
+texture_margin_top = 23.0
+texture_margin_right = 29.0
+texture_margin_bottom = 21.0
 
 [node name="LevelUpScreen" type="CanvasLayer" unique_id=220686174 groups=["level_up_screen"]]
 process_mode = 3
 script = ExtResource("1_wit4d")
 
 [node name="Panel" type="Panel" parent="." unique_id=771744664]
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="VBox" type="VBoxContainer" parent="Panel" unique_id=173811050]
 layout_mode = 1
@@ -18,10 +44,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 878.0
-offset_top = 462.5
-offset_right = 1002.0
-offset_bottom = 577.5
+offset_left = -39.0
+offset_top = -107.5
+offset_right = 39.0
+offset_bottom = 107.5
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -30,31 +56,70 @@ layout_mode = 2
 size_flags_vertical = 6
 
 [node name="Button0" type="Button" parent="Panel/VBox" unique_id=2108307742]
+clip_contents = true
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
+theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
 
-[node name="Button1" type="Button" parent="Panel/VBox" unique_id=155621034]
+[node name="Button1" type="Button" parent="Panel/VBox" unique_id=427917960]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
+theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
 
-[node name="Button2" type="Button" parent="Panel/VBox" unique_id=624821305]
+[node name="Button2" type="Button" parent="Panel/VBox" unique_id=939214774]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
+theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
 
-[node name="Button3" type="Button" parent="Panel/VBox" unique_id=2015019327]
+[node name="Button3" type="Button" parent="Panel/VBox" unique_id=1781821799]
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
+theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
 
 [node name="powerupPannel" type="Panel" parent="." unique_id=2095446455]
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="VBox" type="VBoxContainer" parent="powerupPannel" unique_id=624067827]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = -70.0
+offset_right = 39.0
+offset_bottom = 70.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="powerupButton0" type="Button" parent="powerupPannel/VBox" unique_id=276615457]
+[node name="powerupButton0" type="Button" parent="powerupPannel/VBox" unique_id=218895559]
+clip_contents = true
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
+theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
 
-[node name="powerupButton1" type="Button" parent="powerupPannel/VBox" unique_id=779038553]
+[node name="powerupButton1" type="Button" parent="powerupPannel/VBox" unique_id=494044132]
+clip_contents = true
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
+theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
 
-[node name="powerupButton2" type="Button" parent="powerupPannel/VBox" unique_id=829649172]
+[node name="powerupButton2" type="Button" parent="powerupPannel/VBox" unique_id=618400885]
+clip_contents = true
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
+theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")

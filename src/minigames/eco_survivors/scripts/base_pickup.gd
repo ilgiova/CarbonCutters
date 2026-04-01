@@ -1,7 +1,7 @@
 class_name BasePickup
 extends Area2D
 
-@export var attract_speed: float = 300.0
+@export var attract_speed: float = 350.0
 
 var _target: Node2D = null
 
