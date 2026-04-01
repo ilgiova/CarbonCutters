@@ -5,7 +5,8 @@ extends CharacterBody2D
 
 @export var npc_name: String = "NPC"
 @export var npc_frames: SpriteFrames
-@export_file("*.json") var dialogue_file
+@export_file("*.json") var d_file_it
+@export_file("*.json") var d_file_en
 
 enum {
 	IDLE,
@@ -45,7 +46,8 @@ func _process(delta: float) -> void:
 		if !alredySpeak:
 			PlayerData.add_score(25)
 			alredySpeak = true
-		$Dialogue.d_file = dialogue_file
+		$Dialogue.d_file_en = d_file_en
+		$Dialogue.d_file_it = d_file_it
 		$Dialogue.start()
 		is_chatting = true
 		is_roaming = false

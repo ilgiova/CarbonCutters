@@ -2,7 +2,8 @@ extends Control
 
 signal dialogue_finish
 
-@export_file("*.json") var d_file
+@export_file("*.json") var d_file_it
+@export_file("*.json") var d_file_en
 
 var dialogue = []
 var current_dialogue_id = 0
@@ -12,6 +13,7 @@ var just_finished = false
 
 
 func _ready() -> void:
+	visible = false
 	$NinePatchRect.visible = false
 
 
@@ -25,17 +27,18 @@ func start() -> void:
 
 	dialogue_active = true
 	can_advance = true
+	visible = true
 	$NinePatchRect.visible = true
 	current_dialogue_id = -1
 	next_script()
 
 
 func load_dialogue() -> Array:
-	if d_file == "":
-		print("Nessun file dialogo assegnato")
-		return []
-
-	var file = FileAccess.open(d_file, FileAccess.READ)
+	var file
+	if TranslationServer.get_locale().begins_with("en"):
+		file = FileAccess.open(d_file_en, FileAccess.READ)
+	else:
+		file = FileAccess.open(d_file_it, FileAccess.READ)
 	if file == null:
 		print("Impossibile aprire il file dialogo")
 		return []
@@ -67,6 +70,7 @@ func next_script() -> void:
 	if current_dialogue_id >= dialogue.size():
 		dialogue_active = false
 		$NinePatchRect.visible = false
+		visible = false
 		current_dialogue_id = 0
 		dialogue = []
 		just_finished = true
@@ -77,10 +81,10 @@ func next_script() -> void:
 	$NinePatchRect/Text.text = dialogue[current_dialogue_id]["text"]
 
 
-
 func force_close() -> void:
 	dialogue_active = false
 	$NinePatchRect.visible = false
+	visible = false
 	current_dialogue_id = 0
 	dialogue = []
 	can_advance = true

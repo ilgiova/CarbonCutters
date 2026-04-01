@@ -1,22 +1,172 @@
 [gd_scene format=3 uid="uid://j31bte0lln4"]
 
 [ext_resource type="Script" uid="uid://b2vb7o6su2wny" path="res://src/global/ui/score_hud.gd" id="1_cfvaj"]
+[ext_resource type="Texture2D" uid="uid://bglscraq44p8c" path="res://assets/UI/BackgroundPoints.png" id="2_p8rsi"]
 [ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="2_uceqf"]
+[ext_resource type="Texture2D" uid="uid://d0skc6kr51f27" path="res://assets/UI/points.png" id="3_6jpvj"]
+[ext_resource type="Texture2D" uid="uid://gmle7brsmu8n" path="res://src/world/entities/item/assets/banana32x32.png" id="4_7nouq"]
+[ext_resource type="Texture2D" uid="uid://dra4vnu0d2k20" path="res://src/world/entities/item/assets/cardboard32x32.png" id="5_p8rsi"]
+[ext_resource type="Texture2D" uid="uid://dojgv4voscfc6" path="res://src/world/entities/item/assets/PetBottle32x32.png" id="6_reuhj"]
+[ext_resource type="Texture2D" uid="uid://c6liygnpvpmrs" path="res://src/world/entities/item/assets/glassbottle32x32.png" id="7_fs7wa"]
+[ext_resource type="Texture2D" uid="uid://cblngby1uueu3" path="res://src/world/entities/item/assets/AluCan32x32.png" id="8_d6esn"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c0jid"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3bgvy"]
 
 [node name="Control" type="CanvasLayer" unique_id=1874023264]
 script = ExtResource("1_cfvaj")
 
-[node name="Label" type="Label" parent="." unique_id=1612623822]
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1404454829]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -161.0
-offset_bottom = 66.0
+offset_left = -280.0
+offset_bottom = 80.0
 grow_horizontal = 0
-theme_override_colors/font_color = Color(1, 1, 0, 1)
+
+[node name="Sprite2D" type="TextureRect" parent="MarginContainer2" unique_id=1862107303]
+layout_mode = 2
+texture = ExtResource("2_p8rsi")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer2" unique_id=1612623822]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
 theme_override_fonts/font = ExtResource("2_uceqf")
 theme_override_font_sizes/font_size = 40
 text = "Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=739325102]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -139.0
+offset_right = 142.0
+offset_bottom = 139.0
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer" unique_id=452825568]
+layout_mode = 2
+texture = ExtResource("3_6jpvj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=382776057]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=531128975]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_c0jid")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=126499796]
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1095807598]
+custom_minimum_size = Vector2(7, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_3bgvy")
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1251964201]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("4_7nouq")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1152433777]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("2_uceqf")
+theme_override_font_sizes/font_size = 22
+text = "POINTS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=452551234]
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/VBoxContainer/HBoxContainer2" unique_id=571939888]
+custom_minimum_size = Vector2(7, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_3bgvy")
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1890417546]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("5_p8rsi")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2" unique_id=682346295]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("2_uceqf")
+theme_override_font_sizes/font_size = 22
+text = "POINTS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=676171096]
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/VBoxContainer/HBoxContainer3" unique_id=1013282088]
+custom_minimum_size = Vector2(7, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_3bgvy")
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer3" unique_id=1763082988]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("6_reuhj")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer3" unique_id=647810689]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("2_uceqf")
+theme_override_font_sizes/font_size = 22
+text = "POINTS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1463099575]
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/VBoxContainer/HBoxContainer4" unique_id=1628080638]
+custom_minimum_size = Vector2(7, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_3bgvy")
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer4" unique_id=56875315]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("7_fs7wa")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer4" unique_id=1193566367]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("2_uceqf")
+theme_override_font_sizes/font_size = 22
+text = "POINTS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1018317243]
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/VBoxContainer/HBoxContainer5" unique_id=1029437082]
+custom_minimum_size = Vector2(7, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_3bgvy")
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer5" unique_id=161963597]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("8_d6esn")
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer5" unique_id=639982959]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("2_uceqf")
+theme_override_font_sizes/font_size = 22
+text = "POINTS"
 horizontal_alignment = 1
 vertical_alignment = 1

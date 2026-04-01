@@ -11,11 +11,15 @@ var move_direction: Vector2 = Vector2.ZERO
 @onready var animation_tree: AnimationTree = $AnimationTree
 @onready var animation_playback: AnimationNodeStateMachinePlayback = animation_tree.get("parameters/playback")
 @onready var dust = $dust
+@onready var collectArea: Area2D = $CollectArea
 
 func _ready() -> void:
 	animation_tree.active = true
+	
 	if dust != null:
 		dust.emitting = false
+	
+	collectArea.area_entered.connect(_on_collect_area_area_entered)
 
 func _physics_process(_delta: float) -> void:
 	movement_loop()
@@ -37,7 +41,6 @@ func movement_loop() -> void:
 
 	update_animation()
 
-	# ✅ accendi/spegni polvere solo se il nodo esiste
 	if dust != null:
 		dust.emitting = moving
 
@@ -56,3 +59,7 @@ func update_animation() -> void:
 					animation_playback.travel("run_up")
 				else:
 					animation_playback.travel("run_down")
+
+func _on_collect_area_area_entered(area: Area2D) -> void:
+	if area.is_in_group("items") and area.has_method("collect"):
+		area.collect()
