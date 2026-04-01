@@ -5,7 +5,7 @@ extends CharacterBody2D
 @export var movement_speed: float = 200.0
 @export var damage: int = 10
 @export var max_health: int = 30
-@export var exp_value: int = 10
+@export var exp_value: int = 1
 
 @export_category("Drops")
 @export var exp_scene: PackedScene
