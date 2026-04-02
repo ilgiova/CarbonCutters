@@ -24,8 +24,12 @@ var _level_up_screen: Node = null
 @onready var dust = $dust
 @onready var health_bar = $HealtBar
 @onready var weapon_pivot: Node2D = $WeaponPivot
-@onready var exp_label: Label = get_tree().get_first_node_in_group("exp_label")
+
 @onready var stats_label = get_tree().get_first_node_in_group("stats_label")
+@onready var exp_value_label: Label = $"../../HUD/MarginContainer/VBoxContainer/expLabelValue"
+@onready var hp_label: Label = $"../../HUD/MarginContainer/VBoxContainer/Hp"
+@onready var dmg_label: Label = $"../../HUD/MarginContainer/VBoxContainer/Dmg"
+@onready var rotation_speed_label: Label = $"../../HUD/MarginContainer/VBoxContainer/RotationSpeedValue"
 
 func _ready() -> void:
 	add_to_group("player")
@@ -55,14 +59,13 @@ func gain_exp(amount: int) -> void:
 		_level_up()
 
 func _update_exp_label() -> void:
-	if exp_label != null:
-		exp_label.text = "Garbage collected: %d / %d" % [experience, xp_to_levelup]
+	if exp_value_label != null:
+		exp_value_label.text =  "%d / %d" % [experience, xp_to_levelup]
 
 func _level_up() -> void:
 	if _level_up_screen == null:
 		_level_up_screen = get_tree().current_scene.get_node_or_null("LevelUpScreen")
 	if _level_up_screen == null:
-		push_error("[Player] _level_up | 'LevelUpScreen' node not found!")
 		return
 	if _level_up_screen.answer_selected.is_connected(_on_answer_selected):
 		_level_up_screen.answer_selected.disconnect(_on_answer_selected)
@@ -90,8 +93,6 @@ func apply_powerup(id: String) -> void:
 			weapon_pivot.rotation_speed = current_rotation_speed
 		"bullet":
 			_add_bullet()
-		_:
-			push_error("[Player] apply_powerup | unknown id='%s'" % id)
 	update_stats_label()
 
 func _add_bullet() -> void:
@@ -129,9 +130,10 @@ func update_stats_label() -> void:
 	var bullet_damage = 0
 	if weapon_pivot and weapon_pivot.get_child_count() > 0:
 		bullet_damage = weapon_pivot.get_child(0).damage
-	stats_label.text = "HP: %d/%d | DMG: %d | ROTATION SPEED %.1f" % [
-		current_health, max_health, bullet_damage, current_rotation_speed
-	]
+		hp_label.text = "HP: " + str(current_health) +"%"
+		dmg_label.text = tr("DAMAGE")+": %.1f" % [bullet_damage]
+		rotation_speed_label.text = tr("SPEED")+": " + str(current_rotation_speed)
+	
 
 func _movement_loop() -> void:
 	move_direction.x = float(Input.is_action_pressed("right")) - float(Input.is_action_pressed("left"))

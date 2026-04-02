@@ -1,0 +1,592 @@
+[
+  {
+	"text": "How long does it take for a plastic bottle to decompose?",
+	"answers": [
+	  "1 day",
+	  "1 year",
+	  "500 years",
+      "1000 years"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Which bin should you use to recycle glass bottles?",
+	"answers": [
+	  "Recycling (blue/green)",
+	  "General waste (black)",
+	  "Compost (brown)",
+      "Hazardous waste"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "How many times can aluminium be recycled?",
+	"answers": [
+	  "Only once",
+	  "Up to 5 times",
+	  "Up to 10 times",
+      "Indefinitely"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "What percentage of a recycled glass bottle is used to make a new one?",
+	"answers": [
+	  "10%",
+	  "100%",
+	  "40%",
+      "70%"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Which of these items should NOT go in the recycling bin?",
+	"answers": [
+	  "Cardboard box",
+	  "Plastic bottle",
+	  "Greasy pizza box",
+      "Newspaper"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "How long does it take for a glass bottle to decompose in a landfill?",
+	"answers": [
+	  "1 million years",
+	  "10 years",
+	  "100 years",
+      "500 years"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "What does the recycling symbol with a number inside mean on plastic?",
+	"answers": [
+	  "The product price",
+	  "How many times it was recycled",
+	  "The weight of the item",
+      "The type of plastic resin"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Which material takes the longest to decompose?",
+	"answers": [
+	  "Paper",
+	  "Glass",
+	  "Cotton",
+      "Banana peel"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "How much energy is saved by recycling one aluminium can compared to making a new one?",
+	"answers": [
+	  "5%",
+	  "25%",
+	  "95%",
+      "50%"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "What should you do with plastic bags?",
+	"answers": [
+	  "Return them to supermarket collection points",
+	  "Put them in the recycling bin",
+	  "Throw them in general waste",
+      "Burn them"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Which of these materials can usually be recycled many times without losing quality?",
+	"answers": [
+	  "Food waste",
+	  "Styrofoam",
+	  "Used tissues",
+      "Glass"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "What is compost made from?",
+	"answers": [
+	  "Glass and cans",
+	  "Organic waste like food scraps and leaves",
+	  "Plastic packaging",
+      "Electronic devices"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Which item belongs in organic waste?",
+	"answers": [
+	  "Plastic fork",
+	  "Glass jar",
+	  "Banana peel",
+      "Battery"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Why should batteries not be thrown in normal bins?",
+	"answers": [
+	  "They can release harmful chemicals",
+	  "They are too heavy",
+	  "They melt quickly",
+      "They are made of paper"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "What is the main goal of recycling?",
+	"answers": [
+	  "To make waste heavier",
+	  "To burn more trash",
+	  "To increase landfill size",
+      "To reduce waste and reuse materials"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Which item is usually recyclable?",
+	"answers": [
+	  "Dirty napkin",
+	  "Clean cardboard",
+	  "Used tissue",
+      "Broken ceramic mug"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "What should you do before recycling a food container?",
+	"answers": [
+	  "Paint it",
+	  "Fill it with paper",
+	  "Rinse it if required",
+      "Break it into pieces"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Which item is electronic waste?",
+	"answers": [
+	  "Old phone",
+	  "Apple core",
+	  "Glass bottle",
+      "Cardboard tube"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "What does 'reduce' mean in the phrase 'reduce, reuse, recycle'?",
+	"answers": [
+	  "Use more plastic",
+	  "Create more waste",
+	  "Throw away old things faster",
+      "Use fewer resources and make less waste"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "What does 'reuse' mean?",
+	"answers": [
+	  "Burn old items",
+	  "Use an item again instead of throwing it away",
+	  "Put everything in the recycling bin",
+      "Buy only metal products"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Which item should go to a special collection point?",
+	"answers": [
+	  "Newspaper",
+	  "Banana peel",
+	  "Battery",
+      "Cardboard box"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Why is recycling paper important?",
+	"answers": [
+	  "It helps save trees and energy",
+	  "It makes paper heavier",
+	  "It makes plastic cheaper",
+      "It stops glass production"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Which item is made from paper?",
+	"answers": [
+	  "Bottle cap",
+	  "Aluminium foil",
+	  "Glass cup",
+      "Newspaper"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "What should you do with an old light bulb?",
+	"answers": [
+	  "Throw it in compost",
+	  "Take it to the correct disposal point",
+	  "Put it in a river",
+      "Put it with paper"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Which of these is not usually accepted with paper recycling?",
+	"answers": [
+	  "Clean newspaper",
+	  "Clean office paper",
+	  "Greasy paper",
+      "Cardboard"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Why should recyclable materials be sorted correctly?",
+	"answers": [
+	  "To make recycling easier and more effective",
+	  "To make bins look fuller",
+	  "To stop all waste collection",
+      "To increase pollution"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "What can happen if recycling is contaminated with food waste?",
+	"answers": [
+	  "It becomes more valuable",
+	  "It turns into metal",
+	  "It disappears automatically",
+      "It may become harder to recycle"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Which of these is best for the environment?",
+	"answers": [
+	  "Buying single-use plastic every day",
+	  "Using a reusable bottle",
+	  "Throwing cans in nature",
+      "Burning paper at home"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Which material is commonly used to make cans?",
+	"answers": [
+	  "Wood",
+	  "Rubber",
+	  "Aluminium",
+      "Fabric"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "What should you do with food scraps?",
+	"answers": [
+	  "Put them in organic waste if available",
+	  "Put them with glass",
+	  "Put them with batteries",
+      "Put them in paper recycling"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Why is it useful to use reusable shopping bags?",
+	"answers": [
+	  "They increase landfill waste",
+	  "They cannot carry groceries",
+	  "They are thrown away after one use",
+      "They reduce plastic waste"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "What is a landfill?",
+	"answers": [
+	  "A recycling factory",
+	  "A place where waste is buried",
+	  "A compost bin for gardens only",
+      "A shop for reusable items"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Which one is a good recycling habit?",
+	"answers": [
+	  "Throwing everything together",
+	  "Leaving trash on the ground",
+	  "Separating materials by type",
+      "Burning plastic bottles"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "What should you do with a broken charger?",
+	"answers": [
+	  "Take it to e-waste collection",
+	  "Put it in paper recycling",
+	  "Put it in compost",
+      "Throw it into glass recycling"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Which item is most suitable for reuse?",
+	"answers": [
+	  "Used tissue",
+	  "Broken battery",
+	  "Dirty foil",
+      "Glass jar"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "What does recycling help reduce?",
+	"answers": [
+	  "Tree growth",
+	  "Pollution",
+	  "Rain",
+      "Sunlight"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Which item is usually NOT recyclable in household bins?",
+	"answers": [
+	  "Plastic bottle",
+	  "Glass bottle",
+	  "Ceramic plate",
+      "Newspaper"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Why is aluminium valuable in recycling?",
+	"answers": [
+	  "It can be recycled again and again",
+	  "It dissolves in water",
+	  "It grows naturally in bins",
+      "It cannot be reused"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "What should you do with old clothes in good condition?",
+	"answers": [
+	  "Burn them",
+	  "Throw them in glass recycling",
+	  "Put them in battery disposal",
+      "Donate or reuse them"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Which of these is a reusable item?",
+	"answers": [
+	  "Single-use straw",
+	  "Metal water bottle",
+	  "Disposable cup",
+      "Plastic wrapper"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "What is one benefit of composting?",
+	"answers": [
+	  "It creates plastic",
+	  "It makes batteries safer",
+	  "It turns organic waste into useful soil material",
+      "It replaces glass recycling"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Which item should be emptied before recycling when possible?",
+	"answers": [
+	  "A drink bottle",
+	  "A stone",
+	  "A battery",
+      "A ceramic tile"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Why should you avoid single-use products when possible?",
+	"answers": [
+	  "They are always free",
+	  "They last forever",
+	  "They improve landfill quality",
+      "They often create more waste"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "What does correct waste sorting improve?",
+	"answers": [
+	  "Ocean pollution",
+	  "Recycling efficiency",
+	  "Trash smell",
+      "Fuel use in homes"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Which bin is usually correct for newspapers?",
+	"answers": [
+	  "Organic waste",
+	  "Glass recycling",
+	  "Paper recycling",
+      "Battery collection"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Which item should never be thrown in nature?",
+	"answers": [
+	  "All waste items",
+	  "Only paper",
+	  "Only food scraps",
+      "Only leaves"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "What can recycled paper become?",
+	"answers": [
+	  "Glass bottles",
+	  "Metal cans",
+	  "Plastic bags only",
+      "New paper products"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Which material is usually transparent and fully recyclable?",
+	"answers": [
+	  "Rubber",
+	  "Glass",
+	  "Fabric",
+      "Foam"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "What should you check before recycling an item?",
+	"answers": [
+	  "Its color only",
+	  "Its price",
+	  "Local recycling rules",
+      "Its brand name only"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Which item is best to use instead of disposable cutlery?",
+	"answers": [
+	  "Reusable metal cutlery",
+	  "Single-use plastic forks",
+	  "Foam spoons",
+      "Plastic wrappers"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "What happens when we reuse an object?",
+	"answers": [
+	  "We turn it into fuel",
+	  "We destroy it faster",
+	  "We make it disappear",
+      "We extend its life"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Which of these is an example of reducing waste?",
+	"answers": [
+	  "Throwing away usable items",
+	  "Buying only what you need",
+	  "Using more packaging",
+      "Buying extra single-use cups"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Which household item often belongs to hazardous waste collection?",
+	"answers": [
+	  "Cardboard",
+	  "Apple peel",
+	  "Paint",
+      "Magazine"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Why should broken electronics be recycled properly?",
+	"answers": [
+	  "They contain valuable and sometimes harmful materials",
+	  "They are made only of paper",
+	  "They belong in food waste",
+      "They disappear quickly in landfills"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Which is better than buying bottled water every day?",
+	"answers": [
+	  "Throwing bottles on the ground",
+	  "Burning plastic bottles",
+	  "Buying more plastic bags",
+      "Using a refillable bottle"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "What is the best choice for carrying lunch?",
+	"answers": [
+	  "A disposable foam tray every day",
+	  "A reusable container",
+	  "Loose plastic wrap only",
+      "A broken glass jar"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Why should recycling bins be used correctly?",
+	"answers": [
+	  "To make sorting harder",
+	  "To stop collection workers",
+	  "To help materials get processed properly",
+      "To mix all materials together"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "What kind of waste is fruit peel?",
+	"answers": [
+	  "Organic waste",
+	  "Electronic waste",
+	  "Glass waste",
+      "Metal waste"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Which item should be donated instead of thrown away if it still works?",
+	"answers": [
+	  "A banana peel",
+	  "A broken light bulb",
+	  "A leaking battery",
+      "A usable toaster"
+	],
+	"correct_index": 3
+  }
+]

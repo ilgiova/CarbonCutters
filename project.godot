@@ -18,7 +18,7 @@ config/icon="res://assets/ui/logo.png"
 [autoload]
 
 PlayerData="*res://autoload/player_data.gd"
-GameManager="*res://autoload/game_manager.gd"
+Audio="*uid://dbg3iwss7grnl"
 
 [display]
 

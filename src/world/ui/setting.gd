@@ -27,14 +27,21 @@ func _ready() -> void:
 
 
 func _on_italian_pressed() -> void:
+	Audio.play_sfx(preload("res://sound/ButtonHoverEffect.mp3"))
 	italianButton.button_pressed = true
 	englishButton.button_pressed = false
 	TranslationServer.set_locale("it")
 
 func _on_english_pressed() -> void:
+	Audio.play_sfx(preload("res://sound/ButtonHoverEffect.mp3"))
 	englishButton.button_pressed = true
 	italianButton.button_pressed = false
 	TranslationServer.set_locale("en")
 
 func _on_go_back_pressed() -> void:
+	Audio.play_sfx(preload("res://sound/ButtonHoverEffect.mp3"))
 	get_tree().change_scene_to_file("res://src/world/ui/main_menu.tscn")
+
+
+func _on_h_slider_value_changed(value: float) -> void:
+	Audio.set_master_volume(value)

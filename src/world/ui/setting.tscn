@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dmybc22bd7njp" path="res://assets/UI/pressedButton.png" id="4_7fucm"]
 [ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="4_rxlbd"]
 [ext_resource type="Texture2D" uid="uid://cupev6bulci3p" path="res://assets/UI/RightLongButton.png" id="6_rxlbd"]
+[ext_resource type="Texture2D" uid="uid://du6x035madb2o" path="res://assets/UI/slider.png" id="9_nu0re"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nu0re"]
 
@@ -22,6 +23,9 @@ hoverTexture = ExtResource("3_ydxfe")
 pressedTexture = ExtResource("4_7fucm")
 
 [node name="BackGround" parent="." unique_id=1973606014 instance=ExtResource("1_5044w")]
+
+[node name="Sprite2D" parent="BackGround" index="7" unique_id=306750002]
+visible = false
 
 [node name="Panel" type="Panel" parent="." unique_id=642359236]
 layout_mode = 1
@@ -99,6 +103,30 @@ custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxEmpty_7fucm")
 
+[node name="MarginContainer5" type="MarginContainer" parent="Panel/BoxContainer" unique_id=1123613619]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Panel/BoxContainer/MarginContainer5" unique_id=1225457762]
+layout_mode = 2
+texture = ExtResource("3_rxlbd")
+
+[node name="TitleLabel" type="Label" parent="Panel/BoxContainer/MarginContainer5" unique_id=1795817850]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("4_rxlbd")
+theme_override_font_sizes/font_size = 60
+text = "VOLUME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSlider" type="HSlider" parent="Panel/BoxContainer" unique_id=1017514396]
+layout_mode = 2
+theme_override_constants/center_grabber = 1
+theme_override_icons/grabber = ExtResource("9_nu0re")
+theme_override_icons/grabber_highlight = ExtResource("9_nu0re")
+theme_override_icons/grabber_disabled = ExtResource("9_nu0re")
+value = 100.0
+
 [node name="HSeparator2" type="HSeparator" parent="Panel/BoxContainer" unique_id=200022079]
 custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
@@ -124,4 +152,7 @@ vertical_alignment = 1
 
 [connection signal="pressed" from="Panel/BoxContainer/HBoxContainer/MarginContainer/Italian" to="." method="_on_italian_pressed"]
 [connection signal="pressed" from="Panel/BoxContainer/HBoxContainer/MarginContainer2/English" to="." method="_on_english_pressed"]
+[connection signal="value_changed" from="Panel/BoxContainer/HSlider" to="." method="_on_h_slider_value_changed"]
 [connection signal="pressed" from="Panel/BoxContainer/MarginContainer3/GoBack" to="." method="_on_go_back_pressed"]
+
+[editable path="BackGround"]

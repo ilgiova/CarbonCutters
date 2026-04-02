@@ -6,7 +6,6 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h6411"]
 
 [node name="ItemBase" type="Area2D" unique_id=95679390]
-z_index = -1
 y_sort_enabled = true
 script = ExtResource("1_qy3c3")
 itemType = 2

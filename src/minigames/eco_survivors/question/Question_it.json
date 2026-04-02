@@ -1,0 +1,592 @@
+[
+  {
+	"text": "Quanto tempo impiega una bottiglia di plastica a decomporsi?",
+	"answers": [
+	  "1 giorno",
+	  "1 anno",
+	  "500 anni",
+      "1000 anni"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "In quale bidone dovresti buttare le bottiglie di vetro?",
+	"answers": [
+	  "Riciclaggio vetro",
+	  "Rifiuti generici",
+	  "Compost",
+      "Rifiuti pericolosi"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Quante volte può essere riciclato l'alluminio?",
+	"answers": [
+	  "Solo una volta",
+	  "Fino a 5 volte",
+	  "Fino a 10 volte",
+      "Infinite volte"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Quale percentuale di una bottiglia di vetro riciclata viene usata per crearne una nuova?",
+	"answers": [
+	  "10%",
+	  "100%",
+	  "40%",
+      "70%"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Quale di questi oggetti NON dovrebbe andare nel bidone del riciclaggio?",
+	"answers": [
+	  "Scatola di cartone",
+	  "Bottiglia di plastica",
+	  "Scatola della pizza unta",
+      "Giornale"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Quanto tempo impiega una bottiglia di vetro a decomporsi in discarica?",
+	"answers": [
+	  "1 milione di anni",
+	  "10 anni",
+	  "100 anni",
+      "500 anni"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Cosa indica il simbolo del riciclaggio con un numero sulla plastica?",
+	"answers": [
+	  "Il prezzo del prodotto",
+	  "Quante volte è stata riciclata",
+	  "Il peso dell'oggetto",
+      "Il tipo di resina plastica"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Quale materiale impiega più tempo a decomporsi?",
+	"answers": [
+	  "Carta",
+	  "Vetro",
+	  "Cotone",
+      "Buccia di banana"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Quanta energia si risparmia riciclando una lattina di alluminio rispetto a produrne una nuova?",
+	"answers": [
+	  "5%",
+	  "25%",
+	  "95%",
+      "50%"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Cosa dovresti fare con i sacchetti di plastica?",
+	"answers": [
+	  "Portarli ai punti di raccolta del supermercato",
+	  "Metterli nel bidone del riciclo",
+	  "Buttarli nei rifiuti generici",
+      "Bruciarli"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Quale di questi materiali può solitamente essere riciclato molte volte senza perdere qualità?",
+	"answers": [
+	  "Scarti alimentari",
+	  "Polistirolo",
+	  "Fazzoletti usati",
+      "Vetro"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Da cosa è fatto il compost?",
+	"answers": [
+	  "Vetro e lattine",
+	  "Rifiuti organici come avanzi di cibo e foglie",
+	  "Imballaggi di plastica",
+      "Dispositivi elettronici"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Quale oggetto appartiene ai rifiuti organici?",
+	"answers": [
+	  "Forchetta di plastica",
+	  "Barattolo di vetro",
+	  "Buccia di banana",
+      "Batteria"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Perché le batterie non dovrebbero essere buttate nei normali bidoni?",
+	"answers": [
+	  "Perché possono rilasciare sostanze chimiche dannose",
+	  "Perché sono troppo pesanti",
+	  "Perché si sciolgono velocemente",
+      "Perché sono fatte di carta"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Qual è l'obiettivo principale del riciclo?",
+	"answers": [
+	  "Rendere i rifiuti più pesanti",
+	  "Bruciare più spazzatura",
+	  "Aumentare la dimensione delle discariche",
+      "Ridurre i rifiuti e riutilizzare i materiali"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Quale oggetto è solitamente riciclabile?",
+	"answers": [
+	  "Tovagliolo sporco",
+	  "Cartone pulito",
+	  "Fazzoletto usato",
+      "Tazza di ceramica rotta"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Cosa dovresti fare prima di riciclare un contenitore per cibo?",
+	"answers": [
+	  "Pitturarlo",
+	  "Riempirlo di carta",
+	  "Sciacquarlo se necessario",
+      "Romperlo in pezzi"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Quale oggetto è un rifiuto elettronico?",
+	"answers": [
+	  "Vecchio telefono",
+	  "Torsolo di mela",
+	  "Bottiglia di vetro",
+      "Tubo di cartone"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Cosa significa 'ridurre' nella frase 'ridurre, riutilizzare, riciclare'?",
+	"answers": [
+	  "Usare più plastica",
+	  "Creare più rifiuti",
+	  "Buttare via le cose più in fretta",
+      "Usare meno risorse e produrre meno rifiuti"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Cosa significa 'riutilizzare'?",
+	"answers": [
+	  "Bruciare oggetti vecchi",
+	  "Usare di nuovo un oggetto invece di buttarlo",
+	  "Mettere tutto nel bidone del riciclo",
+      "Comprare solo prodotti di metallo"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Quale oggetto dovrebbe essere portato in un punto di raccolta speciale?",
+	"answers": [
+	  "Giornale",
+	  "Buccia di banana",
+	  "Batteria",
+      "Scatola di cartone"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Perché è importante riciclare la carta?",
+	"answers": [
+	  "Perché aiuta a salvare alberi ed energia",
+	  "Perché la carta diventa più pesante",
+	  "Perché rende la plastica più economica",
+      "Perché ferma la produzione del vetro"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Quale oggetto è fatto di carta?",
+	"answers": [
+	  "Tappo di bottiglia",
+	  "Foglio di alluminio",
+	  "Bicchiere di vetro",
+      "Giornale"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Cosa dovresti fare con una vecchia lampadina?",
+	"answers": [
+	  "Buttarla nel compost",
+	  "Portarla al corretto punto di smaltimento",
+	  "Buttarla in un fiume",
+      "Buttarla con la carta"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Quale di questi non è solitamente accettato con la raccolta della carta?",
+	"answers": [
+	  "Giornale pulito",
+	  "Carta da ufficio pulita",
+	  "Carta unta",
+      "Cartone"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Perché i materiali riciclabili dovrebbero essere separati correttamente?",
+	"answers": [
+	  "Per rendere il riciclo più facile ed efficace",
+	  "Per riempire di più i bidoni",
+	  "Per fermare tutta la raccolta rifiuti",
+      "Per aumentare l'inquinamento"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Cosa può succedere se il riciclo è contaminato da residui di cibo?",
+	"answers": [
+	  "Diventa più prezioso",
+	  "Si trasforma in metallo",
+	  "Scompare automaticamente",
+      "Può diventare più difficile da riciclare"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Quale di queste è la scelta migliore per l'ambiente?",
+	"answers": [
+	  "Comprare plastica usa e getta ogni giorno",
+	  "Usare una bottiglia riutilizzabile",
+	  "Buttare lattine nella natura",
+      "Bruciare carta a casa"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Quale materiale viene comunemente usato per produrre lattine?",
+	"answers": [
+	  "Legno",
+	  "Gomma",
+	  "Alluminio",
+      "Tessuto"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Cosa dovresti fare con gli scarti di cibo?",
+	"answers": [
+	  "Metterli nei rifiuti organici se disponibili",
+	  "Metterli con il vetro",
+	  "Metterli con le batterie",
+      "Metterli nella carta"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Perché è utile usare borse della spesa riutilizzabili?",
+	"answers": [
+	  "Aumentano i rifiuti in discarica",
+	  "Non possono contenere la spesa",
+	  "Si buttano dopo un solo uso",
+      "Riducono i rifiuti di plastica"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Cos'è una discarica?",
+	"answers": [
+	  "Una fabbrica di riciclo",
+	  "Un luogo dove i rifiuti vengono sepolti",
+	  "Un bidone per compost da giardino",
+      "Un negozio di oggetti riutilizzabili"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Quale di queste è una buona abitudine di riciclo?",
+	"answers": [
+	  "Buttare tutto insieme",
+	  "Lasciare rifiuti per terra",
+	  "Separare i materiali per tipo",
+      "Bruciare bottiglie di plastica"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Cosa dovresti fare con un caricatore rotto?",
+	"answers": [
+	  "Portarlo nella raccolta dei rifiuti elettronici",
+	  "Metterlo con la carta",
+	  "Metterlo nel compost",
+      "Buttarlo nel vetro"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Quale oggetto è più adatto al riutilizzo?",
+	"answers": [
+	  "Fazzoletto usato",
+	  "Batteria rotta",
+	  "Foglio di alluminio sporco",
+      "Barattolo di vetro"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Cosa aiuta a ridurre il riciclo?",
+	"answers": [
+	  "La crescita degli alberi",
+	  "L'inquinamento",
+	  "La pioggia",
+      "La luce del sole"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Quale oggetto solitamente NON è riciclabile nei normali bidoni domestici?",
+	"answers": [
+	  "Bottiglia di plastica",
+	  "Bottiglia di vetro",
+	  "Piatto di ceramica",
+      "Giornale"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Perché l'alluminio è prezioso nel riciclo?",
+	"answers": [
+	  "Può essere riciclato ancora e ancora",
+	  "Si dissolve nell'acqua",
+	  "Cresce naturalmente nei bidoni",
+      "Non può essere riutilizzato"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Cosa dovresti fare con vestiti vecchi ma ancora in buone condizioni?",
+	"answers": [
+	  "Bruciarli",
+	  "Buttarli nel vetro",
+	  "Metterli con le batterie",
+      "Donarli o riutilizzarli"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Quale di questi è un oggetto riutilizzabile?",
+	"answers": [
+	  "Cannuccia usa e getta",
+	  "Bottiglia d'acqua in metallo",
+	  "Bicchiere monouso",
+      "Involucro di plastica"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Qual è un vantaggio del compostaggio?",
+	"answers": [
+	  "Crea plastica",
+	  "Rende le batterie più sicure",
+	  "Trasforma i rifiuti organici in materiale utile per il suolo",
+      "Sostituisce il riciclo del vetro"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Quale oggetto dovrebbe essere svuotato prima di essere riciclato quando possibile?",
+	"answers": [
+	  "Una bottiglia per bevande",
+	  "Una pietra",
+	  "Una batteria",
+      "Una piastrella di ceramica"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Perché dovresti evitare i prodotti usa e getta quando possibile?",
+	"answers": [
+	  "Sono sempre gratuiti",
+	  "Durano per sempre",
+	  "Migliorano la qualità delle discariche",
+      "Spesso producono più rifiuti"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Cosa migliora una corretta separazione dei rifiuti?",
+	"answers": [
+	  "L'inquinamento degli oceani",
+	  "L'efficienza del riciclo",
+	  "Il cattivo odore dei rifiuti",
+      "Il consumo di carburante in casa"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Quale bidone è solitamente corretto per i giornali?",
+	"answers": [
+	  "Rifiuti organici",
+	  "Raccolta vetro",
+	  "Raccolta carta",
+      "Raccolta batterie"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Quale oggetto non dovrebbe mai essere buttato nella natura?",
+	"answers": [
+	  "Tutti i rifiuti",
+	  "Solo la carta",
+	  "Solo gli scarti di cibo",
+      "Solo le foglie"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "In cosa può trasformarsi la carta riciclata?",
+	"answers": [
+	  "Bottiglie di vetro",
+	  "Lattine di metallo",
+	  "Solo sacchetti di plastica",
+      "Nuovi prodotti di carta"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Quale materiale è solitamente trasparente e completamente riciclabile?",
+	"answers": [
+	  "Gomma",
+	  "Vetro",
+	  "Tessuto",
+      "Schiuma"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Cosa dovresti controllare prima di riciclare un oggetto?",
+	"answers": [
+	  "Solo il suo colore",
+	  "Il suo prezzo",
+	  "Le regole locali di riciclo",
+      "Solo il suo marchio"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Quale oggetto è meglio usare al posto delle posate usa e getta?",
+	"answers": [
+	  "Posate di metallo riutilizzabili",
+	  "Forchette di plastica monouso",
+	  "Cucchiai di polistirolo",
+      "Involucri di plastica"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Cosa succede quando riutilizziamo un oggetto?",
+	"answers": [
+	  "Lo trasformiamo in carburante",
+	  "Lo distruggiamo più in fretta",
+	  "Lo facciamo sparire",
+      "Ne prolunghiamo la vita"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Quale di questi è un esempio di riduzione dei rifiuti?",
+	"answers": [
+	  "Buttare oggetti ancora utilizzabili",
+	  "Comprare solo quello di cui hai bisogno",
+	  "Usare più imballaggi",
+      "Comprare più bicchieri usa e getta"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Quale rifiuto domestico spesso appartiene alla raccolta dei rifiuti pericolosi?",
+	"answers": [
+	  "Cartone",
+	  "Buccia di mela",
+	  "Vernice",
+      "Rivista"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Perché i dispositivi elettronici rotti dovrebbero essere riciclati correttamente?",
+	"answers": [
+	  "Contengono materiali preziosi e talvolta dannosi",
+	  "Sono fatti solo di carta",
+	  "Appartengono ai rifiuti organici",
+      "Scompaiono velocemente in discarica"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Cosa è meglio che comprare acqua in bottiglia ogni giorno?",
+	"answers": [
+	  "Buttare bottiglie per terra",
+	  "Bruciare bottiglie di plastica",
+	  "Comprare più sacchetti di plastica",
+      "Usare una bottiglia riutilizzabile"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "Qual è la scelta migliore per portare il pranzo?",
+	"answers": [
+	  "Un vassoio usa e getta ogni giorno",
+	  "Un contenitore riutilizzabile",
+	  "Solo pellicola di plastica",
+      "Un barattolo di vetro rotto"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Perché i bidoni del riciclo dovrebbero essere usati correttamente?",
+	"answers": [
+	  "Per rendere la separazione più difficile",
+	  "Per fermare gli addetti alla raccolta",
+	  "Per aiutare i materiali a essere lavorati bene",
+      "Per mescolare tutti i materiali"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Che tipo di rifiuto è una buccia di frutta?",
+	"answers": [
+	  "Rifiuto organico",
+	  "Rifiuto elettronico",
+	  "Rifiuto di vetro",
+      "Rifiuto metallico"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Quale oggetto dovrebbe essere donato invece di essere buttato via se funziona ancora?",
+	"answers": [
+	  "Una buccia di banana",
+	  "Una lampadina rotta",
+	  "Una batteria che perde",
+      "Un tostapane funzionante"
+	],
+	"correct_index": 3
+  }
+]

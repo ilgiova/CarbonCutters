@@ -1,34 +1,23 @@
 [gd_scene format=3 uid="uid://b7wxb7ox623y3"]
 
 [ext_resource type="Script" uid="uid://c8suu2k3oe5pi" path="res://src/minigames/eco_survivors/scripts/level_up_screen.gd" id="1_wit4d"]
-[ext_resource type="Texture2D" uid="uid://7le15n4qpeov" path="res://assets/UI/button.png" id="2_x818l"]
-[ext_resource type="Texture2D" uid="uid://vnnmh1m3r2si" path="res://assets/UI/buttonPress.png" id="3_oulfk"]
-[ext_resource type="Texture2D" uid="uid://b5100k7biuiox" path="res://assets/UI/buttonHover.png" id="4_ylpep"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r0pdf"]
-texture = ExtResource("2_x818l")
-texture_margin_left = 49.0
-texture_margin_top = 23.0
-texture_margin_right = 29.0
-texture_margin_bottom = 21.0
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vgb70"]
-texture = ExtResource("3_oulfk")
-texture_margin_left = 49.0
-texture_margin_top = 23.0
-texture_margin_right = 29.0
-texture_margin_bottom = 21.0
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tdmqf"]
-texture = ExtResource("4_ylpep")
-texture_margin_left = 49.0
-texture_margin_top = 23.0
-texture_margin_right = 29.0
-texture_margin_bottom = 21.0
+[ext_resource type="Texture2D" uid="uid://bqglvykm05k2q" path="res://assets/UI/button_normal.png" id="2_oulfk"]
+[ext_resource type="Texture2D" uid="uid://e8a28ytqgk80" path="res://assets/UI/NormalLongButton.png" id="2_p430u"]
+[ext_resource type="Texture2D" uid="uid://crv5mjmgymtgq" path="res://assets/UI/HoverLongButton.png" id="3_gwbta"]
+[ext_resource type="Texture2D" uid="uid://dmybc22bd7njp" path="res://assets/UI/pressedButton.png" id="3_ylpep"]
+[ext_resource type="Texture2D" uid="uid://kk1cmgyu4cw6" path="res://assets/UI/Button_hover.png" id="5_tdmqf"]
+[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="5_vgb70"]
+[ext_resource type="Texture2D" uid="uid://dn38b7d8nylsy" path="res://assets/UI/wrongLongButton.png" id="5_xph6t"]
+[ext_resource type="Texture2D" uid="uid://cupev6bulci3p" path="res://assets/UI/RightLongButton.png" id="6_vgb70"]
 
 [node name="LevelUpScreen" type="CanvasLayer" unique_id=220686174 groups=["level_up_screen"]]
 process_mode = 3
 script = ExtResource("1_wit4d")
+answer_idle_texture = ExtResource("2_p430u")
+answer_hover_texture = ExtResource("3_gwbta")
+answer_pressed_texture = ExtResource("6_vgb70")
+answer_correct_texture = ExtResource("6_vgb70")
+answer_wrong_texture = ExtResource("5_xph6t")
 
 [node name="Panel" type="Panel" parent="." unique_id=771744664]
 anchors_preset = 15
@@ -38,6 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBox" type="VBoxContainer" parent="Panel" unique_id=173811050]
+custom_minimum_size = Vector2(600, 0)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -54,33 +44,83 @@ grow_vertical = 2
 [node name="QuestionLabel" type="Label" parent="Panel/VBox" unique_id=848585809]
 layout_mode = 2
 size_flags_vertical = 6
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Button0" type="Button" parent="Panel/VBox" unique_id=2108307742]
-clip_contents = true
+[node name="Button1" type="MarginContainer" parent="Panel/VBox" unique_id=327199124]
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
-theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
 
-[node name="Button1" type="Button" parent="Panel/VBox" unique_id=427917960]
+[node name="TextureButton" type="TextureButton" parent="Panel/VBox/Button1" unique_id=1463241082]
+custom_minimum_size = Vector2(300, 40)
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
-theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
+texture_normal = ExtResource("2_oulfk")
+texture_pressed = ExtResource("3_ylpep")
+texture_hover = ExtResource("5_tdmqf")
 
-[node name="Button2" type="Button" parent="Panel/VBox" unique_id=939214774]
+[node name="Label" type="Label" parent="Panel/VBox/Button1" unique_id=1889814102]
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
-theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Button3" type="Button" parent="Panel/VBox" unique_id=1781821799]
+[node name="Button2" type="MarginContainer" parent="Panel/VBox" unique_id=500581607]
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
-theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
+
+[node name="TextureButton" type="TextureButton" parent="Panel/VBox/Button2" unique_id=1411946598]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+texture_normal = ExtResource("2_oulfk")
+texture_pressed = ExtResource("6_vgb70")
+texture_hover = ExtResource("5_tdmqf")
+
+[node name="Label" type="Label" parent="Panel/VBox/Button2" unique_id=489537788]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button3" type="MarginContainer" parent="Panel/VBox" unique_id=1629998000]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="Panel/VBox/Button3" unique_id=429266578]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+texture_normal = ExtResource("2_oulfk")
+texture_pressed = ExtResource("6_vgb70")
+texture_hover = ExtResource("5_tdmqf")
+
+[node name="Label" type="Label" parent="Panel/VBox/Button3" unique_id=171856113]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button4" type="MarginContainer" parent="Panel/VBox" unique_id=144919092]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="Panel/VBox/Button4" unique_id=141388912]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+texture_normal = ExtResource("2_oulfk")
+texture_pressed = ExtResource("6_vgb70")
+texture_hover = ExtResource("5_tdmqf")
+
+[node name="Label" type="Label" parent="Panel/VBox/Button4" unique_id=556115769]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="powerupPannel" type="Panel" parent="." unique_id=2095446455]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -90,6 +130,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 
 [node name="VBox" type="VBoxContainer" parent="powerupPannel" unique_id=624067827]
+custom_minimum_size = Vector2(0, 400)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -103,23 +144,57 @@ offset_bottom = 70.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="powerupButton0" type="Button" parent="powerupPannel/VBox" unique_id=218895559]
-clip_contents = true
+[node name="powerupButton1" type="MarginContainer" parent="powerupPannel/VBox" unique_id=773606441]
+custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
-theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
 
-[node name="powerupButton1" type="Button" parent="powerupPannel/VBox" unique_id=494044132]
-clip_contents = true
+[node name="TextureButton" type="TextureButton" parent="powerupPannel/VBox/powerupButton1" unique_id=932858329]
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
-theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
+texture_normal = ExtResource("2_oulfk")
+texture_pressed = ExtResource("2_oulfk")
+texture_hover = ExtResource("5_tdmqf")
 
-[node name="powerupButton2" type="Button" parent="powerupPannel/VBox" unique_id=618400885]
-clip_contents = true
+[node name="Label" type="Label" parent="powerupPannel/VBox/powerupButton1" unique_id=333716433]
 layout_mode = 2
-theme_override_styles/normal = SubResource("StyleBoxTexture_r0pdf")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_vgb70")
-theme_override_styles/hover = SubResource("StyleBoxTexture_tdmqf")
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="powerupButton2" type="MarginContainer" parent="powerupPannel/VBox" unique_id=1740552364]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="powerupPannel/VBox/powerupButton2" unique_id=204821098]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+texture_normal = ExtResource("2_oulfk")
+texture_pressed = ExtResource("2_oulfk")
+texture_hover = ExtResource("5_tdmqf")
+
+[node name="Label" type="Label" parent="powerupPannel/VBox/powerupButton2" unique_id=738950725]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="powerupButton3" type="MarginContainer" parent="powerupPannel/VBox" unique_id=1470640997]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="powerupPannel/VBox/powerupButton3" unique_id=516935116]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+texture_normal = ExtResource("2_oulfk")
+texture_pressed = ExtResource("2_oulfk")
+texture_hover = ExtResource("5_tdmqf")
+
+[node name="Label" type="Label" parent="powerupPannel/VBox/powerupButton3" unique_id=703249535]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1

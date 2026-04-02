@@ -16,3 +16,11 @@ CARDBOARD_RECYCLED,Cardboard Recycled, Carta Reciclata
 PLASTIC_RECYCLED,Plastic Recycled, Plastica Reciclata
 MISSED_POINT,Missed Point,Punti Mancati
 TOTAL_POINT,Total Point,Punti Totali
+VOLUME,VOLUME,VOLUME
+SPEED,Speed,Velocità
+DAMAGE,Damage,Danno
+GARBAGE_COLLECTED,Garbage collected:,Rifiuti collezionati:
+POWERUP_BULLET_DAMAGE,Bullet Damage,Danno Proiettile
+POWERUP_MAX_HEALTH,Max Health,Salute Massima
+POWERUP_ROTATION_SPEED,Rotation Speed,Velocità di Rotazione
+POWERUP_ORBITAL_BULLET,Orbital Bullet,Proiettile Orbitale

@@ -50,15 +50,18 @@ func update_buttons() -> void:
 		lobby_label.visible = true
 
 func _on_resume_button_pressed() -> void:
+	Audio.play_sfx(preload("res://sound/ButtonHoverEffect.mp3"))
 	close_menu()
 
 func _on_lobby_button_pressed() -> void:
+	Audio.play_sfx(preload("res://sound/ButtonHoverEffect.mp3"))
 	is_open = false
 	get_tree().paused = false
 	hide()
 	get_tree().change_scene_to_file("res://src/world/game_scene.tscn")
 
 func _on_exit_button_pressed() -> void:
+	Audio.play_sfx(preload("res://sound/ButtonHoverEffect.mp3"))
 	is_open = false
 	get_tree().paused = false
 	hide()

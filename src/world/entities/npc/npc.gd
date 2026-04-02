@@ -46,6 +46,9 @@ func _process(delta: float) -> void:
 		if !alredySpeak:
 			PlayerData.add_score(25)
 			alredySpeak = true
+			
+		if !is_chatting:
+			Audio.play_sfx(preload("res://sound/KeyboardClick.mp3"))
 		$Dialogue.d_file_en = d_file_en
 		$Dialogue.d_file_it = d_file_it
 		$Dialogue.start()
