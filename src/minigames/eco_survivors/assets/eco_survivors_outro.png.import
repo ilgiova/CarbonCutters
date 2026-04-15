@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0skc6kr51f27"
-path="res://.godot/imported/points.png-548f150fd2e483cdeb4fc09aeb399203.ctex"
+uid="uid://8ry6xh4nn4ea"
+path="res://.godot/imported/eco_survivors_outro.png-a669c3580c8a9e865793092ecf159861.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/points.png"
-dest_files=["res://.godot/imported/points.png-548f150fd2e483cdeb4fc09aeb399203.ctex"]
+source_file="res://src/minigames/eco_survivors/assets/eco_survivors_outro.png"
+dest_files=["res://.godot/imported/eco_survivors_outro.png-a669c3580c8a9e865793092ecf159861.ctex"]
 
 [params]
 

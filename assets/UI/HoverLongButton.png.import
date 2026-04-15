@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crv5mjmgymtgq"
-path="res://.godot/imported/HoverLongButton.png-3221cd1a759a2de3aa71e045ca70231b.ctex"
+path="res://.godot/imported/HoverLongButton.png-f6dbe8b6086b50197dad15fd1865b79f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/HoverLongButton.png"
-dest_files=["res://.godot/imported/HoverLongButton.png-3221cd1a759a2de3aa71e045ca70231b.ctex"]
+source_file="res://assets/ui/HoverLongButton.png"
+dest_files=["res://.godot/imported/HoverLongButton.png-f6dbe8b6086b50197dad15fd1865b79f.ctex"]
 
 [params]
 

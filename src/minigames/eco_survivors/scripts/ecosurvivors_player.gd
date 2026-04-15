@@ -120,7 +120,7 @@ func take_damage(amount: int) -> void:
 		_die()
 
 func _die() -> void:
-	get_tree().change_scene_to_file("res://src/world/game_scene.tscn")
+	get_tree().change_scene_to_file("res://src/minigames/eco_survivors/scenes/outro_screen.tscn")
 	queue_free()
 	
 	
