@@ -1,14 +1,19 @@
-extends Sprite2D
+extends Node2D
+class_name OutroScreen
 
 # Definiamo i percorsi dei file tramite l'inspector
 @export_file("*.json") var outro_file_en: String = "res://src/minigames/eco_survivors/outro_text/outro_en.json"
 @export_file("*.json") var outro_file_it: String = "res://src/minigames/eco_survivors/outro_text/outro_it.json"
 
 # Prendiamo la reference al nodo TextEdit (figlio dello Sprite2D)
-@onready var text_edit: TextEdit = $TextEdit
+@onready var text_edit: TextEdit = $EcoSurvivorsOutro/TextEdit
+@onready var points: Label = $Label
+var points_get_from_other_scene_i_hate_my_life = 0
 
 func _ready() -> void:
+	print(get_children())
 	# Disabilitiamo la scrittura se il TextEdit serve solo in lettura
+	points.text = str(points_get_from_other_scene_i_hate_my_life)
 	text_edit.editable = false 
 	_load_outro_text()
 

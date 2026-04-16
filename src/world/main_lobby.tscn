@@ -217,7 +217,7 @@ position = Vector2(121, -10)
 
 [node name="ZonaInterattiva3" parent="Y-sorted" unique_id=2035079810 instance=ExtResource("24_lq03f")]
 position = Vector2(4381, 651)
-target_scene = "uid://bur1einktqps1"
+target_scene = "uid://dae5cdtlbqrda"
 
 [node name="Sprite2D" parent="Y-sorted/ZonaInterattiva3" index="0" unique_id=446796136]
 position = Vector2(27.000061, -1.9999704)
