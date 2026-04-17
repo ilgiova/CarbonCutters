@@ -120,9 +120,41 @@ func take_damage(amount: int) -> void:
 		_die()
 
 func _die() -> void:
-	get_tree().change_scene_to_file("res://src/world/game_scene.tscn")
-	queue_free()
+	var scene_resource = preload("res://src/minigames/eco_survivors/scenes/outro_screen.tscn")
+	var instance = scene_resource.instantiate() as OutroScreen
+
+	if instance == null:
+		push_error("OutroScreen: il nodo radice della scena non è di tipo OutroScreen!")
+		queue_free()
+		return
+
+	# Assegna PRIMA di add_child
+	instance.points_get_from_other_scene_i_hate_my_life = level
+
+	# Aggiungi alla scena
+	get_tree().root.add_child(instance)
 	
+	# Distruggi il player (una volta sola!)
+	queue_free()
+
+	# Assegna PRIMA di add_child, così _ready() trova già il valore
+	instance.points_get_from_other_scene_i_hate_my_life = level
+
+	get_tree().root.add_child(instance)
+	queue_free()
+	scene_resource = preload("res://src/minigames/eco_survivors/scenes/outro_screen.tscn")
+	instance = scene_resource.instantiate()
+	
+	# Usiamo il casting dinamico
+	if instance is OutroScreen:
+		instance.points_get_from_other_scene_i_hate_my_life = level
+		get_tree().root.add_child(instance)
+	else:
+		# Questo accade se lo script non è sulla Root della scena o manca class_name
+		get_tree().root.add_child(instance) 
+		push_error("Attenzione: Lo script OutroScreen non è stato trovato sulla radice della scena!")
+	
+	queue_free()
 	
 func update_stats_label() -> void:
 	if stats_label == null:
@@ -130,7 +162,7 @@ func update_stats_label() -> void:
 	var bullet_damage = 0
 	if weapon_pivot and weapon_pivot.get_child_count() > 0:
 		bullet_damage = weapon_pivot.get_child(0).damage
-		hp_label.text = "HP: " + str(current_health) +"%"
+		hp_label.text = "HP: %d / %d" % [current_health, max_health]
 		dmg_label.text = tr("DAMAGE")+": %.1f" % [bullet_damage]
 		rotation_speed_label.text = tr("SPEED")+": " + str(current_rotation_speed)
 	

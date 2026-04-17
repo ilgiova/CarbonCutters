@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://ci72tsfv4fwkn"]
+
+[ext_resource type="Texture2D" uid="uid://8ry6xh4nn4ea" path="res://src/minigames/eco_survivors/assets/eco_survivors_outro.png" id="1_bijbu"]
+[ext_resource type="Script" uid="uid://dpmf2ri8gw4lp" path="res://src/minigames/eco_survivors/scripts/outro.gd" id="2_5brry"]
+[ext_resource type="Texture2D" uid="uid://bqglvykm05k2q" path="res://assets/UI/button_normal.png" id="3_0ff8m"]
+[ext_resource type="Texture2D" uid="uid://kk1cmgyu4cw6" path="res://assets/UI/Button_hover.png" id="4_pkjce"]
+[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="5_ajqhp"]
+[ext_resource type="Script" uid="uid://cb34kcqwqx45e" path="res://src/minigames/eco_survivors/scripts/play_again.gd" id="5_ecg3h"]
+[ext_resource type="Script" uid="uid://b1jcwa6te74pt" path="res://src/minigames/eco_survivors/scripts/go_lobby.gd" id="7_4w05q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bijbu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5brry"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ecg3h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ajqhp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4w05q"]
+
+[node name="OutroScreen" type="Node2D" unique_id=1101786736]
+script = ExtResource("2_5brry")
+
+[node name="EcoSurvivorsOutro" type="Sprite2D" parent="." unique_id=1702902383]
+position = Vector2(987, 538)
+scale = Vector2(0.8861386, 0.8861386)
+texture = ExtResource("1_bijbu")
+
+[node name="TextEdit" type="TextEdit" parent="EcoSurvivorsOutro" unique_id=1061842876]
+offset_left = -537.16205
+offset_top = -47.39665
+offset_right = 545.06146
+offset_bottom = 290.02237
+theme_override_colors/font_readonly_color = Color(0.31764707, 0.13725491, 0.003921569, 1)
+theme_override_font_sizes/font_size = 43
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bijbu")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_5brry")
+wrap_mode = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="EcoSurvivorsOutro" unique_id=588998935]
+offset_left = -454.78214
+offset_top = 376.9162
+offset_right = 473.2737
+offset_bottom = 486.9162
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="EcoSurvivorsOutro/HBoxContainer" unique_id=13553679]
+layout_mode = 2
+
+[node name="playAgain" type="TextureButton" parent="EcoSurvivorsOutro/HBoxContainer/MarginContainer" unique_id=1011019468]
+layout_mode = 2
+texture_normal = ExtResource("3_0ff8m")
+texture_hover = ExtResource("4_pkjce")
+script = ExtResource("5_ecg3h")
+
+[node name="Label" type="Label" parent="EcoSurvivorsOutro/HBoxContainer/MarginContainer" unique_id=1822889525]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("5_ajqhp")
+theme_override_font_sizes/font_size = 40
+text = "PLAY_AGAIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="EcoSurvivorsOutro/HBoxContainer" unique_id=238688860]
+custom_minimum_size = Vector2(60, 30)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_ecg3h")
+
+[node name="MarginContainer2" type="MarginContainer" parent="EcoSurvivorsOutro/HBoxContainer" unique_id=1651960856]
+layout_mode = 2
+
+[node name="GoLobby" type="TextureButton" parent="EcoSurvivorsOutro/HBoxContainer/MarginContainer2" unique_id=85649084]
+layout_mode = 2
+texture_normal = ExtResource("3_0ff8m")
+texture_hover = ExtResource("4_pkjce")
+script = ExtResource("7_4w05q")
+
+[node name="Label" type="Label" parent="EcoSurvivorsOutro/HBoxContainer/MarginContainer2" unique_id=1304396721]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("5_ajqhp")
+theme_override_font_sizes/font_size = 40
+text = "GO_LOBBY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=1927783564]
+offset_left = 1061.0
+offset_top = 275.0
+offset_right = 1501.1117
+offset_bottom = 459.0
+theme_override_colors/font_color = Color(1, 0.93333334, 0.7529412, 1)
+theme_override_font_sizes/font_size = 134
+text = "1"
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=2074704191]
+offset_left = 543.0
+offset_top = 274.0
+offset_right = 1216.0
+offset_bottom = 544.0
+theme_override_colors/font_color = Color(1, 0.92941177, 0.7294118, 1)
+theme_override_colors/font_readonly_color = Color(1, 0.92941177, 0.7294118, 1)
+theme_override_font_sizes/font_size = 128
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ajqhp")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_4w05q")
+text = "LEVEL:"
