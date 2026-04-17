@@ -24,6 +24,9 @@ var _level_up_screen: Node = null
 @onready var dust = $dust
 @onready var health_bar = $HealtBar
 @onready var weapon_pivot: Node2D = $WeaponPivot
+@onready var hud: CanvasLayer = $"../../HUD"
+@onready var control: CanvasLayer = $"../../Control"
+
 
 @onready var stats_label = get_tree().get_first_node_in_group("stats_label")
 @onready var exp_value_label: Label = $"../../HUD/MarginContainer/VBoxContainer/expLabelValue"
@@ -120,40 +123,22 @@ func take_damage(amount: int) -> void:
 		_die()
 
 func _die() -> void:
-	var scene_resource = preload("res://src/minigames/eco_survivors/scenes/outro_screen.tscn")
-	var instance = scene_resource.instantiate() as OutroScreen
+	var scene = preload("res://src/minigames/eco_survivors/scenes/outro_screen.tscn")
+	var instance = scene.instantiate()
 
-	if instance == null:
-		push_error("OutroScreen: il nodo radice della scena non è di tipo OutroScreen!")
-		queue_free()
-		return
-
-	# Assegna PRIMA di add_child
-	instance.points_get_from_other_scene_i_hate_my_life = level
-
-	# Aggiungi alla scena
-	get_tree().root.add_child(instance)
-	
-	# Distruggi il player (una volta sola!)
-	queue_free()
-
-	# Assegna PRIMA di add_child, così _ready() trova già il valore
-	instance.points_get_from_other_scene_i_hate_my_life = level
-
-	get_tree().root.add_child(instance)
-	queue_free()
-	scene_resource = preload("res://src/minigames/eco_survivors/scenes/outro_screen.tscn")
-	instance = scene_resource.instantiate()
-	
-	# Usiamo il casting dinamico
 	if instance is OutroScreen:
 		instance.points_get_from_other_scene_i_hate_my_life = level
-		get_tree().root.add_child(instance)
-	else:
-		# Questo accade se lo script non è sulla Root della scena o manca class_name
-		get_tree().root.add_child(instance) 
-		push_error("Attenzione: Lo script OutroScreen non è stato trovato sulla radice della scena!")
-	
+
+	# nascondi UI
+	if hud:
+		hud.visible = false
+	if control:
+		control.visible = false
+
+	# aggiungi scena
+	get_tree().root.add_child(instance)
+
+	# elimina player
 	queue_free()
 	
 func update_stats_label() -> void:

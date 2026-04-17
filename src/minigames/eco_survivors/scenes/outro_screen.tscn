@@ -5,8 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://bqglvykm05k2q" path="res://assets/UI/button_normal.png" id="3_0ff8m"]
 [ext_resource type="Texture2D" uid="uid://kk1cmgyu4cw6" path="res://assets/UI/Button_hover.png" id="4_pkjce"]
 [ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="5_ajqhp"]
-[ext_resource type="Script" uid="uid://cb34kcqwqx45e" path="res://src/minigames/eco_survivors/scripts/play_again.gd" id="5_ecg3h"]
-[ext_resource type="Script" uid="uid://b1jcwa6te74pt" path="res://src/minigames/eco_survivors/scripts/go_lobby.gd" id="7_4w05q"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bijbu"]
 
@@ -32,7 +30,7 @@ offset_top = -47.39665
 offset_right = 545.06146
 offset_bottom = 290.02237
 theme_override_colors/font_readonly_color = Color(0.31764707, 0.13725491, 0.003921569, 1)
-theme_override_font_sizes/font_size = 43
+theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bijbu")
 theme_override_styles/read_only = SubResource("StyleBoxEmpty_5brry")
 wrap_mode = 1
@@ -51,7 +49,6 @@ layout_mode = 2
 layout_mode = 2
 texture_normal = ExtResource("3_0ff8m")
 texture_hover = ExtResource("4_pkjce")
-script = ExtResource("5_ecg3h")
 
 [node name="Label" type="Label" parent="EcoSurvivorsOutro/HBoxContainer/MarginContainer" unique_id=1822889525]
 layout_mode = 2
@@ -74,7 +71,6 @@ layout_mode = 2
 layout_mode = 2
 texture_normal = ExtResource("3_0ff8m")
 texture_hover = ExtResource("4_pkjce")
-script = ExtResource("7_4w05q")
 
 [node name="Label" type="Label" parent="EcoSurvivorsOutro/HBoxContainer/MarginContainer2" unique_id=1304396721]
 layout_mode = 2
@@ -105,3 +101,6 @@ theme_override_font_sizes/font_size = 128
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ajqhp")
 theme_override_styles/read_only = SubResource("StyleBoxEmpty_4w05q")
 text = "LEVEL:"
+
+[connection signal="pressed" from="EcoSurvivorsOutro/HBoxContainer/MarginContainer/playAgain" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="EcoSurvivorsOutro/HBoxContainer/MarginContainer2/GoLobby" to="." method="_on_go_lobby_pressed"]

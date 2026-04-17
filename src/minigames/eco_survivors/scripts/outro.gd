@@ -5,6 +5,7 @@ class_name OutroScreen
 @export_file("*.json") var outro_file_en: String = "res://src/minigames/eco_survivors/outro_text/outro_en.json"
 @export_file("*.json") var outro_file_it: String = "res://src/minigames/eco_survivors/outro_text/outro_it.json"
 
+
 # Prendiamo la reference al nodo TextEdit (figlio dello Sprite2D)
 @onready var text_edit: TextEdit = $EcoSurvivorsOutro/TextEdit
 @onready var points: Label = $Label
@@ -43,3 +44,15 @@ func _load_outro_text() -> void:
 		text_edit.text = str(parsed["outro_text"])
 	else:
 		push_error("Errore nel formato del file JSON dell'outro.")
+		
+
+
+func _on_play_again_pressed() -> void:
+	get_tree().change_scene_to_file("res://src/minigames/eco_survivors/ecosurvivors.tscn")
+	queue_free()
+
+
+func _on_go_lobby_pressed() -> void:
+	get_tree().change_scene_to_file("res://src/world/game_scene.tscn")
+	queue_free()
+	

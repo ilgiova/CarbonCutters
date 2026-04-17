@@ -5,11 +5,10 @@ extends Sprite2D
 @export_file("*.json") var intro_file_it: String = "res://src/minigames/eco_survivors/intro_text/intro_it.json"
 
 # Prendiamo la reference al nodo TextEdit (figlio dello Sprite2D)
-@onready var text_edit: TextEdit = $TextEdit
+@onready var text_edit: Label = $TextEdit
 
 func _ready() -> void:
 	# Disabilitiamo la scrittura se il TextEdit serve solo in lettura
-	text_edit.editable = false 
 	_load_intro_text()
 
 # Funzione che carica, fa il parsing e assegna il testo

@@ -14,3 +14,4 @@ func _on_texture_button_pressed() -> void:
 	
 	# 4. Cambiamo la scena
 	get_tree().change_scene_to_file("res://src/world/main_lobby.tscn")
+	queue_free()
