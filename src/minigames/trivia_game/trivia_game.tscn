@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://dqr6668unj5a0"]
 
-[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="1_l2vgh"]
 [ext_resource type="Script" uid="uid://li4kvltqykk2" path="res://src/minigames/trivia_game/scripts/trivia_game.gd" id="1_x6l1h"]
 [ext_resource type="Texture2D" uid="uid://v08ct0kaanpi" path="res://src/minigames/trivia_game/assets/background.png" id="1_x43ce"]
 [ext_resource type="Texture2D" uid="uid://6kageht4677y" path="res://src/minigames/trivia_game/assets/QuestionBackground.png" id="2_btkcx"]
@@ -9,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://e8a28ytqgk80" path="res://assets/UI/NormalLongButton.png" id="5_x6l1h"]
 [ext_resource type="Texture2D" uid="uid://crv5mjmgymtgq" path="res://assets/UI/HoverLongButton.png" id="6_mgo8a"]
 [ext_resource type="PackedScene" uid="uid://j31bte0lln4" path="res://src/global/ui/score_hud.tscn" id="7_x6l1h"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="8_ph77j"]
 [ext_resource type="PackedScene" uid="uid://cd1r8x8od7iwm" path="res://src/global/ui/pause_menu.tscn" id="9_ph77j"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mgo8a"]
@@ -84,7 +84,7 @@ layout_mode = 2
 
 [node name="Question" type="Label" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer5" unique_id=1121587738]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_l2vgh")
+theme_override_fonts/font = ExtResource("8_ph77j")
 theme_override_font_sizes/font_size = 64
 text = "QUESTION"
 horizontal_alignment = 1
@@ -104,7 +104,7 @@ stretch_mode = 0
 [node name="anser1" type="Label" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer" unique_id=1280145468]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("1_l2vgh")
+theme_override_fonts/font = ExtResource("8_ph77j")
 theme_override_font_sizes/font_size = 40
 text = "Anser1"
 horizontal_alignment = 1
@@ -123,7 +123,7 @@ stretch_mode = 0
 [node name="anser2" type="Label" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer2" unique_id=1576742108]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("1_l2vgh")
+theme_override_fonts/font = ExtResource("8_ph77j")
 theme_override_font_sizes/font_size = 40
 text = "Anser2"
 horizontal_alignment = 1
@@ -143,7 +143,7 @@ stretch_mode = 0
 [node name="anser3" type="Label" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer3" unique_id=1050692747]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("1_l2vgh")
+theme_override_fonts/font = ExtResource("8_ph77j")
 theme_override_font_sizes/font_size = 40
 text = "Anser3"
 horizontal_alignment = 1
@@ -163,7 +163,7 @@ stretch_mode = 0
 [node name="anser4" type="Label" parent="MainPanel/QuestionFrame/MarginContainer/VBoxContainer/MarginContainer4" unique_id=970840646]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("1_l2vgh")
+theme_override_fonts/font = ExtResource("8_ph77j")
 theme_override_font_sizes/font_size = 40
 text = "Anser4"
 horizontal_alignment = 1

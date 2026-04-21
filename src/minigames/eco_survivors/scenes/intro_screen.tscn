@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dt0id12lxwopm" path="res://src/minigames/eco_survivors/assets/eco_survivors_intro.png" id="1_6xqba"]
 [ext_resource type="TileSet" uid="uid://cy155fk2jtd5h" path="res://assets/world/tileset/ground.tres" id="1_xqkiv"]
 [ext_resource type="Script" uid="uid://sfpkk8fxch6e" path="res://src/minigames/eco_survivors/scripts/intro.gd" id="2_aqjpb"]
-[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="3_pyd52"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="4_xqkiv"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aqjpb"]
 
@@ -24,6 +24,7 @@ offset_left = -685.8278
 offset_top = -295.16638
 offset_bottom = 416.70544
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("4_xqkiv")
 theme_override_font_sizes/font_size = 43
 theme_override_styles/normal = SubResource("StyleBoxEmpty_aqjpb")
 autowrap_mode = 3
@@ -34,7 +35,7 @@ offset_top = 451.43094
 offset_right = 642.4209
 offset_bottom = 512.20044
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("3_pyd52")
+theme_override_fonts/font = ExtResource("4_xqkiv")
 theme_override_font_sizes/font_size = 36
 text = "PRESS_E"
 horizontal_alignment = 1

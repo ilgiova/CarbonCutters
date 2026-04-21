@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dbvnnaryali03" path="res://src/world/ui/Background.tscn" id="2_cn6n6"]
 [ext_resource type="Texture2D" uid="uid://bqglvykm05k2q" path="res://assets/UI/button_normal.png" id="3_4yc2i"]
 [ext_resource type="Texture2D" uid="uid://kk1cmgyu4cw6" path="res://assets/UI/Button_hover.png" id="4_ey0r0"]
-[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="6_p1psj"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="5_4yc2i"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4yc2i"]
 
@@ -38,7 +38,7 @@ texture_hover = ExtResource("4_ey0r0")
 [node name="Label" type="Label" parent="BoxContainer/MarginContainer" unique_id=1716655277]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("6_p1psj")
+theme_override_fonts/font = ExtResource("5_4yc2i")
 theme_override_font_sizes/font_size = 40
 text = "START_GAME"
 horizontal_alignment = 1
@@ -60,7 +60,7 @@ texture_hover = ExtResource("4_ey0r0")
 [node name="Label" type="Label" parent="BoxContainer/MarginContainer2" unique_id=641786736]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("6_p1psj")
+theme_override_fonts/font = ExtResource("5_4yc2i")
 theme_override_font_sizes/font_size = 40
 text = "SETTING"
 horizontal_alignment = 1
@@ -82,7 +82,7 @@ texture_hover = ExtResource("4_ey0r0")
 [node name="Label" type="Label" parent="BoxContainer/MarginContainer3" unique_id=363753257]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("6_p1psj")
+theme_override_fonts/font = ExtResource("5_4yc2i")
 theme_override_font_sizes/font_size = 40
 text = "QUIT_GAME"
 horizontal_alignment = 1

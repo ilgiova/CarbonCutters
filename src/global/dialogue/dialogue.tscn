@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cxj7vtona3lxs" path="res://src/global/dialogue/dialogue.gd" id="1_r4l5n"]
 [ext_resource type="Texture2D" uid="uid://dccb772iqjxrd" path="res://assets/UI/dialogueImmage.png" id="2_r4l5n"]
-[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="3_fl34x"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="3_i3lg5"]
 
 [node name="Dialogue" type="Control" unique_id=1723502717]
 z_index = 10
@@ -33,7 +33,12 @@ offset_top = 27.0
 offset_right = 198.1709
 offset_bottom = 50.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("3_fl34x")
+theme_override_fonts/normal_font = ExtResource("3_i3lg5")
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 24
+theme_override_font_sizes/bold_italics_font_size = 24
+theme_override_font_sizes/italics_font_size = 24
+theme_override_font_sizes/mono_font_size = 24
 text = "Name:"
 scroll_active = false
 vertical_alignment = 1
@@ -45,6 +50,11 @@ offset_top = 51.0
 offset_right = 237.1709
 offset_bottom = 159.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("3_fl34x")
+theme_override_fonts/normal_font = ExtResource("3_i3lg5")
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 24
+theme_override_font_sizes/bold_italics_font_size = 24
+theme_override_font_sizes/italics_font_size = 24
+theme_override_font_sizes/mono_font_size = 24
 text = "Text:"
 scroll_active = false

@@ -6,8 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://e8a28ytqgk80" path="res://assets/UI/NormalLongButton.png" id="3_rxlbd"]
 [ext_resource type="Texture2D" uid="uid://kk1cmgyu4cw6" path="res://assets/UI/Button_hover.png" id="3_ydxfe"]
 [ext_resource type="Texture2D" uid="uid://dmybc22bd7njp" path="res://assets/UI/pressedButton.png" id="4_7fucm"]
-[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="4_rxlbd"]
+[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush Copia.ttf" id="4_rxlbd"]
 [ext_resource type="Texture2D" uid="uid://cupev6bulci3p" path="res://assets/UI/RightLongButton.png" id="6_rxlbd"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="9_fjtia"]
 [ext_resource type="Texture2D" uid="uid://du6x035madb2o" path="res://assets/UI/slider.png" id="9_nu0re"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nu0re"]
@@ -74,7 +75,7 @@ texture_hover = ExtResource("3_ydxfe")
 [node name="Label" type="Label" parent="Panel/BoxContainer/HBoxContainer/MarginContainer" unique_id=2018341977]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("4_rxlbd")
+theme_override_fonts/font = ExtResource("9_fjtia")
 theme_override_font_sizes/font_size = 40
 text = "Italiano"
 horizontal_alignment = 1
@@ -92,7 +93,7 @@ texture_hover = ExtResource("3_ydxfe")
 [node name="Label" type="Label" parent="Panel/BoxContainer/HBoxContainer/MarginContainer2" unique_id=8094514]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("4_rxlbd")
+theme_override_fonts/font = ExtResource("9_fjtia")
 theme_override_font_sizes/font_size = 40
 text = "English"
 horizontal_alignment = 1
@@ -113,7 +114,7 @@ texture = ExtResource("3_rxlbd")
 [node name="TitleLabel" type="Label" parent="Panel/BoxContainer/MarginContainer5" unique_id=1795817850]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("4_rxlbd")
+theme_override_fonts/font = ExtResource("9_fjtia")
 theme_override_font_sizes/font_size = 60
 text = "VOLUME"
 horizontal_alignment = 1
@@ -144,7 +145,7 @@ texture_hover = ExtResource("3_ydxfe")
 [node name="Label" type="Label" parent="Panel/BoxContainer/MarginContainer3" unique_id=641738370]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("4_rxlbd")
+theme_override_fonts/font = ExtResource("9_fjtia")
 theme_override_font_sizes/font_size = 40
 text = "GO_BACK"
 horizontal_alignment = 1

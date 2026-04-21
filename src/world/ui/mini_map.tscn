@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://br7b2vg351uco"]
+
+[ext_resource type="Script" uid="uid://br0iqwrmdm3a7" path="res://src/world/ui/canvas_layer.gd" id="1_legkv"]
+[ext_resource type="PackedScene" uid="uid://bdemy088g0p3j" path="res://src/world/map_marker.tscn" id="2_4mtc7"]
+[ext_resource type="Texture2D" uid="uid://beq4qh5mpg4tt" path="res://assets/world/entities/player/PlayerPing.png" id="2_22elc"]
+[ext_resource type="Texture2D" uid="uid://cbncfwtghhvw7" path="res://assets/UI/FullMapCanvas.png" id="2_ga87v"]
+[ext_resource type="Texture2D" uid="uid://b8uu42sewsjc0" path="res://assets/UI/MiniMapCanvas.png" id="2_iei2u"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="5_fdkhu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ga87v"]
+bg_color = Color(0, 0, 0, 0.546)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ga87v"]
+texture = ExtResource("2_ga87v")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_22elc"]
+texture = ExtResource("2_iei2u")
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=2027326920]
+process_mode = 3
+layer = 9
+script = ExtResource("1_legkv")
+
+[node name="WorldMap" type="Control" parent="." unique_id=1232357046]
+z_index = 10
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackGroundColor" type="Panel" parent="WorldMap" unique_id=618987092]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ga87v")
+
+[node name="MarginContainer" type="MarginContainer" parent="WorldMap" unique_id=1987651374]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 100
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 100
+theme_override_constants/margin_bottom = 100
+
+[node name="Panel" type="Panel" parent="WorldMap/MarginContainer" unique_id=1675760574]
+z_index = 11
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ga87v")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="WorldMap/MarginContainer" unique_id=391574403]
+layout_mode = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="WorldMap/MarginContainer/SubViewportContainer" unique_id=1030154861]
+handle_input_locally = false
+size = Vector2i(1720, 880)
+render_target_update_mode = 4
+
+[node name="Camera2D" type="Camera2D" parent="WorldMap/MarginContainer/SubViewportContainer/SubViewport" unique_id=504917297]
+
+[node name="Markers" type="Control" parent="WorldMap/MarginContainer/SubViewportContainer/SubViewport" unique_id=2047660831]
+z_index = 13
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Trivia" parent="WorldMap/MarginContainer/SubViewportContainer/SubViewport/Markers" unique_id=1471785548 instance=ExtResource("2_4mtc7")]
+z_index = 200
+layout_mode = 1
+world_position = Vector2i(25, -1)
+label_text = "Trivia"
+
+[node name="Conveyour" parent="WorldMap/MarginContainer/SubViewportContainer/SubViewport/Markers" unique_id=1111205390 instance=ExtResource("2_4mtc7")]
+layout_mode = 1
+world_position = Vector2i(-4, 13)
+label_text = "Conveyour Belt"
+
+[node name="MapMarker" parent="WorldMap/MarginContainer/SubViewportContainer/SubViewport/Markers" unique_id=1043253990 instance=ExtResource("2_4mtc7")]
+layout_mode = 0
+world_position = Vector2i(68, 7)
+label_text = "Eco Survivors"
+
+[node name="PlayerIcon" type="Sprite2D" parent="WorldMap" unique_id=626277626]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_22elc")
+
+[node name="Label" type="Label" parent="WorldMap" unique_id=1345866627]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="MiniMap" type="Control" parent="." unique_id=1715388367]
+z_index = 10
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="MiniMap" unique_id=1486256729]
+custom_minimum_size = Vector2(376, 376)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -188.0
+offset_top = -188.0
+offset_right = 188.0
+offset_bottom = 188.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="MiniMap/SubViewportContainer" unique_id=1101268485]
+handle_input_locally = false
+size = Vector2i(376, 376)
+render_target_update_mode = 4
+
+[node name="Camera2D" type="Camera2D" parent="MiniMap/SubViewportContainer/SubViewport" unique_id=1591707510]
+zoom = Vector2(0.2, 0.2)
+
+[node name="InfoLabel" type="Label" parent="MiniMap" unique_id=428221101]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_bottom = -9.375
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("5_fdkhu")
+theme_override_font_sizes/font_size = 30
+text = "PRESS_M"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="MiniMap" unique_id=1864981873]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_22elc")

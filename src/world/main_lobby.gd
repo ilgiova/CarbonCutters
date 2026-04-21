@@ -4,9 +4,11 @@ extends Node2D
 @export var itemScenes: Array[PackedScene] = []
 @export var maxItemsInMap: int = 15
 @export var itemParent: Node2D
+@onready var player: CharacterBody2D = $"Y-sorted/player"
 
 func _ready() -> void:
 	randomize()
+	print(player.global_position)
 	PlayerData.current_context = "lobby"
 	add_to_group("item_spawner")
 

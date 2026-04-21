@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://dpmf2ri8gw4lp" path="res://src/minigames/eco_survivors/scripts/outro.gd" id="2_5brry"]
 [ext_resource type="Texture2D" uid="uid://bqglvykm05k2q" path="res://assets/UI/button_normal.png" id="3_0ff8m"]
 [ext_resource type="Texture2D" uid="uid://kk1cmgyu4cw6" path="res://assets/UI/Button_hover.png" id="4_pkjce"]
-[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="5_ajqhp"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="5_0ff8m"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bijbu"]
 
@@ -53,7 +53,7 @@ texture_hover = ExtResource("4_pkjce")
 [node name="Label" type="Label" parent="EcoSurvivorsOutro/HBoxContainer/MarginContainer" unique_id=1822889525]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("5_ajqhp")
+theme_override_fonts/font = ExtResource("5_0ff8m")
 theme_override_font_sizes/font_size = 40
 text = "PLAY_AGAIN"
 horizontal_alignment = 1
@@ -75,7 +75,7 @@ texture_hover = ExtResource("4_pkjce")
 [node name="Label" type="Label" parent="EcoSurvivorsOutro/HBoxContainer/MarginContainer2" unique_id=1304396721]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("5_ajqhp")
+theme_override_fonts/font = ExtResource("5_0ff8m")
 theme_override_font_sizes/font_size = 40
 text = "GO_LOBBY"
 horizontal_alignment = 1
@@ -87,6 +87,7 @@ offset_top = 275.0
 offset_right = 1501.1117
 offset_bottom = 459.0
 theme_override_colors/font_color = Color(1, 0.93333334, 0.7529412, 1)
+theme_override_fonts/font = ExtResource("5_0ff8m")
 theme_override_font_sizes/font_size = 134
 text = "1"
 
@@ -97,6 +98,7 @@ offset_right = 1216.0
 offset_bottom = 544.0
 theme_override_colors/font_color = Color(1, 0.92941177, 0.7294118, 1)
 theme_override_colors/font_readonly_color = Color(1, 0.92941177, 0.7294118, 1)
+theme_override_fonts/font = ExtResource("5_0ff8m")
 theme_override_font_sizes/font_size = 128
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ajqhp")
 theme_override_styles/read_only = SubResource("StyleBoxEmpty_4w05q")

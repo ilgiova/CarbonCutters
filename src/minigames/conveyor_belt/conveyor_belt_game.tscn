@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bepc7tp16mh6i" path="res://src/minigames/conveyor_belt/scenes/item_carboard.tscn" id="3_nyhtc"]
 [ext_resource type="PackedScene" uid="uid://bf2eldjjk57rf" path="res://src/minigames/conveyor_belt/scenes/item_pet_bottle.tscn" id="4_dnays"]
 [ext_resource type="PackedScene" uid="uid://bxdl6ihk4ma78" path="res://src/minigames/conveyor_belt/scenes/item_banana_peel.tscn" id="5_j4a30"]
-[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="5_k6x4i"]
+[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush Copia.ttf" id="5_k6x4i"]
 [ext_resource type="Texture2D" uid="uid://bglscraq44p8c" path="res://assets/UI/BackgroundPoints.png" id="6_wuflo"]
 [ext_resource type="PackedScene" uid="uid://ddch8y805mtr6" path="res://src/minigames/conveyor_belt/scenes/carboard_trash_can.tscn" id="7_bvmx0"]
 [ext_resource type="PackedScene" uid="uid://bbkflrbkiqq42" path="res://src/minigames/conveyor_belt/scenes/trash_can.tscn" id="7_l2mjd"]

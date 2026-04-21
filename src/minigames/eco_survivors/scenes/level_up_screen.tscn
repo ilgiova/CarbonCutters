@@ -6,8 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://crv5mjmgymtgq" path="res://assets/UI/HoverLongButton.png" id="3_gwbta"]
 [ext_resource type="Texture2D" uid="uid://dmybc22bd7njp" path="res://assets/UI/pressedButton.png" id="3_ylpep"]
 [ext_resource type="Texture2D" uid="uid://kk1cmgyu4cw6" path="res://assets/UI/Button_hover.png" id="5_tdmqf"]
-[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="5_vgb70"]
 [ext_resource type="Texture2D" uid="uid://dn38b7d8nylsy" path="res://assets/UI/wrongLongButton.png" id="5_xph6t"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="6_p430u"]
 [ext_resource type="Texture2D" uid="uid://cupev6bulci3p" path="res://assets/UI/RightLongButton.png" id="6_vgb70"]
 
 [node name="LevelUpScreen" type="CanvasLayer" unique_id=220686174 groups=["level_up_screen"]]
@@ -44,6 +44,7 @@ grow_vertical = 2
 [node name="QuestionLabel" type="Label" parent="Panel/VBox" unique_id=848585809]
 layout_mode = 2
 size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("6_p430u")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -60,7 +61,7 @@ texture_hover = ExtResource("5_tdmqf")
 [node name="Label" type="Label" parent="Panel/VBox/Button1" unique_id=1889814102]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_fonts/font = ExtResource("6_p430u")
 theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -78,7 +79,7 @@ texture_hover = ExtResource("5_tdmqf")
 [node name="Label" type="Label" parent="Panel/VBox/Button2" unique_id=489537788]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_fonts/font = ExtResource("6_p430u")
 theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -96,7 +97,7 @@ texture_hover = ExtResource("5_tdmqf")
 [node name="Label" type="Label" parent="Panel/VBox/Button3" unique_id=171856113]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_fonts/font = ExtResource("6_p430u")
 theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -114,7 +115,7 @@ texture_hover = ExtResource("5_tdmqf")
 [node name="Label" type="Label" parent="Panel/VBox/Button4" unique_id=556115769]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_fonts/font = ExtResource("6_p430u")
 theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -158,7 +159,7 @@ texture_hover = ExtResource("5_tdmqf")
 [node name="Label" type="Label" parent="powerupPannel/VBox/powerupButton1" unique_id=333716433]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_fonts/font = ExtResource("6_p430u")
 theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -176,7 +177,7 @@ texture_hover = ExtResource("5_tdmqf")
 [node name="Label" type="Label" parent="powerupPannel/VBox/powerupButton2" unique_id=738950725]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_fonts/font = ExtResource("6_p430u")
 theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -194,7 +195,7 @@ texture_hover = ExtResource("5_tdmqf")
 [node name="Label" type="Label" parent="powerupPannel/VBox/powerupButton3" unique_id=703249535]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("5_vgb70")
+theme_override_fonts/font = ExtResource("6_p430u")
 theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 vertical_alignment = 1

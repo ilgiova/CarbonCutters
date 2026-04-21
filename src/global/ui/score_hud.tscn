@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://b2vb7o6su2wny" path="res://src/global/ui/score_hud.gd" id="1_cfvaj"]
 [ext_resource type="Texture2D" uid="uid://bglscraq44p8c" path="res://assets/UI/BackgroundPoints.png" id="2_p8rsi"]
-[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="2_uceqf"]
 [ext_resource type="Texture2D" uid="uid://d0skc6kr51f27" path="res://assets/UI/points.png" id="3_6jpvj"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="3_p8rsi"]
 [ext_resource type="Texture2D" uid="uid://gmle7brsmu8n" path="res://src/world/entities/item/assets/banana32x32.png" id="4_7nouq"]
 [ext_resource type="Texture2D" uid="uid://dra4vnu0d2k20" path="res://src/world/entities/item/assets/cardboard32x32.png" id="5_p8rsi"]
 [ext_resource type="Texture2D" uid="uid://dojgv4voscfc6" path="res://src/world/entities/item/assets/PetBottle32x32.png" id="6_reuhj"]
@@ -33,7 +33,7 @@ expand_mode = 2
 [node name="Label" type="Label" parent="MarginContainer2" unique_id=1612623822]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("2_uceqf")
+theme_override_fonts/font = ExtResource("3_p8rsi")
 theme_override_font_sizes/font_size = 40
 text = "Score: 0"
 horizontal_alignment = 1
@@ -77,7 +77,7 @@ texture = ExtResource("4_7nouq")
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1152433777]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("2_uceqf")
+theme_override_fonts/font = ExtResource("3_p8rsi")
 theme_override_font_sizes/font_size = 22
 text = "POINTS"
 horizontal_alignment = 1
@@ -99,7 +99,7 @@ texture = ExtResource("5_p8rsi")
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer2" unique_id=682346295]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("2_uceqf")
+theme_override_fonts/font = ExtResource("3_p8rsi")
 theme_override_font_sizes/font_size = 22
 text = "POINTS"
 horizontal_alignment = 1
@@ -121,7 +121,7 @@ texture = ExtResource("6_reuhj")
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer3" unique_id=647810689]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("2_uceqf")
+theme_override_fonts/font = ExtResource("3_p8rsi")
 theme_override_font_sizes/font_size = 22
 text = "POINTS"
 horizontal_alignment = 1
@@ -143,7 +143,7 @@ texture = ExtResource("7_fs7wa")
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer4" unique_id=1193566367]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("2_uceqf")
+theme_override_fonts/font = ExtResource("3_p8rsi")
 theme_override_font_sizes/font_size = 22
 text = "POINTS"
 horizontal_alignment = 1
@@ -165,7 +165,7 @@ texture = ExtResource("8_d6esn")
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer5" unique_id=639982959]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("2_uceqf")
+theme_override_fonts/font = ExtResource("3_p8rsi")
 theme_override_font_sizes/font_size = 22
 text = "POINTS"
 horizontal_alignment = 1

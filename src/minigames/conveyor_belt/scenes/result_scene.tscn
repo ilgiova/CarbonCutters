@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://mltuq0fn427x" path="res://src/minigames/conveyor_belt/scripts/result_scene.gd" id="1_bhcub"]
 [ext_resource type="Texture2D" uid="uid://b4ucsmr66b3d8" path="res://src/minigames/conveyor_belt/assets/background.png" id="2_4tujh"]
-[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="3_rn30u"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="3_2ca22"]
 [ext_resource type="Texture2D" uid="uid://bqglvykm05k2q" path="res://assets/UI/button_normal.png" id="4_2ca22"]
 [ext_resource type="Texture2D" uid="uid://kk1cmgyu4cw6" path="res://assets/UI/Button_hover.png" id="5_864kg"]
 
@@ -38,7 +38,7 @@ layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 4
-theme_override_fonts/font = ExtResource("3_rn30u")
+theme_override_fonts/font = ExtResource("3_2ca22")
 theme_override_font_sizes/font_size = 80
 text = "STATISTICS"
 horizontal_alignment = 1
@@ -54,7 +54,7 @@ layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.70600003)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 4
-theme_override_fonts/font = ExtResource("3_rn30u")
+theme_override_fonts/font = ExtResource("3_2ca22")
 theme_override_font_sizes/font_size = 50
 text = "FOOD: Value"
 horizontal_alignment = 1
@@ -66,7 +66,7 @@ layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.70600003)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 4
-theme_override_fonts/font = ExtResource("3_rn30u")
+theme_override_fonts/font = ExtResource("3_2ca22")
 theme_override_font_sizes/font_size = 50
 text = "CARDBOARD: Value"
 horizontal_alignment = 1
@@ -78,7 +78,7 @@ layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.70600003)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 4
-theme_override_fonts/font = ExtResource("3_rn30u")
+theme_override_fonts/font = ExtResource("3_2ca22")
 theme_override_font_sizes/font_size = 50
 text = "PLASTIC: Value"
 horizontal_alignment = 1
@@ -90,7 +90,7 @@ layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.70600003)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 4
-theme_override_fonts/font = ExtResource("3_rn30u")
+theme_override_fonts/font = ExtResource("3_2ca22")
 theme_override_font_sizes/font_size = 50
 text = "WASTE: Value"
 horizontal_alignment = 1
@@ -106,7 +106,7 @@ layout_mode = 2
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.70600003)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 4
-theme_override_fonts/font = ExtResource("3_rn30u")
+theme_override_fonts/font = ExtResource("3_2ca22")
 theme_override_font_sizes/font_size = 50
 text = "TOTAL POINTS: Value"
 horizontal_alignment = 1
@@ -131,7 +131,7 @@ texture_hover = ExtResource("5_864kg")
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/MarginContainer" unique_id=141381318]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("3_rn30u")
+theme_override_fonts/font = ExtResource("3_2ca22")
 theme_override_font_sizes/font_size = 40
 text = "PLAY_AGAIN"
 horizontal_alignment = 1
@@ -153,7 +153,7 @@ texture_hover = ExtResource("5_864kg")
 [node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/MarginContainer2" unique_id=2117714926]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("3_rn30u")
+theme_override_fonts/font = ExtResource("3_2ca22")
 theme_override_font_sizes/font_size = 40
 text = "GO_LOBBY"
 horizontal_alignment = 1

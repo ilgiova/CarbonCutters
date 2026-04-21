@@ -18,13 +18,13 @@
 [ext_resource type="Texture2D" uid="uid://cm5ewnnx4844n" path="res://assets/world/props/Tree4.png" id="8_yd4m5"]
 [ext_resource type="PackedScene" uid="uid://dhnv7m4wvq3o3" path="res://src/minigames/eco_survivors/scenes/tank_enemy.tscn" id="10_p6i14"]
 [ext_resource type="Texture2D" uid="uid://bvx4w28j7dwji" path="res://src/minigames/eco_survivors/assets/Gui.png" id="12_5v7dt"]
-[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush.ttf" id="13_ishf7"]
 [ext_resource type="PackedScene" uid="uid://cd1r8x8od7iwm" path="res://src/global/ui/pause_menu.tscn" id="13_tr8mv"]
 [ext_resource type="Texture2D" uid="uid://r06b8pj5jm5o" path="res://assets/world/props/Bushe4.png" id="14_3yxx5"]
 [ext_resource type="PackedScene" uid="uid://j31bte0lln4" path="res://src/global/ui/score_hud.tscn" id="14_tr8mv"]
 [ext_resource type="Texture2D" uid="uid://dar6eu4vcykt2" path="res://assets/world/props/Tree2.png" id="15_dvmgq"]
 [ext_resource type="Texture2D" uid="uid://b1ul6jagdbsjk" path="res://assets/world/props/Tree3.png" id="16_6yjmh"]
 [ext_resource type="TileSet" uid="uid://52naiex1tctu" path="res://assets/world/tileset/cloud.tres" id="17_kqufb"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="22_kqufb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_du18f"]
 texture = ExtResource("3_8x4mo")
@@ -679,7 +679,7 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_ishf7")
 [node name="expLabel" type="Label" parent="HUD/MarginContainer/VBoxContainer" unique_id=1312077948 groups=["exp_label"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("13_ishf7")
+theme_override_fonts/font = ExtResource("22_kqufb")
 theme_override_font_sizes/font_size = 16
 text = "GARBAGE_COLLECTED"
 horizontal_alignment = 1
@@ -688,7 +688,7 @@ vertical_alignment = 1
 [node name="expLabelValue" type="Label" parent="HUD/MarginContainer/VBoxContainer" unique_id=707802524]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("13_ishf7")
+theme_override_fonts/font = ExtResource("22_kqufb")
 text = " 0 / 10"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -701,7 +701,7 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_ishf7")
 [node name="Hp" type="Label" parent="HUD/MarginContainer/VBoxContainer" unique_id=729986643 groups=["stats_label"]]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("13_ishf7")
+theme_override_fonts/font = ExtResource("22_kqufb")
 text = "HP"
 horizontal_alignment = 1
 script = SubResource("GDScript_7ycma")
@@ -709,7 +709,7 @@ script = SubResource("GDScript_7ycma")
 [node name="Dmg" type="Label" parent="HUD/MarginContainer/VBoxContainer" unique_id=1495746975]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("13_ishf7")
+theme_override_fonts/font = ExtResource("22_kqufb")
 text = "DMG"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -717,7 +717,7 @@ vertical_alignment = 1
 [node name="RotationSpeedValue" type="Label" parent="HUD/MarginContainer/VBoxContainer" unique_id=1877028631]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("13_ishf7")
+theme_override_fonts/font = ExtResource("22_kqufb")
 text = "Speed: "
 horizontal_alignment = 1
 vertical_alignment = 1
