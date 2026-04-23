@@ -28,6 +28,7 @@
 [ext_resource type="Texture2D" uid="uid://dstnp2c4xcnqm" path="res://assets/world/building/ecosurvivorsTP.png" id="27_8ohyr"]
 [ext_resource type="Texture2D" uid="uid://cjnhn030nqumh" path="res://assets/world/flags/swiss_flag.png" id="28_6d8su"]
 [ext_resource type="Texture2D" uid="uid://dk57co1ue01un" path="res://assets/world/building/TriviaTp.png" id="29_drqmc"]
+[ext_resource type="Texture2D" uid="uid://dbeoogug4rxe" path="res://assets/world/flags/american_flag.png" id="29_ittcd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_plwcx"]
 texture = ExtResource("4_sj314")
@@ -86,6 +87,35 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_drqmc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xy4k"]
+atlas = ExtResource("29_ittcd")
+region = Rect2(80, 0, 564, 887)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l1it6"]
+atlas = ExtResource("29_ittcd")
+region = Rect2(644, 0, 564, 887)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w2bxj"]
+atlas = ExtResource("29_ittcd")
+region = Rect2(1208, 0, 564, 887)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0rc2l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6xy4k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l1it6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w2bxj")
 }],
 "loop": true,
 "name": &"default",
@@ -265,12 +295,19 @@ shape = SubResource("CircleShape2D_6xy4k")
 [node name="IconKeyboard" parent="Y-sorted/ZonaInterattiva3" index="3" unique_id=1169338842]
 position = Vector2(1, -25)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1987709970]
+[node name="swissFlag" type="AnimatedSprite2D" parent="." unique_id=1987709970]
 position = Vector2(1603, 973)
 scale = Vector2(0.13454719, 0.13454719)
 sprite_frames = SubResource("SpriteFrames_6xy4k")
 autoplay = "default"
-frame_progress = 0.23009504
+frame_progress = 0.9736449
+
+[node name="americanFlag" type="AnimatedSprite2D" parent="." unique_id=422364812]
+position = Vector2(1669.0001, 1214)
+scale = Vector2(0.13741118, 0.1404258)
+sprite_frames = SubResource("SpriteFrames_0rc2l")
+autoplay = "default"
+frame_progress = 0.20887989
 
 [editable path="Y-sorted/ZonaInterattiva"]
 [editable path="Y-sorted/ZonaInterattiva2"]
