@@ -26,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://53s65nlo73on" path="res://src/world/portal/portal_trigger.tscn" id="24_lq03f"]
 [ext_resource type="Texture2D" uid="uid://bvuby2yieyahf" path="res://assets/world/building/RecyclingCenter.png" id="25_ittcd"]
 [ext_resource type="Texture2D" uid="uid://dstnp2c4xcnqm" path="res://assets/world/building/ecosurvivorsTP.png" id="27_8ohyr"]
+[ext_resource type="Texture2D" uid="uid://cjnhn030nqumh" path="res://assets/world/flags/swiss_flag.png" id="28_6d8su"]
 [ext_resource type="Texture2D" uid="uid://dk57co1ue01un" path="res://assets/world/building/TriviaTp.png" id="29_drqmc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_plwcx"]
@@ -61,6 +62,35 @@ size = Vector2(243.07227, 73.512695)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6xy4k"]
 radius = 32.06244
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ittcd"]
+atlas = ExtResource("28_6d8su")
+region = Rect2(644, 187, 563, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ohyr"]
+atlas = ExtResource("28_6d8su")
+region = Rect2(1209, 187, 563, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_drqmc"]
+atlas = ExtResource("28_6d8su")
+region = Rect2(79, 187, 563, 700)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6xy4k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ittcd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ohyr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_drqmc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
 
 [node name="MainLobby" type="Node2D" unique_id=17929028 node_paths=PackedStringArray("groundLayer")]
 script = ExtResource("1_mo1wk")
@@ -234,6 +264,13 @@ shape = SubResource("CircleShape2D_6xy4k")
 
 [node name="IconKeyboard" parent="Y-sorted/ZonaInterattiva3" index="3" unique_id=1169338842]
 position = Vector2(1, -25)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1987709970]
+position = Vector2(1603, 973)
+scale = Vector2(0.13454719, 0.13454719)
+sprite_frames = SubResource("SpriteFrames_6xy4k")
+autoplay = "default"
+frame_progress = 0.23009504
 
 [editable path="Y-sorted/ZonaInterattiva"]
 [editable path="Y-sorted/ZonaInterattiva2"]
