@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="TowerData" format=3 uid="uid://cxq54etem8rqg"]
+
+[ext_resource type="PackedScene" uid="uid://lief1sapwpqt" path="res://src/minigames/eco_valley_defense/data/attack/laser_beam.tscn" id="1_ufxe8"]
+[ext_resource type="Script" uid="uid://c8giv5d8ru50e" path="res://src/minigames/eco_valley_defense/script/tower_data.gd" id="2_1veoj"]
+[ext_resource type="Texture2D" uid="uid://bth07v43p3r8j" path="res://src/minigames/eco_valley_defense/assets/AlgaeBioreactorBase .png" id="3_hxryy"]
+[ext_resource type="Resource" uid="uid://cju7wsrkd0dbr" path="res://src/minigames/eco_valley_defense/data/Tower/AlgaeBioractor/AlgaeBioreactor2.tres" id="4_mqf23"]
+
+[resource]
+script = ExtResource("2_1veoj")
+tower_name = "Algae Bioreactor Lv1"
+description = "Toxic algae droplets that poison enemies over time."
+texture = ExtResource("3_hxryy")
+cost = 120
+damage = 12.0
+attack_cooldown = 1.8
+upgrade = ExtResource("4_mqf23")
+dot_damage = 3.0
+dot_duration = 2.0
+attack_type = 3
+attack_effect_scene = ExtResource("1_ufxe8")
+effect_color = Color(0, 1, 0, 0.64705884)
+metadata/_custom_type_script = "uid://c8giv5d8ru50e"

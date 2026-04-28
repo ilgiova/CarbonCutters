@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://blj72h05eekqv"]
+
+[ext_resource type="Script" uid="uid://crndwmktnr6iu" path="res://src/minigames/eco_valley_defense/script/tower.gd" id="1_4sxu6"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_default"]
+radius = 167.19151
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_83th8"]
+size = Vector2(100, 99)
+
+[node name="Tower" type="Node2D" unique_id=396903564]
+y_sort_enabled = true
+script = ExtResource("1_4sxu6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1021840734]
+scale = Vector2(0.15, 0.15)
+
+[node name="RangeArea" type="Area2D" parent="." unique_id=415174312]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RangeArea" unique_id=371765082]
+shape = SubResource("CircleShape2D_default")
+
+[node name="AttackTimer" type="Timer" parent="." unique_id=2119270775]
+autostart = true
+
+[node name="ClickArea" type="Area2D" parent="." unique_id=906853109]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickArea" unique_id=444678807]
+shape = SubResource("RectangleShape2D_83th8")
+debug_color = Color(0.9283558, 3.6194324e-05, 0.66695476, 0.41960785)
+
+[connection signal="input_event" from="ClickArea" to="." method="_on_click_area_input_event"]

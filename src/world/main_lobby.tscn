@@ -8,7 +8,6 @@
 [ext_resource type="TileSet" uid="uid://cy155fk2jtd5h" path="res://assets/world/tileset/ground.tres" id="3_d6emp"]
 [ext_resource type="PackedScene" uid="uid://dr05nre0byomy" path="res://src/world/entities/item/cardboardItem.tscn" id="3_hg1lf"]
 [ext_resource type="PackedScene" uid="uid://b2evxbkpnti8h" path="res://src/world/entities/item/aluItem.tscn" id="4_b2gcd"]
-[ext_resource type="Texture2D" uid="uid://cxnbyywtdied1" path="res://assets/world/tileset/texture/Forest Tile Bridges (2).png" id="4_sj314"]
 [ext_resource type="PackedScene" uid="uid://qbqaxttdpq3d" path="res://src/world/entities/item/glassItem.tscn" id="5_6d8su"]
 [ext_resource type="TileSet" uid="uid://08gatva7trbu" path="res://assets/world/tileset/shadow.tres" id="5_qcc23"]
 [ext_resource type="TileSet" uid="uid://cu0andkna2fry" path="res://assets/world/tileset/trail.tres" id="6_4pv15"]
@@ -20,6 +19,7 @@
 [ext_resource type="SpriteFrames" uid="uid://noqg86ekx46s" path="res://assets/world/entities/npc/SpriteFrameJacob.tres" id="9_qcc23"]
 [ext_resource type="PackedScene" uid="uid://bj6ogvlus66nj" path="res://src/world/entities/player/player.tscn" id="9_wtwro"]
 [ext_resource type="PackedScene" uid="uid://bqlc2wsmk5nju" path="res://src/world/entities/npc/npc.tscn" id="10_wy8lf"]
+[ext_resource type="TileSet" uid="uid://b8dg5478qjmif" path="res://assets/world/tileset/bridege.tres" id="11_b2gcd"]
 [ext_resource type="SpriteFrames" uid="uid://blj6rlaj4vhng" path="res://assets/world/entities/npc/SpriteFrameDylan.tres" id="12_qcc23"]
 [ext_resource type="PackedScene" uid="uid://dyowpal4xe1f4" path="res://src/world/entities/sheep/sheep.tscn" id="14_4pv15"]
 [ext_resource type="SpriteFrames" uid="uid://cu506iq6rkul6" path="res://assets/world/entities/npc/SpriteFrameMatt.tres" id="14_7hmi3"]
@@ -36,22 +36,6 @@
 [ext_resource type="Texture2D" uid="uid://dxcnrlwerxpvi" path="res://assets/world/switzerland/coltellinosvizzero.png" id="34_yf2c7"]
 [ext_resource type="Texture2D" uid="uid://xq267uyw1af1" path="res://assets/world/switzerland/orologio.png" id="35_qvep6"]
 [ext_resource type="Texture2D" uid="uid://ct6a6qnlnwpq1" path="res://assets/world/america/cartelloroute.png" id="36_r11r5"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_plwcx"]
-texture = ExtResource("4_sj314")
-texture_region_size = Vector2i(64, 64)
-0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -21.333332, 32, -21.333332, 32, -16, -32, -16)
-0:0/0/physics_layer_0/polygon_1/points = PackedVector2Array(-32, 16, 32, 16, 32, 21.333336, -32, 21.333336)
-1:1/0 = 0
-0:1/0 = 0
-0:2/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_a8qx5"]
-tile_size = Vector2i(64, 64)
-physics_layer_0/collision_layer = 1
-physics_layer_0/collision_mask = 0
-sources/3 = SubResource("TileSetAtlasSource_plwcx")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b2gcd"]
 size = Vector2(482.34766, 180.6582)
@@ -152,7 +136,7 @@ tile_set = ExtResource("3_d6emp")
 
 [node name="Bridge" type="TileMapLayer" parent="." unique_id=1233457091]
 tile_map_data = PackedByteArray("AAA4AA4AAwAAAAAAAAA5AA4AAwAAAAAAAAA6AA4AAwAAAAAAAAA7AA4AAwAAAAAAAAA8AA4AAwAAAAAAAAA9AA4AAwAAAAAAAAA+AA4AAwAAAAAAAAA/AA4AAwAAAAAAAABAAA4AAwAAAAAAAABBAA4AAwAAAAAAAAA4AA8AAwAAAAEAAAA5AA8AAwAAAAEAAAA6AA8AAwAAAAEAAAA7AA8AAwAAAAEAAAA8AA8AAwAAAAEAAAA9AA8AAwAAAAEAAAA+AA8AAwAAAAEAAAA/AA8AAwAAAAEAAABAAA8AAwAAAAEAAABBAA8AAwAAAAEAAABCAA4AAwABAAEAAAA3AA4AAwAAAAIAAAA=")
-tile_set = SubResource("TileSet_a8qx5")
+tile_set = ExtResource("11_b2gcd")
 
 [node name="Shadow" type="TileMapLayer" parent="." unique_id=680200228]
 tile_map_data = PackedByteArray("AAD1/xIAAAAAAAAAAAD1/xEAAAAAAAAAAAD1/xAAAAAAAAAAAAD2/xAAAAAAAAAAAAD3/w8AAAAAAAAAAAD4/w8AAAAAAAAAAAD5/w4AAAAAAAAAAAD6/w4AAAAAAAAAAAD7/w4AAAAAAAAAAAD8/w8AAAAAAAAAAAD9/xAAAAAAAAAAAAD+/xAAAAAAAAAAAAAAABAAAAAAAAAAAAD//xAAAAAAAAAAAAABABAAAAAAAAAAAAACABAAAAAAAAAAAAADABAAAAAAAAAAAAAEABAAAAAAAAAAAAAFAA8AAAAAAAAAAAAGAA8AAAAAAAAAAAAHAA4AAAAAAAAAAAAHAA0AAAAAAAAAAAAHAAwAAAAAAAAAAAAHAAsAAAAAAAAAAAAIAAsAAAAAAAAAAAAJAAoAAAAAAAAAAAAJAAkAAAAAAAAAAAAJAAgAAAAAAAAAAAAeAP3/AAAAAAAAAAAeAP7/AAAAAAAAAAAeAP//AAAAAAAAAAAfAP//AAAAAAAAAAAgAP//AAAAAAAAAAAhAP//AAAAAAAAAAAiAP//AAAAAAAAAAAjAP//AAAAAAAAAAAjAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAlAAAAAAAAAAAAAAAmAAAAAAAAAAAAAAAnAAAAAAAAAAAAAAAnAAEAAAAAAAAAAAAnAAIAAAAAAAAAAAAoAAIAAAAAAAAAAAApAAIAAAAAAAAAAAAqAAMAAAAAAAAAAAAqAAQAAAAAAAAAAAAqAAUAAAAAAAAAAAAqAAYAAAAAAAAAAAArAAYAAAAAAAAAAAAsAAYAAAAAAAAAAAAuAAcAAAAAAAAAAAAuAAgAAAAAAAAAAAAvAAgAAAAAAAAAAAAwAAgAAAAAAAAAAAAtAAgAAAAAAAAAAAAtAAcAAAAAAAAAAAAtAAYAAAAAAAAAAAA=")

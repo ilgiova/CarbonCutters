@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://lief1sapwpqt"]
+
+[ext_resource type="Script" uid="uid://cjcajhp617g5q" path="res://src/minigames/eco_valley_defense/data/attack/LaserBeam.gd" id="1_ondxx"]
+[ext_resource type="Texture2D" uid="uid://dnke2r0g4muw2" path="res://src/minigames/eco_valley_defense/assets/LaserBean.png" id="2_uw0vi"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msvs4"]
+atlas = ExtResource("2_uw0vi")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1me81"]
+atlas = ExtResource("2_uw0vi")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ku550"]
+atlas = ExtResource("2_uw0vi")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c3ooi"]
+atlas = ExtResource("2_uw0vi")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nlms8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_msvs4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1me81")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ku550")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c3ooi")
+}],
+"loop": false,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="LaserBeam" type="Node2D" unique_id=1920872377]
+script = ExtResource("1_ondxx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=950097167]
+sprite_frames = SubResource("SpriteFrames_nlms8")
+frame = 3
+frame_progress = 1.0
