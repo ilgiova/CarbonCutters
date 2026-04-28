@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://7lvngknu4inc"]
+
+[ext_resource type="Script" uid="uid://4dm8tda1a45q" path="res://src/minigames/eco_valley_defense/script/enemy_data.gd" id="1_c63r6"]
+[ext_resource type="Texture2D" uid="uid://dl8oy7tntfe4n" path="res://src/minigames/eco_valley_defense/assets/SmogCloud.png" id="2_kf6m4"]
+
+[resource]
+script = ExtResource("1_c63r6")
+enemy_name = "Smog Cloud"
+texture = ExtResource("2_kf6m4")
+max_hp = 120.0
+speed = 160.0
+damage_to_castle = 5
+gold_reward = 1
+level = 4
+metadata/_custom_type_script = "uid://4dm8tda1a45q"

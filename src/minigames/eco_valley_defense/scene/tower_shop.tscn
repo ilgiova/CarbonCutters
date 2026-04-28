@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cmcge1l6dm65g"]
+
+[ext_resource type="Texture2D" uid="uid://cj3sjmv2ikogf" path="res://src/minigames/eco_valley_defense/assets/Nuovo Piskel (6).png" id="1_001md"]
+[ext_resource type="Script" uid="uid://by7qw0o2bcwwa" path="res://src/minigames/eco_valley_defense/script/tower_shop.gd" id="1_sk7rd"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_001md"]
+texture = ExtResource("1_001md")
+axis_stretch_horizontal = 1
+
+[node name="tower_shop" type="PanelContainer" unique_id=1467424311]
+custom_minimum_size = Vector2(36, 0)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -36.0
+offset_top = 100.0
+offset_bottom = 980.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_001md")
+script = ExtResource("1_sk7rd")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1834785260]
+layout_mode = 2
+
+[node name="Tab" type="VBoxContainer" parent="HBoxContainer" unique_id=2128908553]
+custom_minimum_size = Vector2(36, 0)
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="TabIcon" type="Label" parent="HBoxContainer/Tab" unique_id=1270849289]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+
+[node name="TabLabel" type="Label" parent="HBoxContainer/Tab" unique_id=206155116]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer" unique_id=883418399]
+layout_mode = 2
+theme_override_constants/margin_top = 36
+theme_override_constants/margin_bottom = 36
+
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/MarginContainer" unique_id=761489448]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="CardList" type="VBoxContainer" parent="HBoxContainer/MarginContainer/ScrollContainer" unique_id=1177290893]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 6

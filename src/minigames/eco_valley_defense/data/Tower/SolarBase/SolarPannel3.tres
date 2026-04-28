@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="TowerData" format=3 uid="uid://cmuittixj6alj"]
+
+[ext_resource type="Script" uid="uid://c8giv5d8ru50e" path="res://src/minigames/eco_valley_defense/script/tower_data.gd" id="1_2d7pb"]
+[ext_resource type="PackedScene" uid="uid://lief1sapwpqt" path="res://src/minigames/eco_valley_defense/data/attack/laser_beam.tscn" id="1_db5jc"]
+[ext_resource type="Texture2D" uid="uid://bwlnwedswrewf" path="res://src/minigames/eco_valley_defense/assets/SolarBase.png" id="2_olnv0"]
+[ext_resource type="Resource" uid="uid://dhnsdaqe8wi12" path="res://src/minigames/eco_valley_defense/data/Tower/SolarBase/SolarPannel4.tres" id="3_db5jc"]
+
+[resource]
+script = ExtResource("1_2d7pb")
+tower_name = "Solar Pannel Lv3"
+description = "Concentrates sunlight into burning beams."
+texture = ExtResource("2_olnv0")
+damage = 32.0
+attack_range = 200.0
+attack_cooldown = 1.2
+upgrade = ExtResource("3_db5jc")
+upgrade_cost = 400
+attack_type = 1
+num_targets = 2
+attack_effect_scene = ExtResource("1_db5jc")
+metadata/_custom_type_script = "uid://c8giv5d8ru50e"

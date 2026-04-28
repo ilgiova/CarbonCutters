@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://bi17010cbnbbg"]
+
+[ext_resource type="Script" uid="uid://dmwc0yslaahik" path="res://src/minigames/eco_valley_defense/script/round_info.gd" id="1_fejjy"]
+[ext_resource type="Texture2D" uid="uid://l4exl4y0jfh5" path="res://src/minigames/eco_valley_defense/assets/PlayButton.png" id="2_ish3w"]
+[ext_resource type="Texture2D" uid="uid://rboj7d1dxhg5" path="res://src/minigames/eco_valley_defense/assets/SkipButton.png" id="2_pyaf4"]
+[ext_resource type="Texture2D" uid="uid://cc0yq11lv5jcy" path="res://src/minigames/eco_valley_defense/assets/EmptyButton.png" id="3_fyxlv"]
+[ext_resource type="Texture2D" uid="uid://dthndrunn4xi7" path="res://src/minigames/eco_valley_defense/assets/PauseButton.png" id="3_ijoqp"]
+[ext_resource type="Texture2D" uid="uid://8ialxvgcocui" path="res://src/minigames/eco_valley_defense/assets/KeepRunningButton.png" id="4_j3klh"]
+[ext_resource type="Texture2D" uid="uid://cjcutbwsbdeoy" path="res://src/minigames/eco_valley_defense/assets/Info_bar.png" id="5_j3klh"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="6_g17hg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ytw2f"]
+
+[node name="RoundInfo" type="Control" unique_id=1823998485]
+custom_minimum_size = Vector2(283.2, 48)
+layout_mode = 3
+anchors_preset = 0
+offset_top = 100.0
+offset_right = 476.0
+offset_bottom = 140.0
+script = ExtResource("1_fejjy")
+texture_playing = ExtResource("3_ijoqp")
+texture_stopped = ExtResource("2_ish3w")
+texture_auto = ExtResource("4_j3klh")
+
+[node name="BgTexture" type="TextureRect" parent="." unique_id=1957656474]
+layout_mode = 0
+offset_right = 236.0
+offset_bottom = 40.0
+scale = Vector2(1.186, 1.186)
+mouse_filter = 2
+texture = ExtResource("5_j3klh")
+
+[node name="Layout" type="HBoxContainer" parent="." unique_id=61031698]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VSeparator" type="VSeparator" parent="Layout" unique_id=1250734703]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_ytw2f")
+
+[node name="HpLabel" type="Label" parent="Layout" unique_id=300869241]
+custom_minimum_size = Vector2(61, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_g17hg")
+theme_override_font_sizes/font_size = 28
+text = "HP: 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RoundLabel" type="Label" parent="Layout" unique_id=850156517]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_g17hg")
+theme_override_font_sizes/font_size = 20
+text = "Round: 1"
+
+[node name="CenterContainer" type="CenterContainer" parent="Layout" unique_id=569542748]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Layout/CenterContainer" unique_id=1369460069]
+layout_mode = 2
+
+[node name="SkipBtn" type="TextureButton" parent="Layout/CenterContainer/HBoxContainer" unique_id=1571184787]
+layout_mode = 2
+texture_normal = ExtResource("2_pyaf4")
+
+[node name="SpeedBtn" type="TextureButton" parent="Layout/CenterContainer/HBoxContainer" unique_id=1875375546]
+layout_mode = 2
+texture_normal = ExtResource("3_fyxlv")
+
+[node name="Label" type="Label" parent="Layout/CenterContainer/HBoxContainer/SpeedBtn" unique_id=382913948]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_g17hg")
+theme_override_font_sizes/font_size = 27
+text = "1X"
+horizontal_alignment = 1
+vertical_alignment = 1

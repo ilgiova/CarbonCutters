@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="TowerData" format=3 uid="uid://b6qpdf5dspfji"]
+
+[ext_resource type="Script" uid="uid://c8giv5d8ru50e" path="res://src/minigames/eco_valley_defense/script/tower_data.gd" id="1_c51ty"]
+[ext_resource type="PackedScene" uid="uid://05i0mgor1hum" path="res://src/minigames/eco_valley_defense/data/attack/area_effect.tscn" id="1_u72w3"]
+[ext_resource type="Texture2D" uid="uid://cxhwk0onsp17g" path="res://src/minigames/eco_valley_defense/assets/urbanForestBase.png" id="2_rmvff"]
+[ext_resource type="Resource" uid="uid://6gp5c648baoa" path="res://src/minigames/eco_valley_defense/data/Tower/Forest/forest2.tres" id="3_ea4tn"]
+
+[resource]
+script = ExtResource("1_c51ty")
+tower_name = "Forest Lv1"
+description = "A defensive tower that releases damaging spores in a wide area."
+texture = ExtResource("2_rmvff")
+cost = 80
+damage = 8.0
+attack_range = 130.0
+attack_cooldown = 1.5
+upgrade = ExtResource("3_ea4tn")
+upgrade_cost = 100
+attack_type = 2
+attack_effect_scene = ExtResource("1_u72w3")
+effect_color = Color(0.29411766, 1, 0, 0.5019608)
+metadata/_custom_type_script = "uid://c8giv5d8ru50e"

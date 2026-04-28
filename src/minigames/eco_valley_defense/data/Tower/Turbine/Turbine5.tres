@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="TowerData" format=3 uid="uid://dv3q3gbon0dv8"]
+
+[ext_resource type="PackedScene" uid="uid://lief1sapwpqt" path="res://src/minigames/eco_valley_defense/data/attack/laser_beam.tscn" id="1_t4vbo"]
+[ext_resource type="Script" uid="uid://c8giv5d8ru50e" path="res://src/minigames/eco_valley_defense/script/tower_data.gd" id="1_vnt5o"]
+[ext_resource type="Texture2D" uid="uid://by3eigoeme4x3" path="res://src/minigames/eco_valley_defense/assets/turbineUpgrade.png" id="2_783yg"]
+
+[resource]
+script = ExtResource("1_vnt5o")
+tower_name = "Turbine Lv5"
+description = "Fast turbine that fires sharp gusts of wind."
+texture = ExtResource("2_783yg")
+damage = 22.0
+attack_range = 190.0
+attack_cooldown = 0.15
+attack_effect_scene = ExtResource("1_t4vbo")
+metadata/_custom_type_script = "uid://c8giv5d8ru50e"

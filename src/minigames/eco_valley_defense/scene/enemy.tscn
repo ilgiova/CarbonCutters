@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://knd7mr5cnspf"]
+
+[ext_resource type="Script" uid="uid://cedsgbo6t47wb" path="res://src/minigames/eco_valley_defense/script/enemy.gd" id="1_vg4t2"]
+[ext_resource type="Texture2D" uid="uid://8uf5df83dlxu" path="res://src/minigames/eco_survivors/assets/generalEnemy.png" id="2_qvs53"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nmphp"]
+
+[node name="Enemy" type="CharacterBody2D" unique_id=138449107]
+script = ExtResource("1_vg4t2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=10812742]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_qvs53")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=854204811]
+shape = SubResource("CircleShape2D_nmphp")

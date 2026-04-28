@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://05i0mgor1hum"]
+
+[ext_resource type="Script" uid="uid://cnmh8el8261m8" path="res://src/minigames/eco_valley_defense/data/attack/area_effect.gd" id="1_cnjw2"]
+[ext_resource type="Texture2D" uid="uid://7yt02ou132l8" path="res://src/minigames/eco_valley_defense/assets/AreaAttac.png" id="1_wn12q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnjw2"]
+atlas = ExtResource("1_wn12q")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4bjk"]
+atlas = ExtResource("1_wn12q")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ptrwa"]
+atlas = ExtResource("1_wn12q")
+region = Rect2(0, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qar1j"]
+atlas = ExtResource("1_wn12q")
+region = Rect2(150, 150, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_axmmk"]
+atlas = ExtResource("1_wn12q")
+region = Rect2(0, 300, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3eqa1"]
+atlas = ExtResource("1_wn12q")
+region = Rect2(150, 300, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hilss"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnjw2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4bjk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ptrwa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qar1j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_axmmk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3eqa1")
+}],
+"loop": false,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="AreaEffect" type="Node2D" unique_id=1937324273]
+script = ExtResource("1_cnjw2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=875679269]
+sprite_frames = SubResource("SpriteFrames_hilss")
+frame = 5
+frame_progress = 1.0

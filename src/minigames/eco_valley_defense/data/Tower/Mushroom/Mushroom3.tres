@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="TowerData" format=3 uid="uid://c6k8qvjickfi2"]
+
+[ext_resource type="PackedScene" uid="uid://05i0mgor1hum" path="res://src/minigames/eco_valley_defense/data/attack/area_effect.tscn" id="1_7igwj"]
+[ext_resource type="Script" uid="uid://c8giv5d8ru50e" path="res://src/minigames/eco_valley_defense/script/tower_data.gd" id="1_28ova"]
+[ext_resource type="Texture2D" uid="uid://cr0tfqs7yer1s" path="res://src/minigames/eco_valley_defense/assets/MushroomBase.png" id="2_4ljlo"]
+[ext_resource type="Resource" uid="uid://71iitmglb1sf" path="res://src/minigames/eco_valley_defense/data/Tower/Mushroom/Mushroom4.tres" id="3_ofr14"]
+
+[resource]
+script = ExtResource("1_28ova")
+tower_name = "Mushroom Lv3"
+description = "Spreads slowing spores in an area."
+texture = ExtResource("2_4ljlo")
+damage = 16.0
+attack_range = 140.0
+attack_cooldown = 1.4
+upgrade = ExtResource("3_ofr14")
+upgrade_cost = 280
+attack_type = 4
+attack_effect_scene = ExtResource("1_7igwj")
+effect_color = Color(0, 0, 1, 0.41960785)
+slow_amount = 0.45
+slow_duration = 2.0
+metadata/_custom_type_script = "uid://c8giv5d8ru50e"
