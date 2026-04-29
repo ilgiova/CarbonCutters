@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbncfwtghhvw7"
-path="res://.godot/imported/FullMapCanvas.png-2e3beb8ce948772b17e621939f82f7ee.ctex"
+path="res://.godot/imported/FullMapCanvas.png-ae4b83c5bca30bd85b3f8ac921cf8144.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/FullMapCanvas.png"
-dest_files=["res://.godot/imported/FullMapCanvas.png-2e3beb8ce948772b17e621939f82f7ee.ctex"]
+source_file="res://assets/ui/FullMapCanvas.png"
+dest_files=["res://.godot/imported/FullMapCanvas.png-ae4b83c5bca30bd85b3f8ac921cf8144.ctex"]
 
 [params]
 
