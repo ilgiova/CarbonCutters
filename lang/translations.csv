@@ -28,3 +28,6 @@ PRESS_E,Press E to continue,Premi E per continuare
 PRESS_M,Press M for full map,Premi M per la mappa 
 RANGE,Range,Portata
 CADENCE,Cadence,Cadenza
+ECO_VALLEY_TITLE,"Eco Valley Defense","Eco Valley Defense"
+ECO_VALLEY_CONTINUE,"Press E to continue","Premi E per continuare"
+ECO_VALLEY_INTRO_DESCRIPTION,"Defend the valley from pollution.\n\nBuild 6 unique towers, upgradable up to level 5.\nEach round brings stronger waves of enemies.\nDefeat the bosses, earn gold, survive as long as you can.\n\nYou have 100 HP. Each enemy that passes hurts you.\nWhen you reach zero, the valley falls.\n\nHow long will you last?","Difendi la valle dall'inquinamento.\n\nCostruisci 6 torri uniche, potenziabili fino al livello 5.\nAd ogni round nuove ondate, sempre più forti.\nSconfiggi i boss, guadagna oro, sopravvivi il più a lungo possibile.\n\nHai 100 HP. Ogni nemico che passa ti ferisce.\nQuando arrivi a zero, la valle cade.\n\nQuanto resisterai?"

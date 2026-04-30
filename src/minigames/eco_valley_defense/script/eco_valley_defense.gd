@@ -32,6 +32,7 @@ const MAX_PLAYER_HP: int = 100
 # ---------------------------------------------------------------------------
 
 func _ready() -> void:
+	PlayerData.current_context = "minigame"
 	tower_shop.setup(available_towers, gold)
 	tower_shop.tower_selected.connect(_on_tower_selected)
 	tower_shop.info_popup.upgrade_requested.connect(_on_upgrade_requested)
@@ -62,7 +63,7 @@ func spawn_enemy(enemy_data: EnemyData = null, hp_mult: float = 1.0, speed_mult:
 	var enemy = enemy_scene.instantiate()
 	var pf = PathFollow2D.new()
 	pf.rotates = false
-	pf.loop = false   # ← aggiungi questa riga
+	pf.loop = false  
 	path.add_child(pf)
 	pf.progress = 0
 	pf.add_child(enemy)
@@ -87,7 +88,8 @@ func _on_enemy_reached_end(damage: int) -> void:
 	print(player_hp)
 	if player_hp <= 0:
 		player_defeated.emit()
-		print("GAME OVER!")
+		get_tree().change_scene_to_file("res://src/world/game_scene.tscn")
+
 
 # Per il boss: spawna nemici minori alla morte (Fase 7)
 func spawn_death_enemies(spawn_data: Dictionary) -> void:

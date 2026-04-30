@@ -10,6 +10,6 @@ texture = ExtResource("2_kf6m4")
 max_hp = 120.0
 speed = 160.0
 damage_to_castle = 5
-gold_reward = 1
+gold_reward = 3
 level = 4
 metadata/_custom_type_script = "uid://4dm8tda1a45q"

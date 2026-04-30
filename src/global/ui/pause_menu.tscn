@@ -12,6 +12,7 @@ bg_color = Color(0, 0, 0, 0.546)
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l0elr"]
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=1009582514]
+layer = 1000
 script = ExtResource("1_12pgt")
 
 [node name="Panel" type="Panel" parent="." unique_id=1603667376]

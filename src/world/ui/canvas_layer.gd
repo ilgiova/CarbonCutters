@@ -35,6 +35,7 @@ func _ready():
 
 	if tilemap != null:
 		setup_worldmap_camera()
+	markers_container.visible = false;
 
 func _process(_delta):
 	if player != null:

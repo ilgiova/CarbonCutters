@@ -9,6 +9,6 @@ enemy_name = "Oil Bob"
 texture = ExtResource("2_lnt7i")
 max_hp = 30.0
 speed = 80.0
-gold_reward = 1
+gold_reward = 3
 scale_multiplier = 0.09
 metadata/_custom_type_script = "uid://4dm8tda1a45q"

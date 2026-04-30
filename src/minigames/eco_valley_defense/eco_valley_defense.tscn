@@ -23,7 +23,7 @@
 [ext_resource type="Script" uid="uid://4dm8tda1a45q" path="res://src/minigames/eco_valley_defense/script/enemy_data.gd" id="20_i1y8h"]
 [ext_resource type="Resource" uid="uid://dfv8nht5j7suu" path="res://src/minigames/eco_valley_defense/data/Monster/OilBlob.tres" id="21_hesdu"]
 [ext_resource type="Resource" uid="uid://7lvngknu4inc" path="res://src/minigames/eco_valley_defense/data/Monster/SmogCloud.tres" id="22_nlpm7"]
-[ext_resource type="PackedScene" uid="uid://bac5cvytaynlj" path="res://src/debug_spawner.tscn" id="22_roqnt"]
+[ext_resource type="PackedScene" uid="uid://cd1r8x8od7iwm" path="res://src/global/ui/pause_menu.tscn" id="22_roqnt"]
 [ext_resource type="Resource" uid="uid://bywtlf6aycxfg" path="res://src/minigames/eco_valley_defense/data/Monster/OrganicCreature.tres" id="23_n7l4x"]
 [ext_resource type="Resource" uid="uid://de8ovefu0kj2v" path="res://src/minigames/eco_valley_defense/data/Monster/PlasticCreature.tres" id="24_3hi0b"]
 [ext_resource type="Script" uid="uid://4im3ky5r60xa" path="res://src/minigames/eco_valley_defense/data/waweManager/wawe_manager.gd" id="25_hesdu"]
@@ -164,12 +164,7 @@ offset_top = 81.0
 offset_right = 283.2
 offset_bottom = 129.0
 
-[node name="DebugSpawner" parent="UI" unique_id=630196079 instance=ExtResource("22_roqnt")]
-offset_left = 189.0
-offset_top = 260.0
-offset_right = 389.0
-offset_bottom = 727.0
-available_enemies = Array[ExtResource("20_i1y8h")]([ExtResource("21_hesdu"), ExtResource("26_nlpm7"), ExtResource("22_nlpm7"), ExtResource("24_3hi0b"), ExtResource("23_n7l4x")])
+[node name="PauseMenu" parent="UI" unique_id=1009582514 instance=ExtResource("22_roqnt")]
 
 [node name="WaveManager" type="Node" parent="." unique_id=2066566142]
 script = ExtResource("25_hesdu")
