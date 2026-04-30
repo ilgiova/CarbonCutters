@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ui757ulaqrkh"
-path="res://.godot/imported/cartello.png-e4f3b7850a0142471e8e9753e46a2643.ctex"
+uid="uid://bks0b3fm6utg4"
+path="res://.godot/imported/cartello_aperto.png-72f4136458db0aad20c791f9ef0b35be.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/world/cartello.png"
-dest_files=["res://.godot/imported/cartello.png-e4f3b7850a0142471e8e9753e46a2643.ctex"]
+source_file="res://assets/world/signals/cartello_aperto.png"
+dest_files=["res://.godot/imported/cartello_aperto.png-72f4136458db0aad20c791f9ef0b35be.ctex"]
 
 [params]
 

@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://c63klbf2gu6v0"]
+
+[ext_resource type="Script" uid="uid://diihv2e4qpmag" path="res://src/world/ui/cartelli.gd" id="1_im2v1"]
+[ext_resource type="Texture2D" uid="uid://enrnfollta1l" path="res://assets/ui/E.png" id="4_jlmb0"]
+[ext_resource type="Texture2D" uid="uid://bks0b3fm6utg4" path="res://assets/world/signals/cartello_aperto.png" id="5_qmqyb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r11r5"]
+radius = 67.74216
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nld6"]
+atlas = ExtResource("4_jlmb0")
+region = Rect2(0, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kuclc"]
+atlas = ExtResource("4_jlmb0")
+region = Rect2(19, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukjld"]
+atlas = ExtResource("4_jlmb0")
+region = Rect2(38, 0, 19, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cwevt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nld6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kuclc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukjld")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ZonaInterattivaStatuaLiberta" type="Node2D" unique_id=213191148 node_paths=PackedStringArray("popup_ui")]
+script = ExtResource("1_im2v1")
+popup_ui = NodePath("popui")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1577869636]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=345838062]
+position = Vector2(2828, 580)
+shape = SubResource("CircleShape2D_r11r5")
+
+[node name="IconKeyboard" type="AnimatedSprite2D" parent="." unique_id=1467620006]
+z_index = 1
+position = Vector2(2827, 486)
+scale = Vector2(1.3881578, 1.3881578)
+sprite_frames = SubResource("SpriteFrames_cwevt")
+
+[node name="popui" type="CanvasLayer" parent="." unique_id=940452539]
+
+[node name="TextureRect" type="TextureRect" parent="popui" unique_id=1123441378]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -673.5
+offset_top = -439.0
+offset_right = 673.5
+offset_bottom = 439.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("5_qmqyb")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="popui" unique_id=1662369656]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -494.0
+offset_top = -167.25
+offset_right = 494.0
+offset_bottom = 167.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.4, 0.20746668, 0.09600001, 1)
+theme_override_font_sizes/font_size = 49
+autowrap_mode = 3
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
