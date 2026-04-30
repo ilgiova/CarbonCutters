@@ -120,6 +120,36 @@ animations = [{
 "speed": 3.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cxjfr"]
+size = Vector2(54, 81)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf2c7"]
+size = Vector2(52, 73)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qvep6"]
+size = Vector2(1056.8298, 1482.718)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_r11r5"]
+radius = 943.375
+height = 1886.75
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rbotn"]
+size = Vector2(1311.5703, 1781.0474)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nk0wg"]
+radius = 542.0469
+height = 2811.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dyneg"]
+size = Vector2(1347.5729, 1872.3252)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mtjlw"]
+radius = 356.91406
+height = 1835.5508
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_etdq2"]
+size = Vector2(985.17773, 1245.79)
+
 [node name="MainLobby" type="Node2D" unique_id=17929028 node_paths=PackedStringArray("groundLayer")]
 script = ExtResource("1_mo1wk")
 groundLayer = NodePath("Ground")
@@ -336,65 +366,123 @@ sprite_frames = SubResource("SpriteFrames_0rc2l")
 autoplay = "default"
 frame_progress = 0.20887989
 
-[node name="Statualiberta" type="Sprite2D" parent="." unique_id=1817127744]
+[node name="StaticBody2DStatuaLiberta" type="StaticBody2D" parent="." unique_id=1754139298]
+
+[node name="CartelloLiberta" type="Sprite2D" parent="StaticBody2DStatuaLiberta" unique_id=355663937]
+position = Vector2(2828, 543)
+scale = Vector2(0.048445046, 0.048445046)
+texture = ExtResource("31_l1it6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2DStatuaLiberta" unique_id=157643960]
+position = Vector2(2829, 557.5)
+shape = SubResource("RectangleShape2D_cxjfr")
+
+[node name="Statualiberta" type="Sprite2D" parent="StaticBody2DStatuaLiberta" unique_id=1817127744]
 position = Vector2(3010, 301)
 scale = Vector2(0.26737964, 0.26737967)
 texture = ExtResource("30_6xy4k")
 
-[node name="Cartello" type="Sprite2D" parent="." unique_id=355663937]
-position = Vector2(2828, 542.9999)
-scale = Vector2(0.048445046, 0.048445046)
-texture = ExtResource("31_l1it6")
+[node name="StaticBody2DCioccolato" type="StaticBody2D" parent="." unique_id=2016466537]
 
-[node name="Statuacioccolato" type="Sprite2D" parent="." unique_id=1337393626]
-position = Vector2(2075, -265)
-scale = Vector2(0.23663072, 0.23663074)
-texture = ExtResource("32_w2bxj")
-
-[node name="Cartello2" type="Sprite2D" parent="." unique_id=1122687544]
+[node name="CartelloCioccolato" type="Sprite2D" parent="StaticBody2DCioccolato" unique_id=1122687544]
 position = Vector2(2090, 33.000008)
 scale = Vector2(0.050239235, 0.050239235)
 texture = ExtResource("31_l1it6")
 
-[node name="Cappello" type="Sprite2D" parent="." unique_id=533020588]
-position = Vector2(556, 576)
-scale = Vector2(0.06184904, 0.061849035)
-texture = ExtResource("33_cxjfr")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2DCioccolato" unique_id=1468551215]
+position = Vector2(2091, 43.5)
+shape = SubResource("RectangleShape2D_yf2c7")
 
-[node name="Cartello3" type="Sprite2D" parent="." unique_id=473662368]
+[node name="Statuacioccolato" type="Sprite2D" parent="StaticBody2DCioccolato" unique_id=1337393626]
+position = Vector2(2075, -265)
+scale = Vector2(0.23663072, 0.23663074)
+texture = ExtResource("32_w2bxj")
+
+[node name="StaticBody2DCappello" type="StaticBody2D" parent="." unique_id=1847348787]
 position = Vector2(695, 604)
 scale = Vector2(0.063397124, 0.063397124)
+
+[node name="Cappello" type="Sprite2D" parent="StaticBody2DCappello" unique_id=533020588]
+position = Vector2(-2192.5303, -441.6621)
+scale = Vector2(0.9755813, 0.9755812)
+texture = ExtResource("33_cxjfr")
+
+[node name="CartelloCappello" type="Sprite2D" parent="StaticBody2DCappello" unique_id=473662368]
+scale = Vector2(1.0000004, 1.0000004)
 texture = ExtResource("31_l1it6")
 
-[node name="Coltellinosvizzero" type="Sprite2D" parent="." unique_id=1894605312]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2DCappello" unique_id=329557053]
+position = Vector2(7.8867188, 173.50684)
+scale = Vector2(1.000001, 1.000001)
+shape = SubResource("RectangleShape2D_qvep6")
+
+[node name="StaticBody2DColtellino" type="StaticBody2D" parent="." unique_id=2066945247]
 position = Vector2(4394, 344)
 scale = Vector2(0.048990868, 0.04899087)
+
+[node name="CartelloColtellino" type="Sprite2D" parent="StaticBody2DColtellino" unique_id=1878190928]
+position = Vector2(1183.9063, 1449.2505)
+scale = Vector2(1.2452298, 1.2452298)
+texture = ExtResource("31_l1it6")
+
+[node name="Coltellinosvizzero" type="Sprite2D" parent="StaticBody2DColtellino" unique_id=1894605312]
+scale = Vector2(0.9999999, 1)
 texture = ExtResource("34_yf2c7")
 
-[node name="Cartello4" type="Sprite2D" parent="." unique_id=1878190928]
-position = Vector2(4452.0005, 415.00006)
-scale = Vector2(0.061004896, 0.061004896)
-texture = ExtResource("31_l1it6")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2DColtellino" unique_id=1162413898]
+position = Vector2(20.414063, 61.23584)
+rotation = 0.87091935
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CapsuleShape2D_r11r5")
 
-[node name="Orologio" type="Sprite2D" parent="." unique_id=709156201]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2DColtellino" unique_id=1828052842]
+position = Vector2(1201.7031, 1660.9712)
+scale = Vector2(0.9999998, 1)
+shape = SubResource("RectangleShape2D_rbotn")
+
+[node name="StaticBody2DOrologio" type="StaticBody2D" parent="." unique_id=9100281]
 position = Vector2(117.99999, 1723)
 scale = Vector2(0.043945484, 0.043945495)
+
+[node name="CartelloOrologio" type="Sprite2D" parent="StaticBody2DOrologio" unique_id=1998154190]
+position = Vector2(1029.685, -1621.3281)
+scale = Vector2(1.2974606, 1.2974602)
+texture = ExtResource("31_l1it6")
+
+[node name="Orologio" type="Sprite2D" parent="StaticBody2DOrologio" unique_id=709156201]
+scale = Vector2(0.9999998, 0.9999998)
 texture = ExtResource("35_qvep6")
 
-[node name="Cartello5" type="Sprite2D" parent="." unique_id=1998154190]
-position = Vector2(163.25, 1651.75)
-scale = Vector2(0.057017542, 0.057017542)
-texture = ExtResource("31_l1it6")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2DOrologio" unique_id=1347869995]
+position = Vector2(0.00024414063, 159.28906)
+rotation = 1.0471976
+scale = Vector2(0.9999999, 0.99999994)
+shape = SubResource("CapsuleShape2D_nk0wg")
 
-[node name="Cartelloroute" type="Sprite2D" parent="." unique_id=173922424]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2DOrologio" unique_id=1224775502]
+position = Vector2(1032.874, -1414.0273)
+scale = Vector2(0.99999946, 0.9999996)
+shape = SubResource("RectangleShape2D_dyneg")
+
+[node name="StaticBody2DRoute" type="StaticBody2D" parent="." unique_id=1153026778]
 position = Vector2(2965.2087, 1452.2501)
 scale = Vector2(0.07845061, 0.07845061)
+
+[node name="Segnale" type="Sprite2D" parent="StaticBody2DRoute" unique_id=173922424]
 texture = ExtResource("36_r11r5")
 
-[node name="Cartello6" type="Sprite2D" parent="." unique_id=1563639765]
-position = Vector2(2879, 1353)
-scale = Vector2(0.07256789, 0.07256789)
+[node name="CartelloRoute" type="Sprite2D" parent="StaticBody2DRoute" unique_id=1563639765]
+position = Vector2(-1098.8984, -1265.1289)
+scale = Vector2(0.92501366, 0.92501366)
 texture = ExtResource("31_l1it6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2DRoute" unique_id=1663836818]
+position = Vector2(-2.6640625, 149.77344)
+shape = SubResource("CapsuleShape2D_mtjlw")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2DRoute" unique_id=1840781069]
+position = Vector2(-1081.6172, -1148.709)
+shape = SubResource("RectangleShape2D_etdq2")
 
 [editable path="Y-sorted/ZonaInterattiva"]
 [editable path="Y-sorted/ZonaInterattiva2"]
