@@ -1,83 +1,153 @@
 [
   {
-	"text": "Quanto tempo impiega una bottiglia di plastica a decomporsi?",
+	"text": "In che modo è cambiato il consumo di energia finale pro capite in Svizzera dal 2000 ad oggi?",
 	"answers": [
-	  "1 giorno",
-	  "1 anno",
-	  "500 anni",
-      "1000 anni"
+	  "È raddoppiato",
+	  "È rimasto costante",
+	  "È diminuito di oltre il 15% grazie all'efficienza",
+      "È triplicato"
 	],
 	"correct_index": 2
   },
   {
-	"text": "In quale bidone dovresti buttare le bottiglie di vetro?",
+	"text": "Negli Stati Uniti, quale fonte di energia ha storicamente superato il carbone per la prima volta nel 2022 nella produzione di energia elettrica?",
 	"answers": [
-	  "Riciclaggio vetro",
-	  "Rifiuti generici",
-	  "Compost",
-      "Rifiuti pericolosi"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Quante volte può essere riciclato l'alluminio?",
-	"answers": [
-	  "Solo una volta",
-	  "Fino a 5 volte",
-	  "Fino a 10 volte",
-      "Infinite volte"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Quale percentuale di una bottiglia di vetro riciclata viene usata per crearne una nuova?",
-	"answers": [
-	  "10%",
-	  "100%",
-	  "40%",
-      "70%"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Quale di questi oggetti NON dovrebbe andare nel bidone del riciclaggio?",
-	"answers": [
-	  "Scatola di cartone",
-	  "Bottiglia di plastica",
-	  "Scatola della pizza unta",
-      "Giornale"
+	  "Energia Solare",
+	  "Energia Nucleare",
+	  "Le fonti rinnovabili (nel loro insieme)",
+      "Energia Geotermica"
 	],
 	"correct_index": 2
   },
   {
-	"text": "Quanto tempo impiega una bottiglia di vetro a decomporsi in discarica?",
+	"text": "Quale percentuale della produzione di energia elettrica interna della Svizzera è coperta dalle centrali nucleari?",
 	"answers": [
-	  "1 milione di anni",
-	  "10 anni",
-	  "100 anni",
-      "500 anni"
+	  "Meno del 5%",
+	  "Circa il 30%",
+	  "Oltre il 70%",
+      "Esattamente il 50%"
 	],
-	"correct_index": 0
+	"correct_index": 1
   },
   {
-	"text": "Cosa indica il simbolo del riciclaggio con un numero sulla plastica?",
+	"text": "Quale stato degli Stati Uniti è il leader assoluto per capacità installata di energia solare?",
 	"answers": [
-	  "Il prezzo del prodotto",
-	  "Quante volte è stata riciclata",
-	  "Il peso dell'oggetto",
-      "Il tipo di resina plastica"
+	  "Texas",
+	  "Florida",
+	  "California",
+      "Arizona"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "In Svizzera, quasi il 100% di quale di queste fonti energetiche deve essere importato dall'estero?",
+	"answers": [
+	  "Energia Idroelettrica",
+	  "Combustibili fossili (petrolio e gas naturale)",
+	  "Energia Eolica",
+      "Legna da ardere"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Quale settore economico consuma la quota maggiore di energia primaria totale negli Stati Uniti?",
+	"answers": [
+	  "Settore residenziale",
+	  "Settore commerciale",
+	  "Settore agricolo",
+      "Settore dei trasporti"
 	],
 	"correct_index": 3
   },
   {
-	"text": "Quale materiale impiega più tempo a decomporsi?",
+	"text": "Qual è il sistema di riscaldamento attualmente più installato nelle nuove abitazioni in Svizzera per ridurre l'impronta di carbonio?",
 	"answers": [
-	  "Carta",
-	  "Vetro",
-	  "Cotone",
-      "Buccia di banana"
+	  "Caldaie a gasolio",
+	  "Stufe a carbone",
+	  "Pompe di calore elettriche",
+      "Caldaie a gas naturale"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Gli Stati Uniti sono diventati uno dei maggiori esportatori mondiali di quale risorsa energetica grazie alle tecniche di estrazione non convenzionali (fracking)?",
+	"answers": [
+	  "Uranio arricchito",
+	  "Gas naturale liquefatto (GNL)",
+	  "Biocarburanti avanzati",
+      "Idrogeno verde"
 	],
 	"correct_index": 1
+  },
+  {
+	"text": "Da cosa è composta principalmente la produzione idroelettrica svizzera?",
+	"answers": [
+	  "Impianti che sfruttano le maree oceaniche",
+	  "Centrali ad acqua fluente (sui fiumi) e centrali ad accumulazione (dighe)",
+	  "Esclusivamente micro-idroelettrico cittadino",
+      "Solo dighe sotterranee"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Quanti reattori nucleari commerciali sono circa attivi negli Stati Uniti, rendendoli il maggior produttore mondiale di energia nucleare?",
+	"answers": [
+	  "Circa 20",
+	  "Circa 50",
+	  "Oltre 90",
+      "Più di 200"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "Sulla bolletta elettrica svizzera è presente il 'supplemento rete' (Netzzuschlag). A cosa serve principalmente?",
+	"answers": [
+	  "A pagare le multe per le emissioni di CO2",
+	  "A finanziare lo sviluppo delle energie rinnovabili e l'efficienza",
+	  "A importare petrolio dai paesi esteri",
+      "A mantenere in funzione le vecchie centrali a gas"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "In quale regione degli Stati Uniti si concentra la stragrande maggioranza della produzione di energia idroelettrica del paese?",
+	"answers": [
+	  "Nord-Ovest (es. stato di Washington, Oregon)",
+	  "Sud-Est (es. Florida, Georgia)",
+	  "Midwest (es. Kansas, Iowa)",
+      "Nord-Est (es. New York, Maine)"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Quale evento internazionale ha spinto il governo svizzero a decidere nel 2011 di abbandonare progressivamente l'energia nucleare?",
+	"answers": [
+	  "L'incidente di Chernobyl",
+	  "Il disastro di Fukushima",
+	  "La crisi petrolifera del 1973",
+      "La firma dell'Accordo di Parigi"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Da quante grandi reti elettriche principali (Interconnections) è composta la rete degli Stati Uniti contigui?",
+	"answers": [
+	  "Una rete unica completamente integrata",
+	  "Tre reti principali (Orientale, Occidentale e Texas)",
+	  "Cinquanta reti, una per ogni stato, senza scambi",
+      "Dieci reti regionali totalmente scollegate tra loro"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Sia in Svizzera che in America, la transizione energetica punta fortemente sull'elettrificazione di quale settore storicamente dominato dal petrolio?",
+	"answers": [
+	  "Illuminazione pubblica",
+	  "Settore aerospaziale",
+	  "Mobilità e traffico stradale",
+      "Agricoltura verticale"
+	],
+	"correct_index": 2
   },
   {
 	"text": "Quanta energia si risparmia riciclando una lattina di alluminio rispetto a produrne una nuova?",
@@ -86,126 +156,6 @@
 	  "25%",
 	  "95%",
       "50%"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Cosa dovresti fare con i sacchetti di plastica?",
-	"answers": [
-	  "Portarli ai punti di raccolta del supermercato",
-	  "Metterli nel bidone del riciclo",
-	  "Buttarli nei rifiuti generici",
-      "Bruciarli"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Quale di questi materiali può solitamente essere riciclato molte volte senza perdere qualità?",
-	"answers": [
-	  "Scarti alimentari",
-	  "Polistirolo",
-	  "Fazzoletti usati",
-      "Vetro"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Da cosa è fatto il compost?",
-	"answers": [
-	  "Vetro e lattine",
-	  "Rifiuti organici come avanzi di cibo e foglie",
-	  "Imballaggi di plastica",
-      "Dispositivi elettronici"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Quale oggetto appartiene ai rifiuti organici?",
-	"answers": [
-	  "Forchetta di plastica",
-	  "Barattolo di vetro",
-	  "Buccia di banana",
-      "Batteria"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Perché le batterie non dovrebbero essere buttate nei normali bidoni?",
-	"answers": [
-	  "Perché possono rilasciare sostanze chimiche dannose",
-	  "Perché sono troppo pesanti",
-	  "Perché si sciolgono velocemente",
-      "Perché sono fatte di carta"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Qual è l'obiettivo principale del riciclo?",
-	"answers": [
-	  "Rendere i rifiuti più pesanti",
-	  "Bruciare più spazzatura",
-	  "Aumentare la dimensione delle discariche",
-      "Ridurre i rifiuti e riutilizzare i materiali"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Quale oggetto è solitamente riciclabile?",
-	"answers": [
-	  "Tovagliolo sporco",
-	  "Cartone pulito",
-	  "Fazzoletto usato",
-      "Tazza di ceramica rotta"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Cosa dovresti fare prima di riciclare un contenitore per cibo?",
-	"answers": [
-	  "Pitturarlo",
-	  "Riempirlo di carta",
-	  "Sciacquarlo se necessario",
-      "Romperlo in pezzi"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Quale oggetto è un rifiuto elettronico?",
-	"answers": [
-	  "Vecchio telefono",
-	  "Torsolo di mela",
-	  "Bottiglia di vetro",
-      "Tubo di cartone"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Cosa significa 'ridurre' nella frase 'ridurre, riutilizzare, riciclare'?",
-	"answers": [
-	  "Usare più plastica",
-	  "Creare più rifiuti",
-	  "Buttare via le cose più in fretta",
-      "Usare meno risorse e produrre meno rifiuti"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Cosa significa 'riutilizzare'?",
-	"answers": [
-	  "Bruciare oggetti vecchi",
-	  "Usare di nuovo un oggetto invece di buttarlo",
-	  "Mettere tutto nel bidone del riciclo",
-      "Comprare solo prodotti di metallo"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Quale oggetto dovrebbe essere portato in un punto di raccolta speciale?",
-	"answers": [
-	  "Giornale",
-	  "Buccia di banana",
-	  "Batteria",
-      "Scatola di cartone"
 	],
 	"correct_index": 2
   },
@@ -220,373 +170,103 @@
 	"correct_index": 0
   },
   {
-	"text": "Quale oggetto è fatto di carta?",
+	"text": "Qual è attualmente la fonte di energia rinnovabile più utilizzata a livello globale per la produzione di elettricità?",
 	"answers": [
-	  "Tappo di bottiglia",
-	  "Foglio di alluminio",
-	  "Bicchiere di vetro",
-      "Giornale"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Cosa dovresti fare con una vecchia lampadina?",
-	"answers": [
-	  "Buttarla nel compost",
-	  "Portarla al corretto punto di smaltimento",
-	  "Buttarla in un fiume",
-      "Buttarla con la carta"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Quale di questi non è solitamente accettato con la raccolta della carta?",
-	"answers": [
-	  "Giornale pulito",
-	  "Carta da ufficio pulita",
-	  "Carta unta",
-      "Cartone"
+	  "Energia Solare",
+	  "Energia Eolica",
+	  "Energia Idroelettrica",
+      "Geotermia"
 	],
 	"correct_index": 2
   },
   {
-	"text": "Perché i materiali riciclabili dovrebbero essere separati correttamente?",
+	"text": "Quale nazione è attualmente il maggiore produttore e consumatore mondiale di energia solare ed eolica?",
 	"answers": [
-	  "Per rendere il riciclo più facile ed efficace",
-	  "Per riempire di più i bidoni",
-	  "Per fermare tutta la raccolta rifiuti",
-      "Per aumentare l'inquinamento"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Cosa può succedere se il riciclo è contaminato da residui di cibo?",
-	"answers": [
-	  "Diventa più prezioso",
-	  "Si trasforma in metallo",
-	  "Scompare automaticamente",
-      "Può diventare più difficile da riciclare"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Quale di queste è la scelta migliore per l'ambiente?",
-	"answers": [
-	  "Comprare plastica usa e getta ogni giorno",
-	  "Usare una bottiglia riutilizzabile",
-	  "Buttare lattine nella natura",
-      "Bruciare carta a casa"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Quale materiale viene comunemente usato per produrre lattine?",
-	"answers": [
-	  "Legno",
-	  "Gomma",
-	  "Alluminio",
-      "Tessuto"
+	  "Stati Uniti",
+	  "Germania",
+	  "Cina",
+      "India"
 	],
 	"correct_index": 2
   },
   {
-	"text": "Cosa dovresti fare con gli scarti di cibo?",
+	"text": "Quale paese europeo è famoso per generare quasi il 100% della sua elettricità utilizzando un mix di energia geotermica e idroelettrica?",
 	"answers": [
-	  "Metterli nei rifiuti organici se disponibili",
-	  "Metterli con il vetro",
-	  "Metterli con le batterie",
-      "Metterli nella carta"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Perché è utile usare borse della spesa riutilizzabili?",
-	"answers": [
-	  "Aumentano i rifiuti in discarica",
-	  "Non possono contenere la spesa",
-	  "Si buttano dopo un solo uso",
-      "Riducono i rifiuti di plastica"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Cos'è una discarica?",
-	"answers": [
-	  "Una fabbrica di riciclo",
-	  "Un luogo dove i rifiuti vengono sepolti",
-	  "Un bidone per compost da giardino",
-      "Un negozio di oggetti riutilizzabili"
+	  "Norvegia",
+	  "Islanda",
+	  "Svezia",
+      "Danimarca"
 	],
 	"correct_index": 1
   },
   {
-	"text": "Quale di queste è una buona abitudine di riciclo?",
+	"text": "Nel contesto del consumo energetico globale, in quale di questi settori le energie rinnovabili fanno più fatica ad affermarsi rapidamente?",
 	"answers": [
-	  "Buttare tutto insieme",
-	  "Lasciare rifiuti per terra",
-	  "Separare i materiali per tipo",
-      "Bruciare bottiglie di plastica"
+	  "Illuminazione pubblica",
+	  "Produzione di elettricità domestica",
+	  "Settore dei trasporti pesanti e aviazione",
+      "Riscaldamento di piccoli edifici"
 	],
 	"correct_index": 2
   },
   {
-	"text": "Cosa dovresti fare con un caricatore rotto?",
+	"text": "Cosa si intende esattamente per 'biomassa' quando si parla di consumo di energia rinnovabile?",
 	"answers": [
-	  "Portarlo nella raccolta dei rifiuti elettronici",
-	  "Metterlo con la carta",
-	  "Metterlo nel compost",
-      "Buttarlo nel vetro"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Quale oggetto è più adatto al riutilizzo?",
-	"answers": [
-	  "Fazzoletto usato",
-	  "Batteria rotta",
-	  "Foglio di alluminio sporco",
-      "Barattolo di vetro"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Cosa aiuta a ridurre il riciclo?",
-	"answers": [
-	  "La crescita degli alberi",
-	  "L'inquinamento",
-	  "La pioggia",
-      "La luce del sole"
+	  "Energia estratta dalle onde del mare",
+	  "Materiale organico vegetale o animale bruciato o trasformato per produrre energia",
+	  "Pannelli solari biodegradabili",
+      "Energia prodotta dai muscoli umani"
 	],
 	"correct_index": 1
   },
   {
-	"text": "Quale oggetto solitamente NON è riciclabile nei normali bidoni domestici?",
+	"text": "Che cosa rappresenta il concetto di 'intermittenza' che spesso limita l'uso esclusivo di alcune energie rinnovabili sulla rete?",
 	"answers": [
-	  "Bottiglia di plastica",
-	  "Bottiglia di vetro",
-	  "Piatto di ceramica",
-      "Giornale"
+	  "Il fatto che i pannelli solari si rompono spesso",
+	  "Il calo di tensione fisiologico nelle vecchie reti elettriche",
+	  "L'impossibilità di produrre energia quando non c'è sole o vento",
+      "La necessità di spegnere i mulini a vento di notte"
 	],
 	"correct_index": 2
   },
   {
-	"text": "Perché l'alluminio è prezioso nel riciclo?",
+	"text": "Quale continente, grazie all'uso massiccio dell'idroelettrico (soprattutto in nazioni come il Brasile), ha la più alta percentuale di energia elettrica prodotta da fonti rinnovabili?",
 	"answers": [
-	  "Può essere riciclato ancora e ancora",
-	  "Si dissolve nell'acqua",
-	  "Cresce naturalmente nei bidoni",
-      "Non può essere riutilizzato"
+	  "America Centrale e del Sud",
+	  "Europa",
+	  "Asia",
+      "Africa"
 	],
 	"correct_index": 0
   },
   {
-	"text": "Cosa dovresti fare con vestiti vecchi ma ancora in buone condizioni?",
+	"text": "A livello globale, le energie rinnovabili moderne (escludendo la combustione tradizionale di legna per cucinare) coprono approssimativamente quale percentuale del consumo totale di energia primaria?",
 	"answers": [
-	  "Bruciarli",
-	  "Buttarli nel vetro",
-	  "Metterli con le batterie",
-      "Donarli o riutilizzarli"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Quale di questi è un oggetto riutilizzabile?",
-	"answers": [
-	  "Cannuccia usa e getta",
-	  "Bottiglia d'acqua in metallo",
-	  "Bicchiere monouso",
-      "Involucro di plastica"
+	  "Circa il 2%",
+	  "Circa il 15-20%",
+	  "Circa il 45%",
+      "Oltre il 70%"
 	],
 	"correct_index": 1
   },
   {
-	"text": "Qual è un vantaggio del compostaggio?",
+	"text": "Cosa significa 'grid parity' (parità di rete) nel mercato delle energie rinnovabili?",
 	"answers": [
-	  "Crea plastica",
-	  "Rende le batterie più sicure",
-	  "Trasforma i rifiuti organici in materiale utile per il suolo",
-      "Sostituisce il riciclo del vetro"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Quale oggetto dovrebbe essere svuotato prima di essere riciclato quando possibile?",
-	"answers": [
-	  "Una bottiglia per bevande",
-	  "Una pietra",
-	  "Una batteria",
-      "Una piastrella di ceramica"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Perché dovresti evitare i prodotti usa e getta quando possibile?",
-	"answers": [
-	  "Sono sempre gratuiti",
-	  "Durano per sempre",
-	  "Migliorano la qualità delle discariche",
-      "Spesso producono più rifiuti"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Cosa migliora una corretta separazione dei rifiuti?",
-	"answers": [
-	  "L'inquinamento degli oceani",
-	  "L'efficienza del riciclo",
-	  "Il cattivo odore dei rifiuti",
-      "Il consumo di carburante in casa"
+	  "Quando una rete elettrica copre l'intero globo terrestre",
+	  "Quando l'energia rinnovabile costa uguale o meno dell'elettricità prodotta da fonti fossili tradizionali",
+	  "Quando i governi vietano legalmente l'uso del carbone",
+      "Quando l'energia solare e quella eolica producono esattamente la stessa quantità di elettricità"
 	],
 	"correct_index": 1
   },
   {
-	"text": "Quale bidone è solitamente corretto per i giornali?",
+	"text": "Quale tecnologia di supporto è considerata fondamentale per aumentare in modo massiccio il consumo di energia solare ed eolica nei prossimi decenni?",
 	"answers": [
-	  "Rifiuti organici",
-	  "Raccolta vetro",
-	  "Raccolta carta",
-      "Raccolta batterie"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Quale oggetto non dovrebbe mai essere buttato nella natura?",
-	"answers": [
-	  "Tutti i rifiuti",
-	  "Solo la carta",
-	  "Solo gli scarti di cibo",
-      "Solo le foglie"
+	  "Sistemi di accumulo ad alta capacità (es. grandi reti di batterie)",
+	  "Nuovi tipi di centrali a carbone ultra-filtrato",
+	  "L'uso di cavi d'oro puro per ridurre la dispersione termica",
+      "La costruzione di reattori nucleari spaziali"
 	],
 	"correct_index": 0
-  },
-  {
-	"text": "In cosa può trasformarsi la carta riciclata?",
-	"answers": [
-	  "Bottiglie di vetro",
-	  "Lattine di metallo",
-	  "Solo sacchetti di plastica",
-      "Nuovi prodotti di carta"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Quale materiale è solitamente trasparente e completamente riciclabile?",
-	"answers": [
-	  "Gomma",
-	  "Vetro",
-	  "Tessuto",
-      "Schiuma"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Cosa dovresti controllare prima di riciclare un oggetto?",
-	"answers": [
-	  "Solo il suo colore",
-	  "Il suo prezzo",
-	  "Le regole locali di riciclo",
-      "Solo il suo marchio"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Quale oggetto è meglio usare al posto delle posate usa e getta?",
-	"answers": [
-	  "Posate di metallo riutilizzabili",
-	  "Forchette di plastica monouso",
-	  "Cucchiai di polistirolo",
-      "Involucri di plastica"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Cosa succede quando riutilizziamo un oggetto?",
-	"answers": [
-	  "Lo trasformiamo in carburante",
-	  "Lo distruggiamo più in fretta",
-	  "Lo facciamo sparire",
-      "Ne prolunghiamo la vita"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Quale di questi è un esempio di riduzione dei rifiuti?",
-	"answers": [
-	  "Buttare oggetti ancora utilizzabili",
-	  "Comprare solo quello di cui hai bisogno",
-	  "Usare più imballaggi",
-      "Comprare più bicchieri usa e getta"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Quale rifiuto domestico spesso appartiene alla raccolta dei rifiuti pericolosi?",
-	"answers": [
-	  "Cartone",
-	  "Buccia di mela",
-	  "Vernice",
-      "Rivista"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Perché i dispositivi elettronici rotti dovrebbero essere riciclati correttamente?",
-	"answers": [
-	  "Contengono materiali preziosi e talvolta dannosi",
-	  "Sono fatti solo di carta",
-	  "Appartengono ai rifiuti organici",
-      "Scompaiono velocemente in discarica"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Cosa è meglio che comprare acqua in bottiglia ogni giorno?",
-	"answers": [
-	  "Buttare bottiglie per terra",
-	  "Bruciare bottiglie di plastica",
-	  "Comprare più sacchetti di plastica",
-      "Usare una bottiglia riutilizzabile"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Qual è la scelta migliore per portare il pranzo?",
-	"answers": [
-	  "Un vassoio usa e getta ogni giorno",
-	  "Un contenitore riutilizzabile",
-	  "Solo pellicola di plastica",
-      "Un barattolo di vetro rotto"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Perché i bidoni del riciclo dovrebbero essere usati correttamente?",
-	"answers": [
-	  "Per rendere la separazione più difficile",
-	  "Per fermare gli addetti alla raccolta",
-	  "Per aiutare i materiali a essere lavorati bene",
-      "Per mescolare tutti i materiali"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Che tipo di rifiuto è una buccia di frutta?",
-	"answers": [
-	  "Rifiuto organico",
-	  "Rifiuto elettronico",
-	  "Rifiuto di vetro",
-      "Rifiuto metallico"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Quale oggetto dovrebbe essere donato invece di essere buttato via se funziona ancora?",
-	"answers": [
-	  "Una buccia di banana",
-	  "Una lampadina rotta",
-	  "Una batteria che perde",
-      "Un tostapane funzionante"
-	],
-	"correct_index": 3
   }
 ]

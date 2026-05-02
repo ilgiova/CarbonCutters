@@ -1,86 +1,156 @@
 [
   {
-	"text": "How long does it take for a plastic bottle to decompose?",
+	"text": "How has the final energy consumption per capita in Switzerland changed from 2000 to today?",
 	"answers": [
-	  "1 day",
-	  "1 year",
-	  "500 years",
-      "1000 years"
+	  "It has doubled",
+	  "It has remained constant",
+	  "It has decreased by more than 15% thanks to efficiency",
+      "It has tripled"
 	],
 	"correct_index": 2
   },
   {
-	"text": "Which bin should you use to recycle glass bottles?",
+	"text": "In the United States, which energy source historically surpassed coal for the first time in 2022 in electricity generation?",
 	"answers": [
-	  "Recycling (blue/green)",
-	  "General waste (black)",
-	  "Compost (brown)",
-      "Hazardous waste"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "How many times can aluminium be recycled?",
-	"answers": [
-	  "Only once",
-	  "Up to 5 times",
-	  "Up to 10 times",
-      "Indefinitely"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "What percentage of a recycled glass bottle is used to make a new one?",
-	"answers": [
-	  "10%",
-	  "100%",
-	  "40%",
-      "70%"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Which of these items should NOT go in the recycling bin?",
-	"answers": [
-	  "Cardboard box",
-	  "Plastic bottle",
-	  "Greasy pizza box",
-      "Newspaper"
+	  "Solar Energy",
+	  "Nuclear Energy",
+	  "Renewable sources (collectively)",
+      "Geothermal Energy"
 	],
 	"correct_index": 2
   },
   {
-	"text": "How long does it take for a glass bottle to decompose in a landfill?",
+	"text": "What percentage of Switzerland's domestic electricity generation is covered by nuclear power plants?",
 	"answers": [
-	  "1 million years",
-	  "10 years",
-	  "100 years",
-      "500 years"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "What does the recycling symbol with a number inside mean on plastic?",
-	"answers": [
-	  "The product price",
-	  "How many times it was recycled",
-	  "The weight of the item",
-      "The type of plastic resin"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Which material takes the longest to decompose?",
-	"answers": [
-	  "Paper",
-	  "Glass",
-	  "Cotton",
-      "Banana peel"
+	  "Less than 5%",
+	  "About 30%",
+	  "Over 70%",
+      "Exactly 50%"
 	],
 	"correct_index": 1
   },
   {
-	"text": "How much energy is saved by recycling one aluminium can compared to making a new one?",
+	"text": "Which US state is the absolute leader in installed solar energy capacity?",
+	"answers": [
+	  "Texas",
+	  "Florida",
+	  "California",
+      "Arizona"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "In Switzerland, nearly 100% of which of these energy sources must be imported from abroad?",
+	"answers": [
+	  "Hydroelectric Energy",
+	  "Fossil fuels (oil and natural gas)",
+	  "Wind Energy",
+      "Firewood"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Which economic sector consumes the largest share of total primary energy in the United States?",
+	"answers": [
+	  "Residential sector",
+	  "Commercial sector",
+	  "Agricultural sector",
+      "Transportation sector"
+	],
+	"correct_index": 3
+  },
+  {
+	"text": "What is currently the most frequently installed heating system in new homes in Switzerland to reduce the carbon footprint?",
+	"answers": [
+	  "Oil boilers",
+	  "Coal stoves",
+	  "Electric heat pumps",
+      "Natural gas boilers"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "The United States has become one of the world's largest exporters of which energy resource thanks to unconventional extraction techniques (fracking)?",
+	"answers": [
+	  "Enriched uranium",
+	  "Liquefied natural gas (LNG)",
+	  "Advanced biofuels",
+      "Green hydrogen"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "What is Swiss hydroelectric production mainly composed of?",
+	"answers": [
+	  "Plants harnessing ocean tides",
+	  "Run-of-river plants and accumulation plants (dams)",
+	  "Exclusively urban micro-hydroelectric",
+      "Only underground dams"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "Approximately how many commercial nuclear reactors are active in the United States, making it the world's largest producer of nuclear energy?",
+	"answers": [
+	  "About 20",
+	  "About 50",
+	  "Over 90",
+      "More than 200"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "The Swiss electricity bill includes a 'grid surcharge' (Netzzuschlag). What is its main purpose?",
+	"answers": [
+	  "To pay fines for CO2 emissions",
+	  "To finance the development of renewable energies and efficiency",
+	  "To import oil from foreign countries",
+      "To keep old gas plants running"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "In which region of the United States is the vast majority of the country's hydroelectric power production concentrated?",
+	"answers": [
+	  "Northwest (e.g., Washington state, Oregon)",
+	  "Southeast (e.g., Florida, Georgia)",
+	  "Midwest (e.g., Kansas, Iowa)",
+      "Northeast (e.g., New York, Maine)"
+	],
+	"correct_index": 0
+  },
+  {
+	"text": "Which international event pushed the Swiss government to decide in 2011 to gradually phase out nuclear energy?",
+	"answers": [
+	  "The Chernobyl accident",
+	  "The Fukushima disaster",
+	  "The 1973 oil crisis",
+      "The signing of the Paris Agreement"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "How many main power grids (Interconnections) make up the contiguous United States grid?",
+	"answers": [
+	  "A single fully integrated grid",
+	  "Three main grids (Eastern, Western, and Texas)",
+	  "Fifty grids, one for each state, with no exchanges",
+      "Ten totally disconnected regional grids"
+	],
+	"correct_index": 1
+  },
+  {
+	"text": "In both Switzerland and America, the energy transition focuses heavily on the 'electrification' of which sector historically dominated by oil?",
+	"answers": [
+	  "Public lighting",
+	  "Aerospace sector",
+	  "Mobility and road traffic",
+      "Vertical farming"
+	],
+	"correct_index": 2
+  },
+  {
+	"text": "How much energy is saved by recycling an aluminum can compared to producing a new one?",
 	"answers": [
 	  "5%",
 	  "25%",
@@ -90,503 +160,113 @@
 	"correct_index": 2
   },
   {
-	"text": "What should you do with plastic bags?",
+	"text": "Why is it important to recycle paper?",
 	"answers": [
-	  "Return them to supermarket collection points",
-	  "Put them in the recycling bin",
-	  "Throw them in general waste",
-      "Burn them"
+	  "Because it helps save trees and energy",
+	  "Because the paper becomes heavier",
+	  "Because it makes plastic cheaper",
+      "Because it stops glass production"
 	],
 	"correct_index": 0
   },
   {
-	"text": "Which of these materials can usually be recycled many times without losing quality?",
+	"text": "What is currently the most widely used renewable energy source globally for electricity generation?",
 	"answers": [
-	  "Food waste",
-	  "Styrofoam",
-	  "Used tissues",
-      "Glass"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "What is compost made from?",
-	"answers": [
-	  "Glass and cans",
-	  "Organic waste like food scraps and leaves",
-	  "Plastic packaging",
-      "Electronic devices"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Which item belongs in organic waste?",
-	"answers": [
-	  "Plastic fork",
-	  "Glass jar",
-	  "Banana peel",
-      "Battery"
+	  "Solar Energy",
+	  "Wind Energy",
+	  "Hydroelectric Energy",
+      "Geothermal"
 	],
 	"correct_index": 2
   },
   {
-	"text": "Why should batteries not be thrown in normal bins?",
+	"text": "Which nation is currently the world's largest producer and consumer of solar and wind energy?",
 	"answers": [
-	  "They can release harmful chemicals",
-	  "They are too heavy",
-	  "They melt quickly",
-      "They are made of paper"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "What is the main goal of recycling?",
-	"answers": [
-	  "To make waste heavier",
-	  "To burn more trash",
-	  "To increase landfill size",
-      "To reduce waste and reuse materials"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Which item is usually recyclable?",
-	"answers": [
-	  "Dirty napkin",
-	  "Clean cardboard",
-	  "Used tissue",
-      "Broken ceramic mug"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "What should you do before recycling a food container?",
-	"answers": [
-	  "Paint it",
-	  "Fill it with paper",
-	  "Rinse it if required",
-      "Break it into pieces"
+	  "United States",
+	  "Germany",
+	  "China",
+      "India"
 	],
 	"correct_index": 2
   },
   {
-	"text": "Which item is electronic waste?",
+	"text": "Which European country is famous for generating almost 100% of its electricity using a mix of geothermal and hydroelectric energy?",
 	"answers": [
-	  "Old phone",
-	  "Apple core",
-	  "Glass bottle",
-      "Cardboard tube"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "What does 'reduce' mean in the phrase 'reduce, reuse, recycle'?",
-	"answers": [
-	  "Use more plastic",
-	  "Create more waste",
-	  "Throw away old things faster",
-      "Use fewer resources and make less waste"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "What does 'reuse' mean?",
-	"answers": [
-	  "Burn old items",
-	  "Use an item again instead of throwing it away",
-	  "Put everything in the recycling bin",
-      "Buy only metal products"
+	  "Norway",
+	  "Iceland",
+	  "Sweden",
+      "Denmark"
 	],
 	"correct_index": 1
   },
   {
-	"text": "Which item should go to a special collection point?",
+	"text": "In the context of global energy consumption, in which of these sectors do renewable energies struggle the most to establish themselves rapidly?",
 	"answers": [
-	  "Newspaper",
-	  "Banana peel",
-	  "Battery",
-      "Cardboard box"
+	  "Public lighting",
+	  "Domestic electricity generation",
+	  "Heavy transport and aviation sector",
+      "Heating of small buildings"
 	],
 	"correct_index": 2
   },
   {
-	"text": "Why is recycling paper important?",
+	"text": "What exactly is meant by 'biomass' when discussing renewable energy consumption?",
 	"answers": [
-	  "It helps save trees and energy",
-	  "It makes paper heavier",
-	  "It makes plastic cheaper",
-      "It stops glass production"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Which item is made from paper?",
-	"answers": [
-	  "Bottle cap",
-	  "Aluminium foil",
-	  "Glass cup",
-      "Newspaper"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "What should you do with an old light bulb?",
-	"answers": [
-	  "Throw it in compost",
-	  "Take it to the correct disposal point",
-	  "Put it in a river",
-      "Put it with paper"
+	  "Energy extracted from ocean waves",
+	  "Plant or animal organic material burned or processed to produce energy",
+	  "Biodegradable solar panels",
+      "Energy produced by human muscles"
 	],
 	"correct_index": 1
   },
   {
-	"text": "Which of these is not usually accepted with paper recycling?",
+	"text": "What does the concept of 'intermittency' represent, which often limits the exclusive use of certain renewable energies on the grid?",
 	"answers": [
-	  "Clean newspaper",
-	  "Clean office paper",
-	  "Greasy paper",
-      "Cardboard"
+	  "The fact that solar panels break often",
+	  "The physiological voltage drop in old power grids",
+	  "The inability to produce energy when there is no sun or wind",
+      "The need to turn off windmills at night"
 	],
 	"correct_index": 2
   },
   {
-	"text": "Why should recyclable materials be sorted correctly?",
+	"text": "Which continent, thanks to the massive use of hydroelectricity (especially in nations like Brazil), has the highest percentage of electricity produced from renewable sources?",
 	"answers": [
-	  "To make recycling easier and more effective",
-	  "To make bins look fuller",
-	  "To stop all waste collection",
-      "To increase pollution"
+	  "Central and South America",
+	  "Europe",
+	  "Asia",
+      "Africa"
 	],
 	"correct_index": 0
   },
   {
-	"text": "What can happen if recycling is contaminated with food waste?",
+	"text": "Globally, modern renewable energies (excluding the traditional burning of wood for cooking) cover approximately what percentage of total primary energy consumption?",
 	"answers": [
-	  "It becomes more valuable",
-	  "It turns into metal",
-	  "It disappears automatically",
-      "It may become harder to recycle"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Which of these is best for the environment?",
-	"answers": [
-	  "Buying single-use plastic every day",
-	  "Using a reusable bottle",
-	  "Throwing cans in nature",
-      "Burning paper at home"
+	  "About 2%",
+	  "About 15-20%",
+	  "About 45%",
+      "Over 70%"
 	],
 	"correct_index": 1
   },
   {
-	"text": "Which material is commonly used to make cans?",
+	"text": "What does 'grid parity' mean in the renewable energy market?",
 	"answers": [
-	  "Wood",
-	  "Rubber",
-	  "Aluminium",
-      "Fabric"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "What should you do with food scraps?",
-	"answers": [
-	  "Put them in organic waste if available",
-	  "Put them with glass",
-	  "Put them with batteries",
-      "Put them in paper recycling"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Why is it useful to use reusable shopping bags?",
-	"answers": [
-	  "They increase landfill waste",
-	  "They cannot carry groceries",
-	  "They are thrown away after one use",
-      "They reduce plastic waste"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "What is a landfill?",
-	"answers": [
-	  "A recycling factory",
-	  "A place where waste is buried",
-	  "A compost bin for gardens only",
-      "A shop for reusable items"
+	  "When an electrical grid covers the entire globe",
+	  "When renewable energy costs the same or less than electricity produced from traditional fossil sources",
+	  "When governments legally ban the use of coal",
+      "When solar and wind energy produce exactly the same amount of electricity"
 	],
 	"correct_index": 1
   },
   {
-	"text": "Which one is a good recycling habit?",
+	"text": "Which supporting technology is considered essential to massively increase the consumption of solar and wind energy in the coming decades?",
 	"answers": [
-	  "Throwing everything together",
-	  "Leaving trash on the ground",
-	  "Separating materials by type",
-      "Burning plastic bottles"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "What should you do with a broken charger?",
-	"answers": [
-	  "Take it to e-waste collection",
-	  "Put it in paper recycling",
-	  "Put it in compost",
-      "Throw it into glass recycling"
+	  "High-capacity storage systems (e.g., large battery networks)",
+	  "New types of ultra-filtered coal plants",
+	  "The use of pure gold cables to reduce heat loss",
+      "The construction of space nuclear reactors"
 	],
 	"correct_index": 0
-  },
-  {
-	"text": "Which item is most suitable for reuse?",
-	"answers": [
-	  "Used tissue",
-	  "Broken battery",
-	  "Dirty foil",
-      "Glass jar"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "What does recycling help reduce?",
-	"answers": [
-	  "Tree growth",
-	  "Pollution",
-	  "Rain",
-      "Sunlight"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Which item is usually NOT recyclable in household bins?",
-	"answers": [
-	  "Plastic bottle",
-	  "Glass bottle",
-	  "Ceramic plate",
-      "Newspaper"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Why is aluminium valuable in recycling?",
-	"answers": [
-	  "It can be recycled again and again",
-	  "It dissolves in water",
-	  "It grows naturally in bins",
-      "It cannot be reused"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "What should you do with old clothes in good condition?",
-	"answers": [
-	  "Burn them",
-	  "Throw them in glass recycling",
-	  "Put them in battery disposal",
-      "Donate or reuse them"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Which of these is a reusable item?",
-	"answers": [
-	  "Single-use straw",
-	  "Metal water bottle",
-	  "Disposable cup",
-      "Plastic wrapper"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "What is one benefit of composting?",
-	"answers": [
-	  "It creates plastic",
-	  "It makes batteries safer",
-	  "It turns organic waste into useful soil material",
-      "It replaces glass recycling"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Which item should be emptied before recycling when possible?",
-	"answers": [
-	  "A drink bottle",
-	  "A stone",
-	  "A battery",
-      "A ceramic tile"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Why should you avoid single-use products when possible?",
-	"answers": [
-	  "They are always free",
-	  "They last forever",
-	  "They improve landfill quality",
-      "They often create more waste"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "What does correct waste sorting improve?",
-	"answers": [
-	  "Ocean pollution",
-	  "Recycling efficiency",
-	  "Trash smell",
-      "Fuel use in homes"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Which bin is usually correct for newspapers?",
-	"answers": [
-	  "Organic waste",
-	  "Glass recycling",
-	  "Paper recycling",
-      "Battery collection"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Which item should never be thrown in nature?",
-	"answers": [
-	  "All waste items",
-	  "Only paper",
-	  "Only food scraps",
-      "Only leaves"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "What can recycled paper become?",
-	"answers": [
-	  "Glass bottles",
-	  "Metal cans",
-	  "Plastic bags only",
-      "New paper products"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Which material is usually transparent and fully recyclable?",
-	"answers": [
-	  "Rubber",
-	  "Glass",
-	  "Fabric",
-      "Foam"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "What should you check before recycling an item?",
-	"answers": [
-	  "Its color only",
-	  "Its price",
-	  "Local recycling rules",
-      "Its brand name only"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Which item is best to use instead of disposable cutlery?",
-	"answers": [
-	  "Reusable metal cutlery",
-	  "Single-use plastic forks",
-	  "Foam spoons",
-      "Plastic wrappers"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "What happens when we reuse an object?",
-	"answers": [
-	  "We turn it into fuel",
-	  "We destroy it faster",
-	  "We make it disappear",
-      "We extend its life"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "Which of these is an example of reducing waste?",
-	"answers": [
-	  "Throwing away usable items",
-	  "Buying only what you need",
-	  "Using more packaging",
-      "Buying extra single-use cups"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Which household item often belongs to hazardous waste collection?",
-	"answers": [
-	  "Cardboard",
-	  "Apple peel",
-	  "Paint",
-      "Magazine"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "Why should broken electronics be recycled properly?",
-	"answers": [
-	  "They contain valuable and sometimes harmful materials",
-	  "They are made only of paper",
-	  "They belong in food waste",
-      "They disappear quickly in landfills"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Which is better than buying bottled water every day?",
-	"answers": [
-	  "Throwing bottles on the ground",
-	  "Burning plastic bottles",
-	  "Buying more plastic bags",
-      "Using a refillable bottle"
-	],
-	"correct_index": 3
-  },
-  {
-	"text": "What is the best choice for carrying lunch?",
-	"answers": [
-	  "A disposable foam tray every day",
-	  "A reusable container",
-	  "Loose plastic wrap only",
-      "A broken glass jar"
-	],
-	"correct_index": 1
-  },
-  {
-	"text": "Why should recycling bins be used correctly?",
-	"answers": [
-	  "To make sorting harder",
-	  "To stop collection workers",
-	  "To help materials get processed properly",
-      "To mix all materials together"
-	],
-	"correct_index": 2
-  },
-  {
-	"text": "What kind of waste is fruit peel?",
-	"answers": [
-	  "Organic waste",
-	  "Electronic waste",
-	  "Glass waste",
-      "Metal waste"
-	],
-	"correct_index": 0
-  },
-  {
-	"text": "Which item should be donated instead of thrown away if it still works?",
-	"answers": [
-	  "A banana peel",
-	  "A broken light bulb",
-	  "A leaking battery",
-      "A usable toaster"
-	],
-	"correct_index": 3
   }
 ]

@@ -98,5 +98,205 @@
 	"question": "Che cos'è la 'separazione alla fonte'?",
 	"answers": ["Separare i rifiuti nel luogo in cui vengono prodotti", "Mescolare tutta la spazzatura insieme", "Buttare i rifiuti nell'oceano", "Raccogliere i rifiuti dalle strade"],
 	"correctIndex": 0
+  },
+{
+	"question": "Quanta parte dell'elettricità prodotta in Svizzera proviene da fonti rinnovabili (escludendo il nucleare)?",
+	"answers": [
+	  "Circa il 30%",
+	  "Circa il 50%",
+	  "Circa il 75%",
+      "Il 100%"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "Circa quale percentuale dell'elettricità totale degli Stati Uniti è attualmente generata da fonti rinnovabili?",
+	"answers": [
+	  "5-10%",
+	  "20-25%",
+	  "40-50%",
+      "70-80%"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "Qual è in assoluto la principale fonte di produzione di energia elettrica in Svizzera?",
+	"answers": [
+	  "Carbone",
+	  "Energia Nucleare",
+	  "Energia Idroelettrica",
+      "Gas Naturale"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "Qual è attualmente la principale fonte di energia per la produzione di elettricità negli Stati Uniti?",
+	"answers": [
+	  "Carbone",
+	  "Gas Naturale",
+	  "Energia Nucleare",
+      "Energia Eolica"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "In Svizzera, la 'Strategia energetica 2050' prevede la graduale eliminazione di quale fonte energetica per la produzione elettrica?",
+	"answers": [
+	  "Biomasse",
+	  "Energia Solare",
+	  "Energia Idroelettrica",
+      "Energia Nucleare"
+	],
+	"correctIndex": 3
+  },
+  {
+	"question": "Quale stato degli USA produce di gran lunga la maggior quantità di energia eolica?",
+	"answers": [
+	  "California",
+	  "Texas",
+	  "New York",
+      "Florida"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "Quante centrali nucleari commerciali sono attualmente in funzione in Svizzera (dati aggiornati al 2024)?",
+	"answers": [
+	  "Nessuna",
+	  "2",
+	  "4",
+      "10"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "Quale di queste affermazioni sul consumo di energia primaria pro capite è vera?",
+	"answers": [
+	  "USA e Svizzera consumano la stessa quantità",
+	  "La Svizzera consuma il doppio degli USA",
+	  "Gli USA consumano più del doppio della Svizzera",
+      "La Svizzera consuma 5 volte di più degli USA"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "Negli Stati Uniti, l'energia geotermica è sfruttata maggiormente in quale area geografica?",
+	"answers": [
+	  "Negli stati occidentali (es. California, Nevada)",
+	  "Sulla costa orientale",
+	  "Nel Midwest",
+      "Nel sud (es. Florida, Louisiana)"
+	],
+	"correctIndex": 0
+  },
+  {
+	"question": "Quale tipologia di impianto per l'immagazzinamento dell'energia è molto diffusa nelle Alpi svizzere per gestire i picchi di domanda?",
+	"answers": [
+	  "Batterie al litio giganti",
+	  "Centrali idroelettriche di pompaggio",
+	  "Volani ad alta velocità",
+      "Impianti ad aria compressa"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "Qual è l'obiettivo ufficiale a medio termine del governo USA per la rete elettrica nazionale?",
+	"answers": [
+	  "Raggiungere un'elettricità priva di inquinamento da carbonio entro il 2035",
+	  "Costruire 50 nuove centrali a carbone entro il 2030",
+	  "Diventare importatori netti di energia elettrica entro il 2040",
+      "Sostituire totalmente l'eolico con il solare entro il 2025"
+	],
+	"correctIndex": 0
+  },
+  {
+	"question": "Cosa prevede come obiettivo principale la Legge sul clima approvata in Svizzera tramite referendum nel 2023?",
+	"answers": [
+	  "Aumentare l'uso dei combustibili fossili del 10%",
+	  "Raggiungere le zero emissioni nette di gas serra entro il 2050",
+	  "Uscire unilateralmente dall'Accordo di Parigi",
+      "Sussidiare esclusivamente le auto a benzina"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "Negli Stati Uniti, qual è l'impianto di produzione di energia (di qualsiasi tipo) con la maggiore capacità installata?",
+	"answers": [
+	  "La centrale nucleare di Palo Verde",
+	  "La diga idroelettrica di Grand Coulee",
+	  "L'impianto solare termico Ivanpah",
+      "La centrale a carbone di Scherer"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "In Svizzera, l'energia solare ed eolica insieme rappresentano circa quale percentuale della produzione elettrica totale?",
+	"answers": [
+	  "Meno del 15%",
+	  "Circa il 40%",
+	  "Circa il 60%",
+      "Oltre l'80%"
+	],
+	"correctIndex": 0
+  },
+  {
+	"question": "Quale rete elettrica regionale negli USA è nota per essere largamente indipendente e isolata dal resto della rete nazionale?",
+	"answers": [
+	  "La rete di New York (NYISO)",
+	  "La rete della California (CAISO)",
+	  "La rete del Texas (ERCOT)",
+      "La rete del New England (ISO-NE)"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "Qual è uno dei combustibili fossili più utilizzati storicamente per il riscaldamento domestico in Svizzera, sebbene sia in forte calo?",
+	"answers": [
+	  "Carbone",
+	  "Olio da riscaldamento (Nafta)",
+	  "Propano liquido",
+      "Torba"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "Tra le fonti di energia rinnovabile negli USA, quale è cresciuta più rapidamente in termini di percentuale di generazione nell'ultimo decennio?",
+	"answers": [
+	  "Energia Idroelettrica",
+	  "Biomassa",
+	  "Energia Solare",
+      "Energia Geotermica"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "Come si posiziona la rete elettrica della Svizzera rispetto all'import/export con i paesi europei vicini?",
+	"answers": [
+	  "Esporta costantemente energia tutto l'anno",
+	  "È un'isola energetica senza connessioni estere",
+	  "Scambia massicciamente energia: esporta in estate, importa in inverno",
+      "Importa energia solo in estate per il raffreddamento"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "La famosa diga di Hoover, una delle principali fonti di energia idroelettrica per l'ovest degli USA, sfrutta le acque di quale fiume?",
+	"answers": [
+	  "Fiume Mississippi",
+	  "Fiume Colorado",
+	  "Fiume Hudson",
+      "Fiume Columbia"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "Qual è il ruolo del gas naturale nel mix energetico della Svizzera per la produzione specifica di elettricità?",
+	"answers": [
+	  "Produce oltre il 50% dell'elettricità nazionale",
+	  "È marginale (rappresenta meno del 2%)",
+	  "È in rapida crescita per sostituire l'idroelettrico",
+      "È la principale fonte di energia rinnovabile"
+	],
+	"correctIndex": 1
   }
 ]
