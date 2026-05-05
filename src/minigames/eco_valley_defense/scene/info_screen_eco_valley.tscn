@@ -1,0 +1,239 @@
+[gd_scene format=3 uid="uid://dj5bjaj67il8k"]
+
+[ext_resource type="Script" uid="uid://bjwjucivpy8xg" path="res://src/minigames/eco_valley_defense/script/info_screen_eco_valley.gd" id="1_7keo7"]
+[ext_resource type="Texture2D" uid="uid://dt8p2alecocxr" path="res://assets/UI/Banner.png" id="2_m0nee"]
+[ext_resource type="Texture2D" uid="uid://bh64ub2tovv2s" path="res://src/minigames/eco_valley_defense/assets/BackgroundInfo.png" id="2_v5n3s"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="4_jujff"]
+[ext_resource type="Texture2D" uid="uid://btlesuco0rljl" path="res://src/minigames/conveyor_belt/assets/LabelContinue.png" id="5_m0nee"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_outer"]
+bg_color = Color(0.24313726, 0.12156863, 0.11372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mid1"]
+bg_color = Color(0.34509805, 0.19215687, 0.14901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mid2"]
+bg_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mid3"]
+bg_color = Color(0.4392157, 0.28627452, 0.16470589, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mid4"]
+bg_color = Color(0.8039216, 0.6509804, 0.46666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_inner"]
+bg_color = Color(0.8980392, 0.8392157, 0.6313726, 1)
+
+[node name="InfoScreenEcoValley" type="Control" unique_id=1536620083]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7keo7")
+
+[node name="Background" type="PanelContainer" parent="." unique_id=642608114]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_outer")
+
+[node name="Frame1" type="MarginContainer" parent="Background" unique_id=1190514061]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Panel1" type="PanelContainer" parent="Background/Frame1" unique_id=508334077]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mid1")
+
+[node name="Frame2" type="MarginContainer" parent="Background/Frame1/Panel1" unique_id=1970651459]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Panel2" type="PanelContainer" parent="Background/Frame1/Panel1/Frame2" unique_id=1693297187]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mid2")
+
+[node name="Frame3" type="MarginContainer" parent="Background/Frame1/Panel1/Frame2/Panel2" unique_id=1619188922]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Panel3" type="PanelContainer" parent="Background/Frame1/Panel1/Frame2/Panel2/Frame3" unique_id=276770240]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mid3")
+
+[node name="Frame4" type="MarginContainer" parent="Background/Frame1/Panel1/Frame2/Panel2/Frame3/Panel3" unique_id=313579036]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Panel4" type="PanelContainer" parent="Background/Frame1/Panel1/Frame2/Panel2/Frame3/Panel3/Frame4" unique_id=248497138]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mid4")
+
+[node name="Frame5" type="MarginContainer" parent="Background/Frame1/Panel1/Frame2/Panel2/Frame3/Panel3/Frame4/Panel4" unique_id=1516684008]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="InnerPanel" type="PanelContainer" parent="Background/Frame1/Panel1/Frame2/Panel2/Frame3/Panel3/Frame4/Panel4/Frame5" unique_id=1180112878]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_inner")
+
+[node name="ContentMargin" type="MarginContainer" parent="." unique_id=1397510149]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 80
+theme_override_constants/margin_top = 60
+theme_override_constants/margin_right = 80
+theme_override_constants/margin_bottom = 60
+
+[node name="Layout" type="VBoxContainer" parent="ContentMargin" unique_id=33699297]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="TextureRect" type="TextureRect" parent="ContentMargin/Layout" unique_id=2000178835]
+layout_mode = 2
+texture = ExtResource("2_m0nee")
+
+[node name="Title" type="Label" parent="ContentMargin/Layout/TextureRect" unique_id=134815512]
+layout_mode = 0
+offset_top = 30.0
+offset_right = 1760.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0.69411767, 0.5137255, 0.23529412, 1)
+theme_override_colors/font_outline_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("4_jujff")
+theme_override_font_sizes/font_size = 80
+text = "ECO_VALLEY_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Body" type="HBoxContainer" parent="ContentMargin/Layout" unique_id=2034131052]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 50
+
+[node name="LeftSide" type="VBoxContainer" parent="ContentMargin/Layout/Body" unique_id=385038143]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="Description" type="Label" parent="ContentMargin/Layout/Body/LeftSide" unique_id=840527019]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("4_jujff")
+theme_override_font_sizes/font_size = 36
+text = "ECO_VALLEY_INTRO_DESCRIPTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label" type="Label" parent="ContentMargin/Layout/Body/LeftSide" unique_id=1836600656]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.81960785, 0.47843137, 0.17254902, 1)
+theme_override_fonts/font = ExtResource("4_jujff")
+theme_override_font_sizes/font_size = 40
+text = "ECO_VALLEY_INTRO_PHRASE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RightSide" type="VBoxContainer" parent="ContentMargin/Layout/Body" unique_id=1106636103]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 200
+
+[node name="Frame5" type="MarginContainer" parent="ContentMargin/Layout/Body/RightSide" unique_id=198427079]
+custom_minimum_size = Vector2(835, 488)
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Panel1" type="PanelContainer" parent="ContentMargin/Layout/Body/RightSide/Frame5" unique_id=856603931]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mid1")
+
+[node name="MarginContainer" type="MarginContainer" parent="ContentMargin/Layout/Body/RightSide/Frame5/Panel1" unique_id=1777921334]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Preview" type="TextureRect" parent="ContentMargin/Layout/Body/RightSide/Frame5/Panel1/MarginContainer" unique_id=432947171]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_v5n3s")
+expand_mode = 2
+
+[node name="ContinueButton" type="Control" parent="ContentMargin/Layout/Body/RightSide" unique_id=1555665806]
+custom_minimum_size = Vector2(0, 110)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="ButtonBg" type="TextureRect" parent="ContentMargin/Layout/Body/RightSide/ContinueButton" unique_id=1430837869]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -302.0
+offset_top = -109.0
+offset_right = 298.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_m0nee")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ButtonLabel" type="Label" parent="ContentMargin/Layout/Body/RightSide/ContinueButton" unique_id=191471103]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -302.0
+offset_top = -109.0
+offset_right = 298.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_jujff")
+theme_override_font_sizes/font_size = 40
+text = "CARBON_CUTTERS_INTRO_CONTINUE"
+horizontal_alignment = 1
+vertical_alignment = 1

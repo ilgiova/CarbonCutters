@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://de8ovefu0kj2v"]
+
+[ext_resource type="Script" uid="uid://4dm8tda1a45q" path="res://src/minigames/eco_valley_defense/script/enemy_data.gd" id="1_okua4"]
+[ext_resource type="Texture2D" uid="uid://bsjd1x42l82lq" path="res://src/minigames/eco_valley_defense/assets/PlasticCreature.png" id="2_a1g4k"]
+
+[resource]
+script = ExtResource("1_okua4")
+enemy_name = "Plastic Creature"
+texture = ExtResource("2_a1g4k")
+max_hp = 280.0
+speed = 50.0
+damage_to_castle = 12
+gold_reward = 3
+level = 3
+metadata/_custom_type_script = "uid://4dm8tda1a45q"

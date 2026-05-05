@@ -26,3 +26,81 @@ POWERUP_ROTATION_SPEED,Rotation Speed,Velocità di Rotazione
 POWERUP_ORBITAL_BULLET,Orbital Bullet,Proiettile Orbitale
 PRESS_E,Press E to continue,Premi E per continuare
 PRESS_M,Press M for full map,Premi M per la mappa 
+RANGE,Range,Portata
+CADENCE,Cadence,Cadenza
+
+
+CARBON_CUTTERS_INTRO_TITLE,"Get Ready to Save the Island","Pronto a Salvare l'Isola"
+CARBON_CUTTERS_INTRO_CARD_EXPLORE,"Explore the Island","Esplora l'Isola"
+CARBON_CUTTERS_INTRO_CARD_MINIGAMES,"Play Mini-Games","Gioca ai Mini-Giochi"
+CARBON_CUTTERS_INTRO_CARD_CHAT,"Chat with Islanders","Parla con gli Isolani"
+CARBON_CUTTERS_INTRO_DESC,"Earn points to help clean up the island!","Guadagna punti per aiutare a ripulire l'isola!"
+CARBON_CUTTERS_INTRO_MOVEMENT,"Movement","Movimento"
+CARBON_CUTTERS_INTRO_CONTINUE,"Press ENTER to continue","Premi INVIO per continuare"
+
+ECO_VALLEY_TITLE,"Eco Valley Defense","Eco Valley Defense"
+ECO_VALLEY_CONTINUE,"Press E to continue","Premi E per continuare"
+ECO_VALLEY_INTRO_DESCRIPTION,"Defend the valley from pollution.\n\nBuild 6 unique towers, upgradable up to level 5.\nEach round brings stronger waves of enemies.\nDefeat the bosses, earn gold, survive as long as you can.\n\nYou have 100 HP. Each enemy that passes hurts you.\nWhen you reach zero, the valley falls.","Difendi la valle dall'inquinamento.\n\nCostruisci 6 torri uniche, potenziabili fino al livello 5.\nAd ogni round nuove ondate, sempre più forti.\nSconfiggi i boss, guadagna oro, sopravvivi il più a lungo possibile.\n\nHai 100 HP. Ogni nemico che passa ti ferisce.\nQuando arrivi a zero, la valle cade."
+ECO_VALLEY_INTRO_PHRASE,How long will you last?,Quanto resisterai?
+ECO_VALLEY_END_TITLE,"Eco Valley Defense","Eco Valley Defense"
+ECO_VALLEY_END_MESSAGE,"Great work, eco-warrior!\nYou defended the valley with skill and strategy.\nThe corrupted spirits will return — will you be ready?","Ottimo lavoro, eco-guerriero!\nHai difeso la valle con abilità e strategia.\nGli spiriti corrotti torneranno — sarai pronto?"
+ECO_VALLEY_END_PLAY_AGAIN,"Play Again","Gioca Ancora"
+ECO_VALLEY_END_MAIN_MENU,"Main Menu","Menu Principale"
+ECO_VALLEY_END_ROUND_REACHED,"Round reached","Round raggiunto"
+ECO_VALLEY_END_ENEMIES_KILLED,"Enemies defeated","Nemici sconfitti"
+ECO_VALLEY_END_GOLD_EARNED,"Gold earned","Oro guadagnato"
+ECO_VALLEY_TOWER_FOREST_DESC,"A defensive tower that releases damaging spores in a wide area.","Una torre difensiva che rilascia spore che danneggiano in un'area."
+ECO_VALLEY_TOWER_SOLAR_DESC,"Concentrates sunlight into burning beams.","Concentra la luce solare in raggi brucianti."
+ECO_VALLEY_TOWER_WIND_DESC,"Fast turbine that fires sharp gusts of wind.","Turbina veloce che spara raffiche taglienti di vento."
+ECO_VALLEY_TOWER_ALGAE_DESC,"Toxic algae droplets that poison enemies over time.","Goccioline di alghe tossiche che avvelenano i nemici nel tempo."
+ECO_VALLEY_TOWER_MUSHROOM_DESC,"Spreads slowing spores in an area.","Diffonde spore rallentanti in un'area."
+ECO_VALLEY_TOWER_OAK_DESC,"Powerful tree that strikes multiple enemies with roots.","Albero potente che colpisce più nemici con le radici."
+ECO_VALLEY_TOWER_FOREST_NAME_1,"Forest Garden I","Giardino I"
+ECO_VALLEY_TOWER_FOREST_NAME_2,"Forest Garden II","Giardino II"
+ECO_VALLEY_TOWER_FOREST_NAME_3,"Forest Garden III","Giardino III"
+ECO_VALLEY_TOWER_FOREST_NAME_4,"Forest Garden IV","Giardino IV"
+ECO_VALLEY_TOWER_FOREST_NAME_5,"Forest Garden V","Giardino V"
+ECO_VALLEY_TOWER_SOLAR_NAME_1,"Solar Panel I","Pannello Solare I"
+ECO_VALLEY_TOWER_SOLAR_NAME_2,"Solar Panel II","Pannello Solare II"
+ECO_VALLEY_TOWER_SOLAR_NAME_3,"Solar Panel III","Pannello Solare III"
+ECO_VALLEY_TOWER_SOLAR_NAME_4,"Solar Panel IV","Pannello Solare IV"
+ECO_VALLEY_TOWER_SOLAR_NAME_5,"Solar Panel V","Pannello Solare V"
+ECO_VALLEY_TOWER_WIND_NAME_1,"Wind Turbine I","Turbina I"
+ECO_VALLEY_TOWER_WIND_NAME_2,"Wind Turbine II","Turbina II"
+ECO_VALLEY_TOWER_WIND_NAME_3,"Wind Turbine III","Turbina III"
+ECO_VALLEY_TOWER_WIND_NAME_4,"Wind Turbine IV","Turbina IV"
+ECO_VALLEY_TOWER_WIND_NAME_5,"Wind Turbine V","Turbina V"
+ECO_VALLEY_TOWER_ALGAE_NAME_1,"Algae Bioreactor I","Bioreattore I"
+ECO_VALLEY_TOWER_ALGAE_NAME_2,"Algae Bioreactor II","Bioreattore II"
+ECO_VALLEY_TOWER_ALGAE_NAME_3,"Algae Bioreactor III","Bioreattore III"
+ECO_VALLEY_TOWER_ALGAE_NAME_4,"Algae Bioreactor IV","Bioreattore IV"
+ECO_VALLEY_TOWER_ALGAE_NAME_5,"Algae Bioreactor V","Bioreattore V"
+ECO_VALLEY_TOWER_MUSHROOM_NAME_1,"Mushroom Spores I","Funghi I"
+ECO_VALLEY_TOWER_MUSHROOM_NAME_2,"Mushroom Spores II","Funghi II"
+ECO_VALLEY_TOWER_MUSHROOM_NAME_3,"Mushroom Spores III","Funghi III"
+ECO_VALLEY_TOWER_MUSHROOM_NAME_4,"Mushroom Spores IV","Funghi IV"
+ECO_VALLEY_TOWER_MUSHROOM_NAME_5,"Mushroom Spores V","Funghi V"
+ECO_VALLEY_TOWER_OAK_NAME_1,"Ancient Oak I","Quercia I"
+ECO_VALLEY_TOWER_OAK_NAME_2,"Ancient Oak II","Quercia II"
+ECO_VALLEY_TOWER_OAK_NAME_3,"Ancient Oak III","Quercia III"
+ECO_VALLEY_TOWER_OAK_NAME_4,"Ancient Oak IV","Quercia IV"
+ECO_VALLEY_TOWER_OAK_NAME_5,"Ancient Oak V","Quercia V"
+ECO_VALLEY_TOWER_MAX_LEVEL,"Max Level","Livello Max"
+ECO_VALLEY_TOWER_UPGRADE,"Upgrade","Migliora"
+
+
+SORTING_SPRING_MOVE,"MOVE: A S D keys","MOVIMENTO: tasti A S D"
+SORTING_SPRING_GOAL,"GOAL: Sort the water bottles, bananas, and boxes as they come down the conveyor belt.\nPress A, S, or D to activate each piston and push the matching items into the correct bins.\nThe more correct items you sort, the more points you earn","OBIETTIVO: Smista le bottiglie d'acqua, le banane e le scatole mentre scendono lungo il nastro trasportatore.\nPremi A, S o D per attivare ogni pistone e spingere gli oggetti corrispondenti nei bidoni giusti.\nPiù oggetti smisti correttamente, più punti guadagni"
+SORTING_SPRING_GOOD_LUCK,"Good luck Carbon Cutter!","Buona fortuna Carbon Cutter!"
+
+LOGIN,Login,Accedi
+SIGN_UP,Sign up,Registrati
+GUEST,Guest,Ospite
+LOG_OUT,Log out,disconnettersi
+ACCESS,Logging in,Accesso in corso
+DISCONNECTED,Disconnected,Disconnesso
+REGISTRATION,Registration in progress,Registrazione in corso
+WELCOME,Welcome,Benvenuto
+CREATED,Account created! Welocme,Account creato! Benvenuto
+SHORT_USERNAME,Username to short (min 5),Username troppo corto (min 5)
+SHORT_PASSWORD,Password to short (min 8),Password troppo corta (min 8)

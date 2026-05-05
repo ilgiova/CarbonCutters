@@ -192,6 +192,7 @@ func _process(delta):
 		scene.plasticPoint = plasticPoint 
 		scene.missedPoint = missedPoint
 		scene.totalPoint = point
+		PlayerData.save_data()
 		get_tree().root.add_child(scene)
 		queue_free()
 

@@ -7,8 +7,6 @@ extends Control
 
 func _ready():
 	label.text = label_text
-
-	# 🔥 imposta pivot bottom-center
-	await get_tree().process_frame  # aspetta che size sia corretta
+	await get_tree().process_frame 
 	
 	pivot_offset = Vector2(size.x / 2, size.y)

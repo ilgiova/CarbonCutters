@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://dfv8nht5j7suu"]
+
+[ext_resource type="Script" uid="uid://4dm8tda1a45q" path="res://src/minigames/eco_valley_defense/script/enemy_data.gd" id="1_6ryi6"]
+[ext_resource type="Texture2D" uid="uid://c1xj75wjp73fv" path="res://src/minigames/eco_valley_defense/assets/OilBlob.png" id="2_lnt7i"]
+
+[resource]
+script = ExtResource("1_6ryi6")
+enemy_name = "Oil Bob"
+texture = ExtResource("2_lnt7i")
+max_hp = 30.0
+speed = 80.0
+damage_to_castle = 5
+gold_reward = 3
+scale_multiplier = 0.09
+metadata/_custom_type_script = "uid://4dm8tda1a45q"

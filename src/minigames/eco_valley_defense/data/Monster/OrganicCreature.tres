@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://bywtlf6aycxfg"]
+
+[ext_resource type="Script" uid="uid://4dm8tda1a45q" path="res://src/minigames/eco_valley_defense/script/enemy_data.gd" id="1_m7h1w"]
+[ext_resource type="Texture2D" uid="uid://dxnbqia323ix1" path="res://src/minigames/eco_valley_defense/assets/OrganicCreature.png" id="2_ng118"]
+
+[resource]
+script = ExtResource("1_m7h1w")
+enemy_name = "Organic Creature"
+texture = ExtResource("2_ng118")
+max_hp = 90.0
+speed = 75.0
+damage_to_castle = 7
+gold_reward = 3
+level = 2
+metadata/_custom_type_script = "uid://4dm8tda1a45q"

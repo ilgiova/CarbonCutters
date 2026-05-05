@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://bqglvykm05k2q" path="res://assets/UI/button_normal.png" id="4_2ca22"]
 [ext_resource type="Texture2D" uid="uid://kk1cmgyu4cw6" path="res://assets/UI/Button_hover.png" id="5_864kg"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ca22"]
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g4lev"]
 
 [node name="resultScene" type="Control" unique_id=666223100]
@@ -18,8 +20,8 @@ grow_vertical = 2
 script = ExtResource("1_bhcub")
 
 [node name="background" type="Sprite2D" parent="." unique_id=1491808458]
-position = Vector2(982, 476.00003)
-scale = Vector2(1.2744141, 1.2744141)
+position = Vector2(919.00006, 521)
+scale = Vector2(1.3, 1.3)
 texture = ExtResource("2_4tujh")
 region_rect = Rect2(0, 2020, 0, 0)
 
@@ -32,6 +34,11 @@ anchor_right = 0.5
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=551201499]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_2ca22")
 
 [node name="Title" type="Label" parent="VBoxContainer" unique_id=765257427]
 layout_mode = 2

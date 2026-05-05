@@ -1,0 +1,189 @@
+[gd_scene format=3 uid="uid://6mmuglc843a3"]
+
+[ext_resource type="Script" uid="uid://c6kuubcyuf4yg" path="res://src/global/ui/login_screen.gd" id="1_4q6k8"]
+[ext_resource type="PackedScene" uid="uid://dbvnnaryali03" path="res://src/world/ui/Background.tscn" id="2_d5yjy"]
+[ext_resource type="Texture2D" uid="uid://dt8p2alecocxr" path="res://assets/UI/Banner.png" id="3_r3387"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="4_r3387"]
+[ext_resource type="Texture2D" uid="uid://e8a28ytqgk80" path="res://assets/UI/NormalLongButton.png" id="5_ug555"]
+[ext_resource type="Texture2D" uid="uid://cupev6bulci3p" path="res://assets/UI/RightLongButton.png" id="6_8ofxq"]
+[ext_resource type="Texture2D" uid="uid://crv5mjmgymtgq" path="res://assets/UI/HoverLongButton.png" id="6_diqri"]
+[ext_resource type="Texture2D" uid="uid://dn38b7d8nylsy" path="res://assets/UI/wrongLongButton.png" id="6_hpbpr"]
+[ext_resource type="Texture2D" uid="uid://bqglvykm05k2q" path="res://assets/UI/button_normal.png" id="9_mn8u3"]
+[ext_resource type="Texture2D" uid="uid://kk1cmgyu4cw6" path="res://assets/UI/Button_hover.png" id="10_y3c4q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_diqri"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hpbpr"]
+texture = ExtResource("5_ug555")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_40dmt"]
+texture = ExtResource("6_hpbpr")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_up20d"]
+texture = ExtResource("6_8ofxq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mn8u3"]
+texture = ExtResource("5_ug555")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y3c4q"]
+texture = ExtResource("6_8ofxq")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_40dmt"]
+
+[node name="LoginScreen" type="Control" unique_id=1059277669]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4q6k8")
+
+[node name="BackGround" parent="." unique_id=1973606014 instance=ExtResource("2_d5yjy")]
+
+[node name="Sprite2D" parent="BackGround" index="7" unique_id=306750002]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=511791681]
+layout_mode = 0
+offset_left = 234.5
+offset_right = 1685.5
+offset_bottom = 172.0
+texture = ExtResource("3_r3387")
+
+[node name="Label" type="Label" parent="TextureRect" unique_id=184034551]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -30.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.69411767, 0.5137255, 0.23529412, 1)
+theme_override_colors/font_outline_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("4_r3387")
+theme_override_font_sizes/font_size = 100
+text = "Carbon Cutters"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1411166750]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -310.0
+offset_right = 310.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=1270609840]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_diqri")
+
+[node name="UsernameInput" type="LineEdit" parent="VBoxContainer" unique_id=1585616606]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_colors/font_uneditable_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_colors/font_placeholder_color = Color(0.3764706, 0.22352941, 0.15686275, 0.39607844)
+theme_override_fonts/font = ExtResource("4_r3387")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_hpbpr")
+theme_override_styles/read_only = SubResource("StyleBoxTexture_40dmt")
+theme_override_styles/focus = SubResource("StyleBoxTexture_up20d")
+placeholder_text = "UserName"
+alignment = 1
+max_length = 15
+
+[node name="PasswordInput" type="LineEdit" parent="VBoxContainer" unique_id=450705253]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_colors/font_placeholder_color = Color(0.3764706, 0.22352941, 0.15686275, 0.44313726)
+theme_override_fonts/font = ExtResource("4_r3387")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_mn8u3")
+theme_override_styles/focus = SubResource("StyleBoxTexture_y3c4q")
+placeholder_text = "Password"
+alignment = 1
+secret = true
+secret_character = "*"
+
+[node name="LoginBtn" type="TextureButton" parent="VBoxContainer" unique_id=1917287880]
+layout_mode = 2
+texture_normal = ExtResource("5_ug555")
+texture_hover = ExtResource("6_diqri")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/LoginBtn" unique_id=973528177]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("4_r3387")
+theme_override_font_sizes/font_size = 40
+text = "LOGIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SignupBtn" type="TextureButton" parent="VBoxContainer" unique_id=1796981295]
+layout_mode = 2
+texture_normal = ExtResource("5_ug555")
+texture_hover = ExtResource("6_diqri")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/SignupBtn" unique_id=797644991]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("4_r3387")
+theme_override_font_sizes/font_size = 40
+text = "SIGN_UP"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StatusLabel" type="Label" parent="VBoxContainer" unique_id=328459705]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_r3387")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VSeparator" type="HSeparator" parent="VBoxContainer" unique_id=583228924]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_40dmt")
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer" unique_id=221508221]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="GoBack" type="TextureButton" parent="VBoxContainer/MarginContainer3" unique_id=684647130]
+layout_mode = 2
+texture_normal = ExtResource("9_mn8u3")
+texture_hover = ExtResource("10_y3c4q")
+
+[node name="Label" type="Label" parent="VBoxContainer/MarginContainer3" unique_id=758548278]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("4_r3387")
+theme_override_font_sizes/font_size = 40
+text = "GO_BACK"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/MarginContainer3/GoBack" to="." method="_on_go_back_pressed"]
+
+[editable path="BackGround"]

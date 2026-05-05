@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="TowerData" format=3 uid="uid://lyyeyifd26wu"]
+
+[ext_resource type="PackedScene" uid="uid://lief1sapwpqt" path="res://src/minigames/eco_valley_defense/data/attack/laser_beam.tscn" id="1_0odrp"]
+[ext_resource type="Script" uid="uid://c8giv5d8ru50e" path="res://src/minigames/eco_valley_defense/script/tower_data.gd" id="1_k1t1y"]
+[ext_resource type="Texture2D" uid="uid://eejkbuwo3cby" path="res://src/minigames/eco_valley_defense/assets/AncietOakUpgrade.png" id="2_0ry8x"]
+[ext_resource type="Resource" uid="uid://dt4dw58ck3t7k" path="res://src/minigames/eco_valley_defense/data/Tower/AncientOak/AncientOak5.tres" id="3_0odrp"]
+
+[resource]
+script = ExtResource("1_k1t1y")
+tower_name = "Anchient Oak Lv4"
+description = "Powerful tree that strikes multiple enemies with roots."
+texture = ExtResource("2_0ry8x")
+cost = 80
+damage = 80.0
+attack_range = 135.0
+attack_cooldown = 1.7
+upgrade = ExtResource("3_0odrp")
+upgrade_cost = 1000
+attack_type = 1
+num_targets = 6
+attack_effect_scene = ExtResource("1_0odrp")
+effect_color = Color(0.54901963, 0.27450982, 0.078431375, 0.7176471)
+metadata/_custom_type_script = "uid://c8giv5d8ru50e"

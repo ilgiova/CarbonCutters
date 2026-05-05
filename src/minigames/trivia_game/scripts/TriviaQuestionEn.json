@@ -98,5 +98,205 @@
 	"question": "What is 'source segregation'?",
 	"answers": ["Sorting waste at the point of origin", "Mixing all trash together", "Dumping waste in the ocean", "Collecting trash from streets"],
 	"correctIndex": 0
+  },
+{
+	"question": "How much of the electricity produced in Switzerland comes from renewable sources (excluding nuclear)?",
+	"answers": [
+	  "About 30%",
+	  "About 50%",
+	  "About 75%",
+      "100%"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "Approximately what percentage of total U.S. electricity is currently generated from renewable sources?",
+	"answers": [
+	  "5-10%",
+	  "20-25%",
+	  "40-50%",
+      "70-80%"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "What is the absolute main source of electricity production in Switzerland?",
+	"answers": [
+	  "Coal",
+	  "Nuclear Energy",
+	  "Hydroelectric Energy",
+      "Natural Gas"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "What is currently the main source of energy for electricity generation in the United States?",
+	"answers": [
+	  "Coal",
+	  "Natural Gas",
+	  "Nuclear Energy",
+      "Wind Energy"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "In Switzerland, the 'Energy Strategy 2050' foresees the gradual phase-out of which energy source for electricity production?",
+	"answers": [
+	  "Biomass",
+	  "Solar Energy",
+	  "Hydroelectric Energy",
+      "Nuclear Energy"
+	],
+	"correctIndex": 3
+  },
+  {
+	"question": "Which US state produces by far the most wind energy?",
+	"answers": [
+	  "California",
+	  "Texas",
+	  "New York",
+      "Florida"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "How many commercial nuclear power plants are currently operating in Switzerland (data updated to 2024)?",
+	"answers": [
+	  "None",
+	  "2",
+	  "4",
+      "10"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "Which of these statements about per capita primary energy consumption is true?",
+	"answers": [
+	  "USA and Switzerland consume the same amount",
+	  "Switzerland consumes twice as much as the USA",
+	  "The USA consumes more than twice as much as Switzerland",
+      "Switzerland consumes 5 times more than the USA"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "In the United States, in which geographic area is geothermal energy most utilized?",
+	"answers": [
+	  "In the Western states (e.g., California, Nevada)",
+	  "On the East Coast",
+	  "In the Midwest",
+      "In the South (e.g., Florida, Louisiana)"
+	],
+	"correctIndex": 0
+  },
+  {
+	"question": "What type of energy storage facility is very common in the Swiss Alps to manage peak demand?",
+	"answers": [
+	  "Giant lithium batteries",
+	  "Pumped-storage hydroelectric plants",
+	  "High-speed flywheels",
+      "Compressed air facilities"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "What is the official medium-term goal of the US government for the national power grid?",
+	"answers": [
+	  "Reach 100% carbon pollution-free electricity by 2035",
+	  "Build 50 new coal plants by 2030",
+	  "Become net electricity importers by 2040",
+      "Totally replace wind with solar by 2025"
+	],
+	"correctIndex": 0
+  },
+  {
+	"question": "What is the main goal of the Climate Act approved in Switzerland by referendum in 2023?",
+	"answers": [
+	  "Increase the use of fossil fuels by 10%",
+	  "Reach net-zero greenhouse gas emissions by 2050",
+	  "Unilaterally withdraw from the Paris Agreement",
+      "Subsidize exclusively gasoline cars"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "In the United States, what is the power generation facility (of any type) with the largest installed capacity?",
+	"answers": [
+	  "Palo Verde Nuclear Generating Station",
+	  "Grand Coulee Dam",
+	  "Ivanpah Solar Electric Generating System",
+      "Plant Scherer (coal)"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "In Switzerland, solar and wind energy together represent approximately what percentage of total electricity production?",
+	"answers": [
+	  "Less than 15%",
+	  "About 40%",
+	  "About 60%",
+      "Over 80%"
+	],
+	"correctIndex": 0
+  },
+  {
+	"question": "Which regional power grid in the US is known for being largely independent and isolated from the rest of the national grid?",
+	"answers": [
+	  "The New York grid (NYISO)",
+	  "The California grid (CAISO)",
+	  "The Texas grid (ERCOT)",
+      "The New England grid (ISO-NE)"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "What is one of the most historically used fossil fuels for domestic heating in Switzerland, although it is in sharp decline?",
+	"answers": [
+	  "Coal",
+	  "Heating oil",
+	  "Liquid propane",
+      "Peat"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "Among renewable energy sources in the US, which one has grown fastest in terms of generation percentage over the last decade?",
+	"answers": [
+	  "Hydroelectric Energy",
+	  "Biomass",
+	  "Solar Energy",
+      "Geothermal Energy"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "How does the Swiss electricity grid position itself regarding import/export with neighboring European countries?",
+	"answers": [
+	  "It constantly exports energy all year round",
+	  "It is an energy island with no foreign connections",
+	  "It exchanges energy massively: exports in summer, imports in winter",
+      "It imports energy only in summer for cooling"
+	],
+	"correctIndex": 2
+  },
+  {
+	"question": "The famous Hoover Dam, one of the main sources of hydroelectric power for the western US, harnesses the waters of which river?",
+	"answers": [
+	  "Mississippi River",
+	  "Colorado River",
+	  "Hudson River",
+      "Columbia River"
+	],
+	"correctIndex": 1
+  },
+  {
+	"question": "What is the role of natural gas in Switzerland's energy mix for specific electricity production?",
+	"answers": [
+	  "It produces over 50% of national electricity",
+	  "It is marginal (represents less than 2%)",
+	  "It is rapidly growing to replace hydroelectricity",
+      "It is the main renewable energy source"
+	],
+	"correctIndex": 1
   }
 ]

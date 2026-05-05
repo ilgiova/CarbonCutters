@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://b2me3hi07i3rq"]
+
+[ext_resource type="Script" uid="uid://4dm8tda1a45q" path="res://src/minigames/eco_valley_defense/script/enemy_data.gd" id="1_4atnn"]
+[ext_resource type="Resource" uid="uid://dfv8nht5j7suu" path="res://src/minigames/eco_valley_defense/data/Monster/OilBlob.tres" id="2_gevjm"]
+[ext_resource type="Resource" uid="uid://bywtlf6aycxfg" path="res://src/minigames/eco_valley_defense/data/Monster/OrganicCreature.tres" id="3_7bhi2"]
+[ext_resource type="Texture2D" uid="uid://bnpn1bo2ujly6" path="res://src/minigames/eco_valley_defense/assets/FinalBoss.png" id="4_gevjm"]
+
+[resource]
+script = ExtResource("1_4atnn")
+enemy_name = "Boss"
+texture = ExtResource("4_gevjm")
+max_hp = 2500.0
+speed = 40.0
+damage_to_castle = 15
+gold_reward = 1
+level = 5
+death_spawn = Array[ExtResource("1_4atnn")]([ExtResource("2_gevjm"), ExtResource("3_7bhi2")])
+scale_multiplier = 0.09
+metadata/_custom_type_script = "uid://4dm8tda1a45q"

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TowerData" format=3 uid="uid://c35r7rq8dibu"]
+
+[ext_resource type="Script" uid="uid://c8giv5d8ru50e" path="res://src/minigames/eco_valley_defense/script/tower_data.gd" id="1_1k7vu"]
+[ext_resource type="PackedScene" uid="uid://lief1sapwpqt" path="res://src/minigames/eco_valley_defense/data/attack/laser_beam.tscn" id="1_i38ld"]
+[ext_resource type="Texture2D" uid="uid://cjyjg65sdv0at" path="res://src/minigames/eco_valley_defense/assets/turbineBase.png" id="2_kus5c"]
+[ext_resource type="Resource" uid="uid://vamqqxfen6u8" path="res://src/minigames/eco_valley_defense/data/Tower/Turbine/Turbine2.tres" id="3_reojl"]
+
+[resource]
+script = ExtResource("1_1k7vu")
+tower_name = "Turbine Lv1"
+texture = ExtResource("2_kus5c")
+cost = 60
+damage = 4.0
+attack_range = 140.0
+attack_cooldown = 0.3
+upgrade = ExtResource("3_reojl")
+upgrade_cost = 100
+attack_effect_scene = ExtResource("1_i38ld")
+metadata/_custom_type_script = "uid://c8giv5d8ru50e"

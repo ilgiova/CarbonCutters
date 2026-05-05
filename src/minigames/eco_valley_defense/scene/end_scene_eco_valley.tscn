@@ -1,0 +1,239 @@
+[gd_scene format=3 uid="uid://8ngl7cxv4t8n"]
+
+[ext_resource type="Script" uid="uid://725ofp3wbvx3" path="res://src/minigames/eco_valley_defense/script/end_scene_eco_valley.gd" id="1_css26"]
+[ext_resource type="Texture2D" uid="uid://bqglvykm05k2q" path="res://assets/UI/button_normal.png" id="2_button"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="3_font"]
+[ext_resource type="Texture2D" uid="uid://kk1cmgyu4cw6" path="res://assets/UI/Button_hover.png" id="4_gbt2k"]
+
+[sub_resource type="StyleBoxFlat" id="SB_outer"]
+bg_color = Color(0.24313726, 0.12156863, 0.11372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="SB_mid1"]
+bg_color = Color(0.34509805, 0.19215687, 0.14901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="SB_mid2"]
+bg_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+
+[sub_resource type="StyleBoxFlat" id="SB_mid3"]
+bg_color = Color(0.4392157, 0.28627452, 0.16470589, 1)
+
+[sub_resource type="StyleBoxFlat" id="SB_mid4"]
+bg_color = Color(0.8039216, 0.6509804, 0.46666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="SB_inner"]
+bg_color = Color(0.8980392, 0.8392157, 0.6313726, 1)
+
+[sub_resource type="StyleBoxFlat" id="SB_score_box"]
+bg_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="EndScreenEcoValley" type="Control" unique_id=641488754]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_css26")
+
+[node name="Background" type="PanelContainer" parent="." unique_id=1070933168]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("SB_outer")
+
+[node name="F1" type="MarginContainer" parent="Background" unique_id=1116170026]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="P1" type="PanelContainer" parent="Background/F1" unique_id=1213533491]
+layout_mode = 2
+theme_override_styles/panel = SubResource("SB_mid1")
+
+[node name="F2" type="MarginContainer" parent="Background/F1/P1" unique_id=1069319747]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="P2" type="PanelContainer" parent="Background/F1/P1/F2" unique_id=297060403]
+layout_mode = 2
+theme_override_styles/panel = SubResource("SB_mid2")
+
+[node name="F3" type="MarginContainer" parent="Background/F1/P1/F2/P2" unique_id=1001719534]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="P3" type="PanelContainer" parent="Background/F1/P1/F2/P2/F3" unique_id=885729084]
+layout_mode = 2
+theme_override_styles/panel = SubResource("SB_mid3")
+
+[node name="F4" type="MarginContainer" parent="Background/F1/P1/F2/P2/F3/P3" unique_id=935136476]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="P4" type="PanelContainer" parent="Background/F1/P1/F2/P2/F3/P3/F4" unique_id=1735688449]
+layout_mode = 2
+theme_override_styles/panel = SubResource("SB_mid4")
+
+[node name="F5" type="MarginContainer" parent="Background/F1/P1/F2/P2/F3/P3/F4/P4" unique_id=955186789]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Inner" type="PanelContainer" parent="Background/F1/P1/F2/P2/F3/P3/F4/P4/F5" unique_id=1305581042]
+layout_mode = 2
+theme_override_styles/panel = SubResource("SB_inner")
+
+[node name="ContentMargin" type="MarginContainer" parent="." unique_id=547604568]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 80
+theme_override_constants/margin_top = 60
+theme_override_constants/margin_right = 80
+theme_override_constants/margin_bottom = 60
+
+[node name="Layout" type="VBoxContainer" parent="ContentMargin" unique_id=2039183925]
+layout_mode = 2
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="Title" type="Label" parent="ContentMargin/Layout" unique_id=2010783203]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 80
+text = "ECO_VALLEY_END_TITLE"
+horizontal_alignment = 1
+
+[node name="ScoreBox" type="PanelContainer" parent="ContentMargin/Layout" unique_id=22382008]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("SB_score_box")
+
+[node name="ScoreMargin" type="MarginContainer" parent="ContentMargin/Layout/ScoreBox" unique_id=668859125]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 20
+
+[node name="ScoreLabel" type="Label" parent="ContentMargin/Layout/ScoreBox/ScoreMargin" unique_id=1414798919]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8980392, 0.8392157, 0.6313726, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 60
+text = "Score: 0"
+horizontal_alignment = 1
+
+[node name="StatsContainer" type="VBoxContainer" parent="ContentMargin/Layout" unique_id=1918424154]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="RoundLabel" type="Label" parent="ContentMargin/Layout/StatsContainer" unique_id=618873527]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 36
+text = "ECO_VALLEY_END_ROUND_REACHED"
+horizontal_alignment = 1
+
+[node name="EnemiesKilledLabel" type="Label" parent="ContentMargin/Layout/StatsContainer" unique_id=1494511304]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 36
+text = "ECO_VALLEY_END_ENEMIES_KILLED"
+horizontal_alignment = 1
+
+[node name="GoldEarnedLabel" type="Label" parent="ContentMargin/Layout/StatsContainer" unique_id=544556965]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 36
+text = "ECO_VALLEY_END_GOLD_EARNED"
+horizontal_alignment = 1
+
+[node name="MessageLabel" type="Label" parent="ContentMargin/Layout" unique_id=1112449609]
+custom_minimum_size = Vector2(900, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 30
+text = "ECO_VALLEY_END_MESSAGE"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="ButtonsRow" type="HBoxContainer" parent="ContentMargin/Layout" unique_id=172630209]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="PlayAgainBtn" type="TextureButton" parent="ContentMargin/Layout/ButtonsRow" unique_id=423318845]
+custom_minimum_size = Vector2(450, 100)
+layout_mode = 2
+texture_normal = ExtResource("2_button")
+texture_hover = ExtResource("4_gbt2k")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ContentMargin/Layout/ButtonsRow/PlayAgainBtn" unique_id=1852045401]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 40
+text = "ECO_VALLEY_END_PLAY_AGAIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainMenuBtn" type="TextureButton" parent="ContentMargin/Layout/ButtonsRow" unique_id=606847158]
+custom_minimum_size = Vector2(450, 100)
+layout_mode = 2
+texture_normal = ExtResource("2_button")
+texture_hover = ExtResource("4_gbt2k")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ContentMargin/Layout/ButtonsRow/MainMenuBtn" unique_id=1442967539]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 40
+text = "ECO_VALLEY_END_MAIN_MENU"
+horizontal_alignment = 1
+vertical_alignment = 1

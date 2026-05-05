@@ -14,7 +14,7 @@ extends CanvasLayer
 @onready var worldmap_viewport = $WorldMap/MarginContainer/SubViewportContainer/SubViewport
 @onready var worldmap_camera = $WorldMap/MarginContainer/SubViewportContainer/SubViewport/Camera2D
 
-var MARKERS_OFFSET: Vector2 = Vector2(-90, -45)
+var MARKERS_OFFSET: Vector2 = Vector2(-140, -75)
 
 func _ready():
 	canvas.visible = true
@@ -35,6 +35,7 @@ func _ready():
 
 	if tilemap != null:
 		setup_worldmap_camera()
+	markers_container.visible = false;
 
 func _process(_delta):
 	if player != null:
