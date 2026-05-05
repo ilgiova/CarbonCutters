@@ -48,11 +48,13 @@ func _load_outro_text() -> void:
 
 
 func _on_play_again_pressed() -> void:
+	PlayerData.save_data()
 	get_tree().change_scene_to_file("res://src/minigames/eco_survivors/ecosurvivors.tscn")
 	queue_free()
 
 
 func _on_go_lobby_pressed() -> void:
+	PlayerData.save_data()
 	get_tree().change_scene_to_file("res://src/world/game_scene.tscn")
 	queue_free()
 	

@@ -18,7 +18,11 @@ signal player_defeated
 @export var enemy_scene:      PackedScene
 @export var tower_scene:      PackedScene
 @export var available_towers: Array[TowerData] = []
+@export var end_screen_scene: PackedScene  
 
+
+var enemies_killed_total: int = 0
+var gold_earned_total: int = 0
 var gold: int = 300
 var placing := false
 var preview: Node2D = null
@@ -80,15 +84,16 @@ func spawn_enemy(enemy_data: EnemyData = null, hp_mult: float = 1.0, speed_mult:
 
 func _on_enemy_died(reward: int) -> void:
 	gold += reward
+	gold_earned_total += reward
+	enemies_killed_total += 1
 	tower_shop.refresh_gold(gold)
 
 func _on_enemy_reached_end(damage: int) -> void:
 	player_hp = max(0, player_hp - damage)
 	player_hp_changed.emit(player_hp)
-	print(player_hp)
 	if player_hp <= 0:
 		player_defeated.emit()
-		get_tree().change_scene_to_file("res://src/world/game_scene.tscn")
+		_show_end_screen()
 
 
 # Per il boss: spawna nemici minori alla morte (Fase 7)
@@ -99,6 +104,36 @@ func spawn_death_enemies(spawn_data: Dictionary) -> void:
 		var last_pf = children[children.size() - 1]
 		if last_pf is PathFollow2D:
 			last_pf.progress = spawn_data.path_progress
+
+func _show_end_screen() -> void:
+	get_tree().paused = true
+	
+	# Crea un CanvasLayer dedicato per stare sopra TUTTO
+	var canvas = CanvasLayer.new()
+	canvas.layer = 10000  # numero alto = sopra tutto
+	canvas.process_mode = Node.PROCESS_MODE_ALWAYS
+	add_child(canvas)
+	
+	var end_screen = end_screen_scene.instantiate()
+	end_screen.process_mode = Node.PROCESS_MODE_ALWAYS
+	canvas.add_child(end_screen)
+	
+	end_screen.show_results(
+		wave_manager.current_round,
+		enemies_killed_total,
+		gold_earned_total
+	)
+	end_screen.play_again_pressed.connect(_on_play_again)
+	end_screen.main_menu_pressed.connect(_on_main_menu)
+
+func _on_play_again() -> void:
+	get_tree().paused = false
+	get_tree().reload_current_scene()
+
+func _on_main_menu() -> void:
+	get_tree().paused = false
+	
+	get_tree().change_scene_to_file("res://src/world/game_scene.tscn")
 
 # ---------------------------------------------------------------------------
 # Selezione e piazzamento torri

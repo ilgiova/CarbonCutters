@@ -2,13 +2,13 @@
 
 [ext_resource type="Script" uid="uid://4dm8tda1a45q" path="res://src/minigames/eco_valley_defense/script/enemy_data.gd" id="1_4atnn"]
 [ext_resource type="Resource" uid="uid://dfv8nht5j7suu" path="res://src/minigames/eco_valley_defense/data/Monster/OilBlob.tres" id="2_gevjm"]
-[ext_resource type="Texture2D" uid="uid://c1xj75wjp73fv" path="res://src/minigames/eco_valley_defense/assets/OilBlob.png" id="2_i51r1"]
 [ext_resource type="Resource" uid="uid://bywtlf6aycxfg" path="res://src/minigames/eco_valley_defense/data/Monster/OrganicCreature.tres" id="3_7bhi2"]
+[ext_resource type="Texture2D" uid="uid://bnpn1bo2ujly6" path="res://src/minigames/eco_valley_defense/assets/FinalBoss.png" id="4_gevjm"]
 
 [resource]
 script = ExtResource("1_4atnn")
 enemy_name = "Boss"
-texture = ExtResource("2_i51r1")
+texture = ExtResource("4_gevjm")
 max_hp = 2500.0
 speed = 40.0
 damage_to_castle = 15

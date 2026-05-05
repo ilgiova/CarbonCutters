@@ -71,6 +71,28 @@ custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxEmpty_4yc2i")
 
+[node name="MarginContainer4" type="MarginContainer" parent="BoxContainer" unique_id=207628055]
+layout_mode = 2
+
+[node name="LoginButton" type="TextureButton" parent="BoxContainer/MarginContainer4" unique_id=987001096]
+layout_mode = 2
+texture_normal = ExtResource("3_4yc2i")
+texture_hover = ExtResource("4_ey0r0")
+
+[node name="Label" type="Label" parent="BoxContainer/MarginContainer4" unique_id=1807828932]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
+theme_override_fonts/font = ExtResource("5_4yc2i")
+theme_override_font_sizes/font_size = 40
+text = "Login"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator3" type="HSeparator" parent="BoxContainer" unique_id=476418929]
+custom_minimum_size = Vector2(0, 120)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_4yc2i")
+
 [node name="MarginContainer3" type="MarginContainer" parent="BoxContainer" unique_id=999483686]
 layout_mode = 2
 
@@ -90,4 +112,5 @@ vertical_alignment = 1
 
 [connection signal="pressed" from="BoxContainer/MarginContainer/Startbutton" to="." method="_on_startbutton_pressed"]
 [connection signal="pressed" from="BoxContainer/MarginContainer2/Setting" to="." method="_on_setting_pressed"]
+[connection signal="pressed" from="BoxContainer/MarginContainer4/LoginButton" to="." method="_on_login_button_pressed"]
 [connection signal="pressed" from="BoxContainer/MarginContainer3/ExitButton" to="." method="_on_exit_button_pressed"]

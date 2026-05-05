@@ -89,12 +89,12 @@ func _make_card(data: TowerData) -> PanelContainer:
 	card.add_child(vbox)
 
 	if data.texture != null:
-		var tr := TextureRect.new()
-		tr.texture             = data.texture
-		tr.custom_minimum_size = Vector2(36, 36)
-		tr.stretch_mode        = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		tr.expand_mode         = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
-		vbox.add_child(tr)
+		var tex_rect := TextureRect.new()
+		tex_rect.texture             = data.texture
+		tex_rect.custom_minimum_size = Vector2(36, 36)
+		tex_rect.stretch_mode        = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		tex_rect.expand_mode         = TextureRect.EXPAND_FIT_WIDTH_PROPORTIONAL
+		vbox.add_child(tex_rect)
 	else:
 		var icon := Label.new()
 		icon.text                = "🏰"

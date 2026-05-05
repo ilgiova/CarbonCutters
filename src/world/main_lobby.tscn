@@ -265,7 +265,7 @@ position = Vector2(2014, 1819)
 [node name="ZonaInterattiva" parent="Y-sorted" unique_id=116407124 instance=ExtResource("24_lq03f")]
 y_sort_enabled = true
 position = Vector2(-356, 1125)
-target_scene = "uid://l4samjtjjh0u"
+target_scene = "uid://b0bikkldqls0q"
 
 [node name="Sprite2D" parent="Y-sorted/ZonaInterattiva" index="0" unique_id=446796136]
 position = Vector2(150, -53)
@@ -280,6 +280,26 @@ position = Vector2(-27, 97)
 shape = SubResource("CircleShape2D_6d8su")
 
 [node name="IconKeyboard" parent="Y-sorted/ZonaInterattiva" index="3" unique_id=1169338842]
+position = Vector2(-31, 26)
+
+[node name="ZonaInterattiva5" parent="Y-sorted" unique_id=1179034357 instance=ExtResource("24_lq03f")]
+y_sort_enabled = true
+position = Vector2(-356, 1125)
+target_scene = "uid://b0bikkldqls0q"
+
+[node name="Sprite2D" parent="Y-sorted/ZonaInterattiva5" index="0" unique_id=446796136]
+position = Vector2(150, -53)
+texture = ExtResource("25_ittcd")
+
+[node name="CollisionShape2D" parent="Y-sorted/ZonaInterattiva5/StaticBody2D" parent_id_path=PackedInt32Array(1179034357, 631433023) index="0" unique_id=1051250301]
+position = Vector2(148.82617, 4.3291016)
+shape = SubResource("RectangleShape2D_b2gcd")
+
+[node name="CollisionShape2D" parent="Y-sorted/ZonaInterattiva5/Area2D" parent_id_path=PackedInt32Array(1179034357, 130289625) index="0" unique_id=448928396]
+position = Vector2(-27, 97)
+shape = SubResource("CircleShape2D_6d8su")
+
+[node name="IconKeyboard" parent="Y-sorted/ZonaInterattiva5" index="3" unique_id=1169338842]
 position = Vector2(-31, 26)
 
 [node name="ZonaInterattiva2" parent="Y-sorted" unique_id=1679799929 instance=ExtResource("24_lq03f")]
@@ -518,6 +538,7 @@ signsFileIt = "res://src/world/signals/SignsIt.json"
 sign_id = "cartello_route_66"
 
 [editable path="Y-sorted/ZonaInterattiva"]
+[editable path="Y-sorted/ZonaInterattiva5"]
 [editable path="Y-sorted/ZonaInterattiva2"]
 [editable path="Y-sorted/ZonaInterattiva3"]
 [editable path="Y-sorted/ZonaInterattiva4"]

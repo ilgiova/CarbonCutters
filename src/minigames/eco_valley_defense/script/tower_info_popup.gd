@@ -43,17 +43,17 @@ func hide_popup() -> void:
 
 func _refresh(data: TowerData, placed: bool) -> void:
 	tower_image.texture = data.texture
-	tower_name.text     = data.tower_name
-	description.text    = data.description
+	tower_name.text     = tr(data.tower_name)        # ← tr()
+	description.text    = tr(data.description)        # ← tr()
 	value_dmg.text      = tr("DAMAGE")+": %.0f" % data.damage
 	value_dps.text      = "DPS: %.1f" % data.get_dps()
 	value_range.text    = tr("RANGE") + ": %.0f" % data.attack_range
 	value_speed.text    = tr("CADENCE")+": %.1fs" % data.attack_cooldown
 	if data.upgrade == null:
-		upgrade_btn_label.text     = "Livello massimo"
+		upgrade_btn_label.text     = tr("ECO_VALLEY_TOWER_MAX_LEVEL")
 		upgrade_btn.disabled = true
 	else:
-		upgrade_btn_label.text    = "Upgrade  %d" % data.upgrade_cost
+		upgrade_btn_label.text    = tr("ECO_VALLEY_TOWER_UPGRADE") + "  %d" % data.upgrade_cost
 		upgrade_btn.disabled = not placed
 
 

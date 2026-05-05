@@ -1,0 +1,249 @@
+[gd_scene format=3 uid="uid://cwj0vvjh67aoh"]
+
+[ext_resource type="Texture2D" uid="uid://dt8p2alecocxr" path="res://assets/UI/Banner.png" id="1_348n4"]
+[ext_resource type="Script" uid="uid://cvpd568xv8oku" path="res://src/world/ui/carbon_cutters_intro.gd" id="1_gb4dn"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="2_gb4dn"]
+[ext_resource type="Texture2D" uid="uid://te8rnf4afft1" path="res://assets/UI/immage5.png" id="3_lu3hc"]
+[ext_resource type="Texture2D" uid="uid://o2kpi0a7i8ah" path="res://assets/UI/immage4.png" id="4_pj413"]
+[ext_resource type="Texture2D" uid="uid://1yblpym27mox" path="res://assets/UI/immage3.png" id="5_ujjpi"]
+[ext_resource type="Texture2D" uid="uid://c5hf4svduto4p" path="res://assets/UI/immage2.png" id="6_4dao6"]
+[ext_resource type="Texture2D" uid="uid://co873uux0cn32" path="res://assets/UI/immage6.png" id="7_f3yxy"]
+[ext_resource type="Texture2D" uid="uid://oerod3o3d3ck" path="res://assets/UI/Immage1.png" id="8_u7cj7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rkwx1"]
+bg_color = Color(0.24313726, 0.12156863, 0.11372549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gahd5"]
+bg_color = Color(0.34509805, 0.19215687, 0.14901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kp7wh"]
+bg_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ini2s"]
+bg_color = Color(0.4392157, 0.28627452, 0.16470589, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_44s5x"]
+bg_color = Color(0.8039216, 0.6509804, 0.46666667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j1wwi"]
+bg_color = Color(0.8980392, 0.8392157, 0.6313726, 1)
+
+[node name="CarbonCuttersIntro" type="Control" unique_id=122468770]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gb4dn")
+
+[node name="Background" type="PanelContainer" parent="." unique_id=104279623]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_rkwx1")
+
+[node name="Frame1" type="MarginContainer" parent="Background" unique_id=2018851959]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Panel1" type="PanelContainer" parent="Background/Frame1" unique_id=634311471]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gahd5")
+
+[node name="Frame2" type="MarginContainer" parent="Background/Frame1/Panel1" unique_id=1482900493]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Panel2" type="PanelContainer" parent="Background/Frame1/Panel1/Frame2" unique_id=2091371211]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kp7wh")
+
+[node name="Frame3" type="MarginContainer" parent="Background/Frame1/Panel1/Frame2/Panel2" unique_id=2063446303]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Panel3" type="PanelContainer" parent="Background/Frame1/Panel1/Frame2/Panel2/Frame3" unique_id=2141110699]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ini2s")
+
+[node name="Frame4" type="MarginContainer" parent="Background/Frame1/Panel1/Frame2/Panel2/Frame3/Panel3" unique_id=1036862126]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Panel4" type="PanelContainer" parent="Background/Frame1/Panel1/Frame2/Panel2/Frame3/Panel3/Frame4" unique_id=193277555]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_44s5x")
+
+[node name="Frame5" type="MarginContainer" parent="Background/Frame1/Panel1/Frame2/Panel2/Frame3/Panel3/Frame4/Panel4" unique_id=733970392]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="InnerPanel" type="PanelContainer" parent="Background/Frame1/Panel1/Frame2/Panel2/Frame3/Panel3/Frame4/Panel4/Frame5" unique_id=1459384554]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j1wwi")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1091876139]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 60
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 60
+
+[node name="Layout" type="VBoxContainer" parent="MarginContainer" unique_id=2037918863]
+layout_mode = 2
+
+[node name="TitleBanner" type="TextureRect" parent="MarginContainer/Layout" unique_id=1609076725]
+layout_mode = 2
+texture = ExtResource("1_348n4")
+stretch_mode = 5
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/Layout/TitleBanner" unique_id=714393725]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.6938622, 0.51312196, 0.23561022, 1)
+theme_override_colors/font_outline_color = Color(0.3764706, 0.22352941, 0.15686275, 1)
+theme_override_constants/shadow_offset_x = 6
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 27
+theme_override_fonts/font = ExtResource("2_gb4dn")
+theme_override_font_sizes/font_size = 80
+text = "CARBON_CUTTERS_INTRO_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TopRow" type="HBoxContainer" parent="MarginContainer/Layout" unique_id=1632575067]
+layout_mode = 2
+alignment = 1
+
+[node name="FirstImmage" type="TextureRect" parent="MarginContainer/Layout/TopRow" unique_id=726371460]
+layout_mode = 2
+texture = ExtResource("3_lu3hc")
+
+[node name="Label" type="Label" parent="MarginContainer/Layout/TopRow/FirstImmage" unique_id=1096811197]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("2_gb4dn")
+theme_override_font_sizes/font_size = 40
+text = "CARBON_CUTTERS_INTRO_CARD_EXPLORE"
+horizontal_alignment = 1
+
+[node name="SecondImmage" type="TextureRect" parent="MarginContainer/Layout/TopRow" unique_id=1687457419]
+layout_mode = 2
+texture = ExtResource("4_pj413")
+
+[node name="Label" type="Label" parent="MarginContainer/Layout/TopRow/SecondImmage" unique_id=175572937]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("2_gb4dn")
+theme_override_font_sizes/font_size = 40
+text = "CARBON_CUTTERS_INTRO_CARD_MINIGAMES"
+horizontal_alignment = 1
+
+[node name="TheardImmage" type="TextureRect" parent="MarginContainer/Layout/TopRow" unique_id=793759799]
+layout_mode = 2
+texture = ExtResource("5_ujjpi")
+
+[node name="Label" type="Label" parent="MarginContainer/Layout/TopRow/TheardImmage" unique_id=989709008]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("2_gb4dn")
+theme_override_font_sizes/font_size = 40
+text = "CARBON_CUTTERS_INTRO_CARD_CHAT"
+horizontal_alignment = 1
+
+[node name="BottomRow" type="HBoxContainer" parent="MarginContainer/Layout" unique_id=652700758]
+layout_mode = 2
+alignment = 1
+
+[node name="FirstImmage" type="TextureRect" parent="MarginContainer/Layout/BottomRow" unique_id=1198968295]
+layout_mode = 2
+texture = ExtResource("6_4dao6")
+
+[node name="SecondImmage" type="TextureRect" parent="MarginContainer/Layout/BottomRow" unique_id=155377520]
+layout_mode = 2
+texture = ExtResource("7_f3yxy")
+
+[node name="LabelMovment" type="Label" parent="MarginContainer/Layout/BottomRow/SecondImmage" unique_id=91426747]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_gb4dn")
+theme_override_font_sizes/font_size = 40
+text = "CARBON_CUTTERS_INTRO_MOVEMENT"
+horizontal_alignment = 1
+
+[node name="PressLabel" type="Label" parent="MarginContainer/Layout/BottomRow/SecondImmage" unique_id=291297311]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_gb4dn")
+theme_override_font_sizes/font_size = 40
+text = "CARBON_CUTTERS_INTRO_CONTINUE"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="TheardImmage" type="TextureRect" parent="MarginContainer/Layout/BottomRow" unique_id=247634235]
+layout_mode = 2
+texture = ExtResource("8_u7cj7")

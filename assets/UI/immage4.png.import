@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5c4vdjmaam38"
-path="res://.godot/imported/IndustrialBot4.png-37bbad35094d9b6bce4eb2410c623709.ctex"
+uid="uid://o2kpi0a7i8ah"
+path="res://.godot/imported/immage4.png-3bab4c2c154cac2de524c0389342b89f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/minigames/eco_valley_defense/assets/IndustrialBot4.png"
-dest_files=["res://.godot/imported/IndustrialBot4.png-37bbad35094d9b6bce4eb2410c623709.ctex"]
+source_file="res://assets/UI/immage4.png"
+dest_files=["res://.godot/imported/immage4.png-3bab4c2c154cac2de524c0389342b89f.ctex"]
 
 [params]
 

@@ -7,6 +7,10 @@ extends CanvasLayer
 @onready var glassLabel: Label = $MarginContainer/VBoxContainer/HBoxContainer4/Label
 @onready var canLabel: Label = $MarginContainer/VBoxContainer/HBoxContainer5/Label
 @onready var trashDisplay: MarginContainer = $MarginContainer
+@onready var nameLabel: Label = $TextureRect/Label
+
+
+
 
 func _process(_delta):
 	label.text = tr("SCORE")+": " + str(PlayerData.score)
@@ -15,8 +19,14 @@ func _process(_delta):
 	waterLabel.text = str(PlayerData.getPlasticCount())
 	glassLabel.text = str(PlayerData.getGlassCount())
 	canLabel.text = str(PlayerData.getAluminumCount())
+	
 	if PlayerData.current_context == "lobby":
 		trashDisplay.visible = true
 	else:
 		trashDisplay.visible = false
+		
+	if !PlayerData.isLoggedIn():
+		nameLabel.text = "Ospite"
+	else:
+		nameLabel.text = PlayerData.getUserName()
 	

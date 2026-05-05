@@ -15,6 +15,7 @@
 [ext_resource type="Resource" uid="uid://sgpbmx4qmwpg" path="res://src/minigames/eco_valley_defense/data/Tower/SolarBase/SolarPannel1.tres" id="8_jk32b"]
 [ext_resource type="Resource" uid="uid://kp8h85dwe6il" path="res://src/minigames/eco_valley_defense/data/Tower/Mushroom/Mushroom1.tres" id="9_3hi0b"]
 [ext_resource type="Resource" uid="uid://btfpo2kiflfq3" path="res://src/minigames/eco_valley_defense/data/Tower/AncientOak/AncientOak1.tres" id="10_roqnt"]
+[ext_resource type="PackedScene" uid="uid://8ngl7cxv4t8n" path="res://src/minigames/eco_valley_defense/scene/end_scene_eco_valley.tscn" id="11_hp314"]
 [ext_resource type="PackedScene" uid="uid://cmcge1l6dm65g" path="res://src/minigames/eco_valley_defense/scene/tower_shop.tscn" id="12_a0dnh"]
 [ext_resource type="Texture2D" uid="uid://bglscraq44p8c" path="res://assets/UI/BackgroundPoints.png" id="13_2mpv4"]
 [ext_resource type="Resource" uid="uid://cxq54etem8rqg" path="res://src/minigames/eco_valley_defense/data/Tower/AlgaeBioractor/AlgaeBioreactor1.tres" id="13_b010m"]
@@ -63,6 +64,7 @@ script = ExtResource("1_fd63e")
 enemy_scene = ExtResource("3_vp0g2")
 tower_scene = SubResource("PackedScene_jk32b")
 available_towers = Array[ExtResource("4_dj8rb")]([ExtResource("5_a0dnh"), ExtResource("13_b010m"), ExtResource("9_3hi0b"), ExtResource("8_jk32b"), ExtResource("7_tp6es"), ExtResource("10_roqnt")])
+end_screen_scene = ExtResource("11_hp314")
 
 [node name="Tile" type="Node2D" parent="." unique_id=827435982]
 y_sort_enabled = true
@@ -165,7 +167,10 @@ offset_right = 283.2
 offset_bottom = 129.0
 
 [node name="PauseMenu" parent="UI" unique_id=1009582514 instance=ExtResource("22_roqnt")]
+visible = false
 
 [node name="WaveManager" type="Node" parent="." unique_id=2066566142]
 script = ExtResource("25_hesdu")
 enemy_pool = Array[ExtResource("20_i1y8h")]([ExtResource("21_hesdu"), ExtResource("23_n7l4x"), ExtResource("24_3hi0b"), ExtResource("22_nlpm7"), ExtResource("26_nlpm7")])
+auto_start = null
+initial_delay = null

@@ -33,7 +33,7 @@ func setup_area(radius: float, damage: float, tower: Node, color: Color = Color.
 
 func _on_frame_changed() -> void:
 	# Applica il danno a metà animazione (frame centrale)
-	var mid_frame = sprite.sprite_frames.get_frame_count("default") / 2
+	var mid_frame = int(sprite.sprite_frames.get_frame_count("default") / 2.0)
 	if sprite.frame >= mid_frame and not _damage_dealt:
 		_damage_dealt = true
 		_apply_damage_to_enemies()

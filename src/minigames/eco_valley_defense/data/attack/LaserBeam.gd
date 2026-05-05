@@ -13,7 +13,7 @@ func _ready() -> void:
 	sprite.animation_finished.connect(_on_animation_finished)
 
 # Setup esteso con TowerData
-func setup(from_global: Vector2, target: Node, damage: float, tower_data: TowerData = null, color: Color = Color.WHITE) -> void:
+func setup(from_global: Vector2, target: Node, damage: float, tower_data: TowerData = null, _color: Color = Color.WHITE) -> void:
 	if not is_inside_tree():
 		await ready
 	

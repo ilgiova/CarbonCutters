@@ -3,7 +3,7 @@ extends Node
 
 signal round_started(round_number: int)
 signal round_completed(round_number: int)
-signal wave_countdown(seconds_left: float)
+
 
 enum State { IDLE, RESTING, SPAWNING, WAITING_FOR_KILLS }
 
@@ -11,6 +11,7 @@ enum State { IDLE, RESTING, SPAWNING, WAITING_FOR_KILLS }
 @export var auto_start: bool = true
 @export var initial_delay: float = 5.0
 
+var pointMultiplyer: int = 2
 var current_round: int = 0
 var state: State = State.IDLE
 var _alive_enemies: int = 0
@@ -22,21 +23,45 @@ func _ready() -> void:
 
 
 func _spawn_wave(wave: WaveData) -> void:
+	# Separa entry "immediate" (delay = 0) da entry "delayed" (delay > 0)
+	var immediate_entries: Array[WaveEntry] = []
+	var delayed_entries: Array[WaveEntry] = []
+	
 	for entry in wave.entries:
 		if entry.delay_before > 0:
-			await get_tree().create_timer(entry.delay_before).timeout
-		
+			delayed_entries.append(entry)
+		else:
+			immediate_entries.append(entry)
+	
+	# Costruisci la queue mescolata di tutti i nemici "immediati"
+	var spawn_queue: Array[EnemyData] = []
+	for entry in immediate_entries:
 		for i in entry.count:
-			_spawn_one(entry.enemy_data)
+			spawn_queue.append(entry.enemy_data)
+	spawn_queue.shuffle()
+	
+	# Spawna la queue mescolata
+	for enemy_data in spawn_queue:
+		_spawn_one(enemy_data)
+		await get_tree().create_timer(wave.spawn_interval).timeout
+	
+	# Poi spawna le entry con delay (boss, aftermath...)
+	# Ognuna mescolata internamente al proprio gruppo
+	for entry in delayed_entries:
+		await get_tree().create_timer(entry.delay_before).timeout
+		var sub_queue: Array[EnemyData] = []
+		for i in entry.count:
+			sub_queue.append(entry.enemy_data)
+		sub_queue.shuffle()
+		for enemy_data in sub_queue:
+			_spawn_one(enemy_data)
 			await get_tree().create_timer(wave.spawn_interval).timeout
 
 func _spawn_one(enemy_data: EnemyData) -> void:
 	if _game == null or not _game.has_method("spawn_enemy"):
 		return
 	_alive_enemies += 1
-	
-	# Calcola scaling: ogni 10 round +5% HP e +10% velocità
-	var tier = current_round / 10  # 0 nei round 1-9, 1 nei round 10-19, ecc.
+	var tier = int(current_round / 10.0)  
 	var hp_mult = 1.0 + (tier * 0.12)
 	var speed_mult = 1.0 + (tier * 0.10)
 	
@@ -63,6 +88,7 @@ func _complete_round() -> void:
 	state = State.RESTING
 	round_completed.emit(current_round)
 	print("Round ", current_round, " completato!")
+	PlayerData.add_score(current_round * pointMultiplyer)
 	
 	if auto_continue:
 		# Modalità auto: piccola pausa e poi parte da solo
