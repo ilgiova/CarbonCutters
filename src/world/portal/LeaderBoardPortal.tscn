@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://4nlpadl4whqm"]
+
+[ext_resource type="Texture2D" uid="uid://d11qqosy814wc" path="res://assets/world/building/LeaderboardPortal.png" id="1_ev1q8"]
+[ext_resource type="Script" uid="uid://b8fljd4721mld" path="res://src/world/portal/leader_board_portal.gd" id="1_gx2q2"]
+[ext_resource type="Texture2D" uid="uid://enrnfollta1l" path="res://assets/UI/E.png" id="3_tivr8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gx2q2"]
+size = Vector2(186.79688, 116.36719)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tivr8"]
+radius = 113.0177
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nld6"]
+atlas = ExtResource("3_tivr8")
+region = Rect2(0, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kuclc"]
+atlas = ExtResource("3_tivr8")
+region = Rect2(19, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukjld"]
+atlas = ExtResource("3_tivr8")
+region = Rect2(38, 0, 19, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7s31b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nld6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kuclc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukjld")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="LeaderBoardPortal" type="Node2D" unique_id=1997312038]
+script = ExtResource("1_gx2q2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=940361152]
+position = Vector2(-2, -79)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ev1q8")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=926876767]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1207974880]
+position = Vector2(-2.3984375, -32.816406)
+shape = SubResource("RectangleShape2D_gx2q2")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=791632891]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1204528117]
+position = Vector2(-2, -32)
+shape = SubResource("CircleShape2D_tivr8")
+
+[node name="IconKeyboard" type="AnimatedSprite2D" parent="." unique_id=1164796577]
+z_index = 1
+position = Vector2(-1, -214)
+scale = Vector2(1.3881578, 1.3881578)
+sprite_frames = SubResource("SpriteFrames_7s31b")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

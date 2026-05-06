@@ -38,6 +38,7 @@
 [ext_resource type="Texture2D" uid="uid://dxcnrlwerxpvi" path="res://assets/world/switzerland/coltellinosvizzero.png" id="34_yf2c7"]
 [ext_resource type="Texture2D" uid="uid://xq267uyw1af1" path="res://assets/world/switzerland/orologio.png" id="35_qvep6"]
 [ext_resource type="Texture2D" uid="uid://ct6a6qnlnwpq1" path="res://assets/world/america/cartelloroute.png" id="36_r11r5"]
+[ext_resource type="PackedScene" uid="uid://4nlpadl4whqm" path="res://src/world/portal/LeaderBoardPortal.tscn" id="39_r11r5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b2gcd"]
 size = Vector2(482.34766, 180.6582)
@@ -46,10 +47,10 @@ size = Vector2(482.34766, 180.6582)
 radius = 51.78803
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ittcd"]
-size = Vector2(184, 89)
+size = Vector2(211, 103)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8ohyr"]
-radius = 29.0
+radius = 43.046486
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_drqmc"]
 size = Vector2(243.07227, 73.512695)
@@ -198,7 +199,7 @@ d_file_it = "res://src/world/entities/npc/data/it/DylanDialoguer.json"
 d_file_en = "res://src/world/entities/npc/data/en/DylanDialoguer.json"
 
 [node name="NpcBryce" parent="Y-sorted/npc" unique_id=1937738153 instance=ExtResource("10_wy8lf")]
-position = Vector2(1148, 198)
+position = Vector2(2168, 290)
 npc_name = "Bryce"
 npc_frames = ExtResource("8_sj314")
 d_file_it = "res://src/world/entities/npc/data/it/BryceDialoguer.json"
@@ -212,7 +213,7 @@ d_file_it = "res://src/world/entities/npc/data/it/JacobDialoguer.json"
 d_file_en = "res://src/world/entities/npc/data/en/JacobDialoguer.json"
 
 [node name="NpcMatt" parent="Y-sorted/npc" unique_id=2094250646 instance=ExtResource("10_wy8lf")]
-position = Vector2(397, 15)
+position = Vector2(828, 319)
 npc_name = "Matt"
 npc_frames = ExtResource("14_7hmi3")
 d_file_it = "res://src/world/entities/npc/data/it/MattDialoguer.json"
@@ -232,7 +233,7 @@ position = Vector2(1508, 365)
 
 [node name="sheep5" parent="Y-sorted/sheeps" unique_id=184011954 instance=ExtResource("14_4pv15")]
 y_sort_enabled = true
-position = Vector2(483, 14)
+position = Vector2(106, 95)
 
 [node name="sheep4" parent="Y-sorted/sheeps" unique_id=834764864 instance=ExtResource("14_4pv15")]
 y_sort_enabled = true
@@ -309,14 +310,14 @@ target_scene = "uid://dqr6668unj5a0"
 
 [node name="Sprite2D" parent="Y-sorted/ZonaInterattiva2" index="0" unique_id=446796136]
 position = Vector2(139.99994, -69)
-scale = Vector2(0.20254508, 0.19537877)
+scale = Vector2(0.25, 0.24)
 texture = ExtResource("29_drqmc")
 
 [node name="StaticBody2D" parent="Y-sorted/ZonaInterattiva2" index="1" unique_id=631433023]
 position = Vector2(134, 52)
 
 [node name="CollisionShape2D" parent="Y-sorted/ZonaInterattiva2/StaticBody2D" index="0" unique_id=1051250301]
-position = Vector2(-1, -83.5)
+position = Vector2(8.5, -84.5)
 shape = SubResource("RectangleShape2D_ittcd")
 
 [node name="Area2D" parent="Y-sorted/ZonaInterattiva2" index="2" unique_id=130289625]
@@ -327,7 +328,7 @@ position = Vector2(-9, -51)
 shape = SubResource("CircleShape2D_8ohyr")
 
 [node name="IconKeyboard" parent="Y-sorted/ZonaInterattiva2" index="3" unique_id=1169338842]
-position = Vector2(121, -123)
+position = Vector2(103, -170)
 
 [node name="ZonaInterattiva3" parent="Y-sorted" unique_id=2035079810 instance=ExtResource("24_lq03f")]
 y_sort_enabled = true
@@ -369,6 +370,10 @@ shape = SubResource("CircleShape2D_r11r5")
 
 [node name="IconKeyboard" parent="Y-sorted/ZonaInterattiva4" index="3" unique_id=1169338842]
 position = Vector2(1598, -42)
+
+[node name="LeaderBoardPortal" parent="Y-sorted" unique_id=2029095923 instance=ExtResource("39_r11r5")]
+y_sort_enabled = true
+position = Vector2(533, 27)
 
 [node name="swissFlag" type="AnimatedSprite2D" parent="." unique_id=1987709970]
 position = Vector2(1603, 973)
