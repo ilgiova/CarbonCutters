@@ -562,6 +562,7 @@ position = Vector2(-1585, 78)
 signsFileEn = "res://src/world/signals/SignsEn.json"
 signsFileIt = "res://src/world/signals/SignsIt.json"
 sign_id = "camion_spazzatura"
+esegui_azione_speciale = true
 
 [editable path="Y-sorted/ZonaInterattiva"]
 [editable path="Y-sorted/ZonaInterattiva5"]
