@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bcpbv8kc3wnpy"]
+
+[ext_resource type="AudioStream" uid="uid://d3764ti6ousjl" path="res://sound/loop.mp3" id="1_467g6"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=1359269657]
+stream = ExtResource("1_467g6")
+volume_db = -21.55
+autoplay = true
