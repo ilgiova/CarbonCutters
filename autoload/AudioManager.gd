@@ -5,6 +5,7 @@ var sfx_player: AudioStreamPlayer
 var master_volume: float = 100.0
 
 func _ready():
+	process_mode = Node.PROCESS_MODE_ALWAYS
 	music_player = AudioStreamPlayer.new()
 	add_child(music_player)
 

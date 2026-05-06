@@ -277,6 +277,7 @@ func fetch_leaderboard() -> void:
 	
 	var http = HTTPRequest.new()
 	add_child(http)
+	http.accept_gzip = false
 	http.request_completed.connect(_on_leaderboard_response.bind(http))
 	http.request(url, headers, HTTPClient.METHOD_GET)
 
