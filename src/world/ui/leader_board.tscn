@@ -185,6 +185,7 @@ vertical_alignment = 1
 [node name="VBoxContainer2" type="VBoxContainer" parent="Control/MarginContainer/HBoxContainer" unique_id=765209599]
 layout_mode = 2
 theme_override_constants/separation = 10
+alignment = 1
 
 [node name="Player1" type="TextureRect" parent="Control/MarginContainer/HBoxContainer/VBoxContainer2" unique_id=304557465]
 custom_minimum_size = Vector2(500, 0)
