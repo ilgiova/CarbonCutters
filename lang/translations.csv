@@ -104,3 +104,5 @@ WELCOME,Welcome,Benvenuto
 CREATED,Account created! Welocme,Account creato! Benvenuto
 SHORT_USERNAME,Username to short (min 5),Username troppo corto (min 5)
 SHORT_PASSWORD,Password to short (min 8),Password troppo corta (min 8)
+USER_EXIST,Username already existing, Username già esistente
+INSERT_EMPTY,Insert username and passoword,Inserisci username e password

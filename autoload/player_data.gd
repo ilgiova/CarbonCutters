@@ -112,7 +112,8 @@ func signup(username: String, password: String) -> void:
 		"apikey: " + SUPABASE_KEY,
 		"Authorization: Bearer " + SUPABASE_KEY,
 		"Content-Type: application/json",
-		"Prefer: return=representation"
+		"Prefer: return=representation",
+		"Accept-Encoding: identity"
 	]
 	
 	var body = JSON.stringify({
@@ -128,6 +129,7 @@ func signup(username: String, password: String) -> void:
 	
 	var http = HTTPRequest.new()
 	add_child(http)
+	http.accept_gzip = false
 	http.request_completed.connect(_on_signup_response.bind(username, http))
 	http.request(url, headers, HTTPClient.METHOD_POST, body)
 
@@ -141,7 +143,7 @@ func _on_signup_response(_result: int, response_code: int, _headers: PackedStrin
 		resetData()
 		signup_success.emit()
 	elif response_code == 409:
-		signup_failed.emit("Username già esistente")
+		signup_failed.emit("USER_EXIST")
 	else:
 		signup_failed.emit("Errore: " + str(response_code))
 
@@ -151,19 +153,23 @@ func _on_signup_response(_result: int, response_code: int, _headers: PackedStrin
 # ============================================================
 func login(username: String, password: String) -> void:
 	if username.is_empty() or password.is_empty():
-		login_failed.emit("Inserisci username e password")
+		login_failed.emit("INSERT_EMPTY")
 		return
 	
 	var hashed = _hash_password(password)
-	var url = SUPABASE_URL + "/rest/v1/users?name=eq." + username + "&password_hash=eq." + hashed
+	var encoded_user = username.uri_encode()  
+	var encoded_hash = hashed.uri_encode()    
+	var url = SUPABASE_URL + "/rest/v1/users?name=eq." + encoded_user + "&password_hash=eq." + encoded_hash
 	
 	var headers = [
 		"apikey: " + SUPABASE_KEY,
-		"Authorization: Bearer " + SUPABASE_KEY
+		"Authorization: Bearer " + SUPABASE_KEY,
+		"Accept-Encoding: identity" 
 	]
 	
 	var http = HTTPRequest.new()
 	add_child(http)
+	http.accept_gzip = false
 	http.request_completed.connect(_on_login_response.bind(http))
 	http.request(url, headers, HTTPClient.METHOD_GET)
 
@@ -204,7 +210,8 @@ func save_data() -> void:
 	var headers = [
 		"apikey: " + SUPABASE_KEY,
 		"Authorization: Bearer " + SUPABASE_KEY,
-		"Content-Type: application/json"
+		"Content-Type: application/json",
+		"Accept-Encoding: identity"
 	]
 	
 	var body = JSON.stringify({
@@ -219,6 +226,7 @@ func save_data() -> void:
 	
 	var http = HTTPRequest.new()
 	add_child(http)
+	http.accept_gzip = false
 	http.request_completed.connect(_on_save_response.bind(http))
 	http.request(url, headers, HTTPClient.METHOD_PATCH, body)
 

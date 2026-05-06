@@ -19,7 +19,6 @@ config/icon="res://assets/ui/logo.png"
 
 PlayerData="*res://autoload/player_data.gd"
 Audio="*uid://dbg3iwss7grnl"
-UserManager="*uid://btnyexnquvhne"
 
 [display]
 
