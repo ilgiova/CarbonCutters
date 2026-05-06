@@ -39,6 +39,7 @@
 [ext_resource type="Texture2D" uid="uid://xq267uyw1af1" path="res://assets/world/switzerland/orologio.png" id="35_qvep6"]
 [ext_resource type="Texture2D" uid="uid://ct6a6qnlnwpq1" path="res://assets/world/america/cartelloroute.png" id="36_r11r5"]
 [ext_resource type="PackedScene" uid="uid://4nlpadl4whqm" path="res://src/world/portal/LeaderBoardPortal.tscn" id="39_r11r5"]
+[ext_resource type="Texture2D" uid="uid://bwrsbl2lrdlfg" path="res://assets/world/entities/camion.png" id="40_rbotn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b2gcd"]
 size = Vector2(482.34766, 180.6582)
@@ -143,8 +144,8 @@ height = 2811.0
 size = Vector2(1347.5729, 1872.3252)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mtjlw"]
-radius = 356.91406
-height = 1835.5508
+radius = 677.9165
+height = 2081.918
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_etdq2"]
 size = Vector2(985.17773, 1245.79)
@@ -541,6 +542,26 @@ position = Vector2(51, 784)
 signsFileEn = "res://src/world/signals/SignsEn.json"
 signsFileIt = "res://src/world/signals/SignsIt.json"
 sign_id = "cartello_route_66"
+
+[node name="StaticBody2DCamion" type="StaticBody2D" parent="." unique_id=254976779]
+position = Vector2(2965.2087, 1452.2501)
+scale = Vector2(0.07845061, 0.07845061)
+
+[node name="Camion" type="Sprite2D" parent="StaticBody2DCamion" unique_id=1741784657]
+position = Vector2(-21638.38, -10521.691)
+scale = Vector2(1.4802145, 1.4802146)
+texture = ExtResource("40_rbotn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2DCamion" unique_id=29674761]
+position = Vector2(-21799.813, -10328.155)
+rotation = -0.95818573
+shape = SubResource("CapsuleShape2D_mtjlw")
+
+[node name="ZonaInterattivaCamion" parent="." unique_id=2005850929 instance=ExtResource("33_qvep6")]
+position = Vector2(-1585, 78)
+signsFileEn = "res://src/world/signals/SignsEn.json"
+signsFileIt = "res://src/world/signals/SignsIt.json"
+sign_id = "camion_spazzatura"
 
 [editable path="Y-sorted/ZonaInterattiva"]
 [editable path="Y-sorted/ZonaInterattiva5"]
