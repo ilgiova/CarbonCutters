@@ -4,7 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://bepc7tp16mh6i" path="res://src/minigames/conveyor_belt/scenes/item_carboard.tscn" id="3_nyhtc"]
 [ext_resource type="PackedScene" uid="uid://bf2eldjjk57rf" path="res://src/minigames/conveyor_belt/scenes/item_pet_bottle.tscn" id="4_dnays"]
 [ext_resource type="PackedScene" uid="uid://bxdl6ihk4ma78" path="res://src/minigames/conveyor_belt/scenes/item_banana_peel.tscn" id="5_j4a30"]
-[ext_resource type="FontFile" uid="uid://u61k3shqedrp" path="res://assets/fonts/Star Crush Copia.ttf" id="5_k6x4i"]
+[ext_resource type="Texture2D" uid="uid://b4ucsmr66b3d8" path="res://src/minigames/conveyor_belt/assets/background.png" id="5_psdr6"]
+[ext_resource type="FontFile" uid="uid://bas012qe4y3c2" path="res://assets/fonts/BasicFont.ttf" id="6_psdr6"]
 [ext_resource type="Texture2D" uid="uid://bglscraq44p8c" path="res://assets/UI/BackgroundPoints.png" id="6_wuflo"]
 [ext_resource type="PackedScene" uid="uid://ddch8y805mtr6" path="res://src/minigames/conveyor_belt/scenes/carboard_trash_can.tscn" id="7_bvmx0"]
 [ext_resource type="PackedScene" uid="uid://bbkflrbkiqq42" path="res://src/minigames/conveyor_belt/scenes/trash_can.tscn" id="7_l2mjd"]
@@ -18,9 +19,6 @@
 [ext_resource type="Texture2D" uid="uid://bdj5t4hpy707m" path="res://src/minigames/conveyor_belt/assets/S.png" id="15_vj3wq"]
 [ext_resource type="Texture2D" uid="uid://cwob66a01neko" path="res://src/minigames/conveyor_belt/assets/D.png" id="16_vj3wq"]
 [ext_resource type="PackedScene" uid="uid://cd1r8x8od7iwm" path="res://src/global/ui/pause_menu.tscn" id="17_mt4qr"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8cenw"]
-load_path = "res://.godot/imported/background.png-ea4ad5e861605908cb56d16533415b56.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_psdr6"]
 atlas = ExtResource("8_wuflo")
@@ -137,13 +135,11 @@ itemScenes = Array[PackedScene]([ExtResource("3_nyhtc"), ExtResource("4_dnays"),
 z_index = -1
 position = Vector2(991, 579.00006)
 scale = Vector2(1.4, 1.19)
-texture = SubResource("CompressedTexture2D_8cenw")
+texture = ExtResource("5_psdr6")
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=1277235313]
-visible = false
 
 [node name="TimerLabel" type="Label" parent="UI" unique_id=765779527]
-visible = false
 custom_minimum_size = Vector2(200, 50)
 anchors_preset = -1
 anchor_left = 0.5
@@ -156,7 +152,7 @@ offset_right = 100.0
 offset_bottom = -108.48001
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("5_k6x4i")
+theme_override_fonts/font = ExtResource("6_psdr6")
 theme_override_font_sizes/font_size = 50
 text = "TIMER"
 horizontal_alignment = 1
@@ -171,7 +167,6 @@ grow_vertical = 2
 color = Color(0, 0, 0, 0.5)
 
 [node name="CountdownShadow" type="Label" parent="UI" unique_id=10216931]
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -183,13 +178,12 @@ offset_right = 20.0
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("5_k6x4i")
+theme_override_fonts/font = ExtResource("6_psdr6")
 theme_override_font_sizes/font_size = 120
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CountdownLabel" type="Label" parent="UI" unique_id=682322978]
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -201,7 +195,7 @@ offset_right = 20.0
 offset_bottom = 66.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("5_k6x4i")
+theme_override_fonts/font = ExtResource("6_psdr6")
 theme_override_font_sizes/font_size = 140
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -222,7 +216,7 @@ expand_mode = 2
 [node name="Label" type="Label" parent="UI/MarginContainer" unique_id=1910444062]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.38039216, 0.22352941, 0.15686275, 1)
-theme_override_fonts/font = ExtResource("5_k6x4i")
+theme_override_fonts/font = ExtResource("6_psdr6")
 theme_override_font_sizes/font_size = 40
 text = "Score: 0"
 horizontal_alignment = 1
