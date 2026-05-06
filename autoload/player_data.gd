@@ -30,12 +30,14 @@ signal signup_success
 signal signup_failed(reason: String)
 signal save_success
 signal save_failed(reason: String)
-
+signal leaderboard_loaded(data: Array)
+signal leaderboard_failed
 
 # ============================================================
 # AVVIO
 # ============================================================
 func _ready() -> void:
+	process_mode = Node.PROCESS_MODE_ALWAYS
 	TranslationServer.set_locale("en")
 
 
@@ -258,3 +260,40 @@ func _hash_password(password: String) -> String:
 	ctx.update(password.to_utf8_buffer())
 	var hash_bytes = ctx.finish()
 	return hash_bytes.hex_encode()
+
+
+# ============================================================
+# LEADERBOARD
+# ============================================================
+
+func fetch_leaderboard() -> void:
+	var url = SUPABASE_URL + "/rest/v1/users?select=name,score&order=score.desc&limit=10"
+	
+	var headers = [
+		"apikey: " + SUPABASE_KEY,
+		"Authorization: Bearer " + SUPABASE_KEY,
+        "Accept-Encoding: identity"
+	]
+	
+	var http = HTTPRequest.new()
+	add_child(http)
+	http.request_completed.connect(_on_leaderboard_response.bind(http))
+	http.request(url, headers, HTTPClient.METHOD_GET)
+
+func _on_leaderboard_response(_result, response_code, _headers, body: PackedByteArray, http: HTTPRequest) -> void:
+	http.queue_free()
+	
+	var body_str = body.get_string_from_utf8()
+	if body_str.is_empty():
+		body_str = body.get_string_from_ascii()
+	
+	if response_code != 200:
+		leaderboard_failed.emit()
+		return
+	
+	var json = JSON.parse_string(body_str)
+	if json == null:
+		leaderboard_failed.emit()
+		return
+	
+	leaderboard_loaded.emit(json)

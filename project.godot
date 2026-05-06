@@ -19,6 +19,7 @@ config/icon="res://assets/ui/logo.png"
 
 PlayerData="*res://autoload/player_data.gd"
 Audio="*uid://dbg3iwss7grnl"
+GlobalAudioStreamPlayer="*uid://bcpbv8kc3wnpy"
 
 [display]
 

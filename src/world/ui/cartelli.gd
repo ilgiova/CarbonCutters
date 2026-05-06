@@ -7,6 +7,9 @@ extends Node2D
 # L'ID univoco di questo cartello per cercarlo nel JSON (es. "statua_liberta")
 @export var sign_id: String = "default_id"
 
+# Flag per attivare il comportamento speciale da Godot Editor
+@export var esegui_azione_speciale: bool = false
+
 @export var popup_ui: CanvasLayer
 
 @onready var icon: AnimatedSprite2D = $IconKeyboard
@@ -50,15 +53,49 @@ func load_localized_text() -> void:
 		else:
 			print("Errore: ID non trovato nel file JSON -> ", sign_id)
 			
-# Logica di interazione mantenuta identica
 func _process(_delta: float) -> void:
+	# Controlliamo l'input dell'utente e la collisione
 	if Input.is_action_just_pressed("interact") and body_inside:
 		is_reading = not is_reading
+		
 		if popup_ui != null:
 			popup_ui.visible = is_reading
 		icon.visible = not is_reading
+		
+		# Se stiamo aprendo il cartello e il flag è attivo, eseguiamo l'azione
+		if is_reading and esegui_azione_speciale:
+			_esegui_logica_extra()
 
+# Metodo isolato per gestire la logica aggiuntiva
+# Assumendo che il tuo Autoload si chiami 'PlayerData' invece di 'Global'
+func _esegui_logica_extra() -> void:
+	print("Azione speciale innescata dal cartello: ", sign_id)
+	
+	# Accediamo al Singleton usando il nome corretto registrato nel sistema
+	var totale_oggetti: int = (
+		PlayerData.getPlasticCount() + 
+		PlayerData.getCardboardCount() + 
+		PlayerData.getGlassCount() + 
+		PlayerData.getAluminumCount() + 
+		PlayerData.getOrganicCount()
+	)
+	
+	if totale_oggetti == 0:
+		print("Nessuna spazzatura da convertire.")
+		return
+		
+	var punti_guadagnati: int = totale_oggetti * 10
+	
+	PlayerData.add_score(punti_guadagnati)
+	
+	PlayerData.plasticCount = 0
+	PlayerData.cardboardCount = 0
+	PlayerData.glassCount = 0
+	PlayerData.aluminumCount = 0
+	PlayerData.organicCount = 0
+	
 func _on_area_2d_body_entered(body: Node2D) -> void:
+	# Rilevamento del player per mostrare l'icona
 	if body.is_in_group("player") or body.name.to_lower().find("player") != -1:
 		body_inside = true
 		if not is_reading:
@@ -66,6 +103,7 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 			icon.play("default")
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
+	# Chiusura e reset automatico all'uscita dall'area
 	if body.is_in_group("player") or body.name.to_lower().find("player") != -1:
 		body_inside = false
 		is_reading = false

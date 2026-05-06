@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c63klbf2gu6v0"]
 
-[ext_resource type="Script" path="res://src/world/ui/cartelli.gd" id="1_im2v1"]
-[ext_resource type="Texture2D" uid="uid://enrnfollta1l" path="res://assets/UI/E.png" id="4_jlmb0"]
+[ext_resource type="Script" uid="uid://diihv2e4qpmag" path="res://src/world/ui/cartelli.gd" id="1_im2v1"]
+[ext_resource type="Texture2D" uid="uid://enrnfollta1l" path="res://assets/ui/E.png" id="4_jlmb0"]
 [ext_resource type="Texture2D" uid="uid://bks0b3fm6utg4" path="res://assets/world/signals/cartello_aperto.png" id="5_qmqyb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r11r5"]
@@ -36,7 +36,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="ZonaInterattivaStatuaLiberta" type="Node2D" unique_id=213191148 node_paths=PackedStringArray("popup_ui")]
+[node name="ZonaInterattivaCartelli" type="Node2D" unique_id=213191148 node_paths=PackedStringArray("popup_ui")]
 script = ExtResource("1_im2v1")
 popup_ui = NodePath("popui")
 
