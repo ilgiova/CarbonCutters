@@ -223,7 +223,7 @@ d_file_it = "res://src/world/entities/npc/data/it/JacobDialoguer.json"
 d_file_en = "res://src/world/entities/npc/data/en/JacobDialoguer.json"
 
 [node name="NpcMatt" parent="Y-sorted/npc" unique_id=2094250646 instance=ExtResource("10_wy8lf")]
-position = Vector2(828, 319)
+position = Vector2(896, 321)
 npc_name = "Matt"
 npc_frames = ExtResource("14_7hmi3")
 d_file_it = "res://src/world/entities/npc/data/it/MattDialoguer.json"

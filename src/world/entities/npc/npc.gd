@@ -16,7 +16,7 @@ enum {
 
 const SPEED = 30
 const TILE_SIZE = 64
-const MAX_TILES = 10
+const MAX_TILES = 5
 const MAX_DIST = TILE_SIZE * MAX_TILES
 
 var current_state = IDLE
