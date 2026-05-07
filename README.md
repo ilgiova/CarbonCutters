@@ -28,7 +28,7 @@ To run the project locally, explore the source code, or contribute to the develo
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone [https://github.com/ilgiova/CarbonCutters.git](https://github.com/ilgiova/CarbonCutters.git)
+   git clone https://github.com/ilgiova/CarbonCutters.git
    ```
 2. Download and install **Godot Engine**.
 3. Launch Godot, open the Project Manager, and click on **Import**.
