@@ -31,8 +31,8 @@
 [ext_resource type="Texture2D" uid="uid://dk57co1ue01un" path="res://assets/world/building/TriviaTp.png" id="29_drqmc"]
 [ext_resource type="Texture2D" uid="uid://dbeoogug4rxe" path="res://assets/world/flags/american_flag.png" id="29_ittcd"]
 [ext_resource type="Texture2D" uid="uid://wcei84vg0yxc" path="res://assets/world/america/statualiberta.png" id="30_6xy4k"]
-[ext_resource type="Script" uid="uid://ddgt55x0ww3fx" path="res://src/world/entities/item/path_follow_2d.gd" id="30_nk0wg"]
-[ext_resource type="PackedScene" uid="uid://bnprs1ic7chhe" path="res://src/world/entities/item/camion.tscn" id="31_dyneg"]
+[ext_resource type="Script" path="res://src/world/entities/item/path_follow_2d.gd" id="30_nk0wg"]
+[ext_resource type="PackedScene" path="res://src/world/entities/item/camion.tscn" id="31_dyneg"]
 [ext_resource type="Texture2D" uid="uid://ui757ulaqrkh" path="res://assets/world/signals/cartello.png" id="31_l1it6"]
 [ext_resource type="Texture2D" uid="uid://blpitg0se8klr" path="res://assets/world/switzerland/statuacioccolato.png" id="32_w2bxj"]
 [ext_resource type="Texture2D" uid="uid://bcemn1qmap6i4" path="res://assets/world/america/cappello.png" id="33_cxjfr"]
@@ -209,7 +209,7 @@ d_file_it = "res://src/world/entities/npc/data/it/DylanDialoguer.json"
 d_file_en = "res://src/world/entities/npc/data/en/DylanDialoguer.json"
 
 [node name="NpcBryce" parent="Y-sorted/npc" unique_id=1937738153 instance=ExtResource("10_wy8lf")]
-position = Vector2(2168, 290)
+position = Vector2(2095, 310)
 npc_name = "Bryce"
 npc_frames = ExtResource("8_sj314")
 d_file_it = "res://src/world/entities/npc/data/it/BryceDialoguer.json"
@@ -230,7 +230,7 @@ d_file_it = "res://src/world/entities/npc/data/it/MattDialoguer.json"
 d_file_en = "res://src/world/entities/npc/data/en/MattDialoguer.json"
 
 [node name="NpcTrevor" parent="Y-sorted/npc" unique_id=1473692085 instance=ExtResource("10_wy8lf")]
-position = Vector2(2403, 953)
+position = Vector2(2403, 1040)
 npc_name = "Trevor"
 d_file_it = "res://src/world/entities/npc/data/it/TrevorDialoguer.json"
 d_file_en = "res://src/world/entities/npc/data/en/TrevorDialoguer.json"
@@ -247,7 +247,7 @@ position = Vector2(106, 95)
 
 [node name="sheep4" parent="Y-sorted/sheeps" unique_id=834764864 instance=ExtResource("14_4pv15")]
 y_sort_enabled = true
-position = Vector2(2288, 429)
+position = Vector2(2395, 446)
 
 [node name="sheep3" parent="Y-sorted/sheeps" unique_id=129413789 instance=ExtResource("14_4pv15")]
 y_sort_enabled = true
@@ -255,7 +255,7 @@ position = Vector2(2788, 1248)
 
 [node name="sheep2" parent="Y-sorted/sheeps" unique_id=1837377680 instance=ExtResource("14_4pv15")]
 y_sort_enabled = true
-position = Vector2(2065, 803)
+position = Vector2(1350, 686)
 
 [node name="sheep" parent="Y-sorted/sheeps" unique_id=1726531562 instance=ExtResource("14_4pv15")]
 y_sort_enabled = true
