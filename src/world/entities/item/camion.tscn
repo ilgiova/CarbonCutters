@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://bnprs1ic7chhe"]
+
+[ext_resource type="Texture2D" uid="uid://bwrsbl2lrdlfg" path="res://assets/world/entities/camion.png" id="1_1ntyi"]
+[ext_resource type="Script" uid="uid://b8vi7nvns3sp2" path="res://src/world/entities/item/camion.gd" id="1_enjj8"]
+[ext_resource type="Texture2D" uid="uid://k24ndwg85jml" path="res://assets/world/entities/player/dust.png" id="2_enjj8"]
+[ext_resource type="Texture2D" uid="uid://enrnfollta1l" path="res://assets/UI/E.png" id="3_oqf7n"]
+[ext_resource type="Texture2D" uid="uid://bks0b3fm6utg4" path="res://assets/world/signals/cartello_aperto.png" id="4_dkxrk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rjpvr"]
+radius = 50.32892
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_enjj8"]
+radius = 147.01361
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nld6"]
+atlas = ExtResource("3_oqf7n")
+region = Rect2(0, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kuclc"]
+atlas = ExtResource("3_oqf7n")
+region = Rect2(19, 0, 19, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukjld"]
+atlas = ExtResource("3_oqf7n")
+region = Rect2(38, 0, 19, 21)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_618uf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nld6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kuclc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukjld")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Camion" type="Node2D" unique_id=274040108]
+z_index = 10
+script = ExtResource("1_enjj8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2085031043]
+position = Vector2(0.99999994, -25.999998)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_1ntyi")
+
+[node name="Area2D" type="StaticBody2D" parent="." unique_id=1583631118]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=279902825]
+position = Vector2(0, -14)
+shape = SubResource("CircleShape2D_rjpvr")
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=1385214180]
+collision_layer = 15
+collision_mask = 31
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=1040058555]
+position = Vector2(-1, -1)
+shape = SubResource("CircleShape2D_enjj8")
+
+[node name="dust2" type="CPUParticles2D" parent="." unique_id=1441448366]
+position = Vector2(-1, 21)
+amount = 5
+texture = ExtResource("2_enjj8")
+lifetime = 1.5
+emission_shape = 3
+emission_rect_extents = Vector2(3, 2)
+gravity = Vector2(0, 0)
+
+[node name="dust" type="CPUParticles2D" parent="." unique_id=752042318]
+position = Vector2(-49, -2)
+amount = 5
+texture = ExtResource("2_enjj8")
+lifetime = 1.5
+emission_shape = 3
+emission_rect_extents = Vector2(3, 2)
+gravity = Vector2(0, 0)
+
+[node name="IconKeyboard" type="AnimatedSprite2D" parent="." unique_id=578591165]
+z_index = 1
+position = Vector2(-1, -127)
+scale = Vector2(1.3881578, 1.3881578)
+sprite_frames = SubResource("SpriteFrames_618uf")
+
+[node name="popui" type="CanvasLayer" parent="." unique_id=411086220]
+layer = 11
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="popui" unique_id=1896918652]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -673.5
+offset_top = -439.0
+offset_right = 673.5
+offset_bottom = 439.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("4_dkxrk")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="popui" unique_id=1068731971]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -494.0
+offset_top = -167.25
+offset_right = 494.0
+offset_bottom = 167.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.4, 0.20746668, 0.09600001, 1)
+theme_override_font_sizes/font_size = 49
+text = "camion_spazzatura"
+autowrap_mode = 3
+
+[connection signal="body_entered" from="Area2D2" to="." method="_on_area_2d_2_body_entered"]
+[connection signal="body_exited" from="Area2D2" to="." method="_on_area_2d_2_body_exited"]
