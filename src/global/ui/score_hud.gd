@@ -26,7 +26,9 @@ func _process(_delta):
 		trashDisplay.visible = false
 		
 	if !PlayerData.isLoggedIn():
-		nameLabel.text = "Ospite"
+		if(TranslationServer.get_locale() == "en"):
+			nameLabel.text = "Ospite"
+		nameLabel.text = "Guest"
 	else:
 		nameLabel.text = PlayerData.getUserName()
 	
