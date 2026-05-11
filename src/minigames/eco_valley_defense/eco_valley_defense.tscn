@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://57fd451n5665"]
+[gd_scene format=4 uid="uid://6ned13j68yy4"]
 
 [ext_resource type="Script" uid="uid://coal8y0gbg5yu" path="res://src/minigames/eco_valley_defense/script/eco_valley_defense.gd" id="1_fd63e"]
 [ext_resource type="TileSet" uid="uid://cy155fk2jtd5h" path="res://assets/world/tileset/ground.tres" id="1_rwx6y"]
@@ -10,7 +10,7 @@
 [ext_resource type="Script" uid="uid://c8giv5d8ru50e" path="res://src/minigames/eco_valley_defense/script/tower_data.gd" id="4_dj8rb"]
 [ext_resource type="TileSet" uid="uid://cvgbqy5fqfupv" path="res://assets/world/tileset/props.tres" id="4_pngnl"]
 [ext_resource type="Resource" uid="uid://b6qpdf5dspfji" path="res://src/minigames/eco_valley_defense/data/Tower/Forest/forest1.tres" id="5_a0dnh"]
-[ext_resource type="TileSet" uid="uid://b8dg5478qjmif" path="res://assets/world/tileset/bridege.tres" id="7_adyl4"]
+[ext_resource type="TileSet" uid="uid://cgvf3q7l23cny" path="res://assets/world/tileset/bridege.tres" id="7_adyl4"]
 [ext_resource type="Resource" uid="uid://c35r7rq8dibu" path="res://src/minigames/eco_valley_defense/data/Tower/Turbine/Turbine1.tres" id="7_tp6es"]
 [ext_resource type="Resource" uid="uid://sgpbmx4qmwpg" path="res://src/minigames/eco_valley_defense/data/Tower/SolarBase/SolarPannel1.tres" id="8_jk32b"]
 [ext_resource type="Resource" uid="uid://kp8h85dwe6il" path="res://src/minigames/eco_valley_defense/data/Tower/Mushroom/Mushroom1.tres" id="9_3hi0b"]
