@@ -10,6 +10,7 @@ tower_name = "Anchient Oak Lv5"
 description = "Powerful tree that strikes multiple enemies with roots."
 texture = ExtResource("2_3kv03")
 damage = 100.0
+attack_range = 200.0
 attack_cooldown = 1.6
 attack_type = 1
 num_targets = 7
