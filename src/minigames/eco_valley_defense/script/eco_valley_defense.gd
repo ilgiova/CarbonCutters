@@ -23,7 +23,7 @@ signal player_defeated
 
 var enemies_killed_total: int = 0
 var gold_earned_total: int = 0
-var gold: int = 300
+var gold: int = 30000
 var placing := false
 var preview: Node2D = null
 var selected_data: TowerData = null
